@@ -1,5 +1,4 @@
 /**
- *
  * Copyright (c) 2015-present, Facebook, Inc.
  * All rights reserved.
  *
@@ -9,6 +8,8 @@
  */
 
 #import "AppDelegate.h"
+
+#import "RCTBundleURLProvider.h"
 #import "RCTRootView.h"
 
 @implementation AppDelegate
@@ -27,9 +28,10 @@ NSString *wifiIP = nil; // no need to set this now (set only as a manual overrid
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   NSURL *jsCodeLocation = nil;
-  
+
 #ifndef DEBUG // PRODUCTION
-  jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+  jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
+  /* jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"]; */
 #else
   if (!useBundle) {
     NSString *address = @"localhost";
@@ -39,12 +41,11 @@ NSString *wifiIP = nil; // no need to set this now (set only as a manual overrid
     jsCodeLocation = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@:8081/index.ios.bundle?platform=ios&dev=true", address]];
   }
 #endif
-  
+
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
-                                                      moduleName:moduleName
+                                                      moduleName:@"NativeStarter"
                                                initialProperties:nil
                                                    launchOptions:launchOptions];
-  
   rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
 
   // This makes sure the app loading screen shows for a little longer.
