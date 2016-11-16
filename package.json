@@ -6,7 +6,6 @@
     "start": "react-native start",
     "cleanstart": "watchman watch-del-all && npm cache clean && react-native start -- --reset-cache",
     "postmerge": "git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD | grep --quiet package.json && npm install",
-    "postinstall": "echo \"Fixing react-native-cli linkage...\" && npm install react-native-cli@latest && react-native link && npm prune",
     "reinstall": "rm -rf ./node_modules && watchman watch-del-all && npm cache clean && rm -rf $TMPDIR/react-* && npm install",
     "link": "react-native link",
     "lint": "eslint app lib",
@@ -17,6 +16,7 @@
     "android-emulator": "android avd",
     "android-logs": "adb logcat *:S ReactNative:V ReactNativeJS:V",
     "bundle": "react-native bundle --entry-file=index.ios.js --bundle-output=ios/main.jsbundle --dev false",
+    "flow": "flow",
     "test": "jest"
   },
   "rnpm": {
@@ -25,6 +25,12 @@
     ]
   },
   "dependencies": {
+    "constelation-Col": "^5.0.0",
+    "constelation-Flex": "^5.0.0",
+    "constelation-Row": "^5.0.0",
+    "constelation-Style_": "^4.0.0",
+    "constelation-View": "^5.0.0",
+    "lodash": "^4.17.2",
     "mobx": "^2.3.7",
     "mobx-react": "^3.5.1",
     "react": "15.3.2",
@@ -37,6 +43,7 @@
     "babel-preset-react-native": "1.9.0",
     "babel-preset-react-native-stage-0": "^1.0.1",
     "eslint": "^3.0.1",
+    "eslint-config-constelation": "^1.0.0",
     "eslint-config-kylpo": "^2.0.0",
     "eslint-plugin-react": "^6.2.0",
     "estraverse-fb": "^1.3.1",

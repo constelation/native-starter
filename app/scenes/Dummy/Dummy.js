@@ -8,8 +8,8 @@ import {
   StyleSheet,
   Text,
   TouchableOpacity,
-  View,
 } from 'react-native'
+import View from 'constelation-View'
 
 export default class Dummy extends React.Component {
   handlePress = () => {
@@ -18,7 +18,7 @@ export default class Dummy extends React.Component {
 
   render() {
     return (
-      <View style={{flex: 1}}>
+      <View flex={1}>
         <StatusBar
           animated
           barStyle='light-content'

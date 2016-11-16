@@ -7,6 +7,10 @@ import {
   Platform,
   ScrollView,
 } from 'react-native'
+import View from 'constelation-View'
+import Row from 'constelation-Row'
+import Col from 'constelation-Col'
+import Style_ from 'constelation-Style_'
 
 export default class Showcase extends React.Component {
   // What's this!? I can still define a custom navBar from within my component.
@@ -48,9 +52,35 @@ export default class Showcase extends React.Component {
   render() {
     return (
       <ScrollView style={{flex: 1, marginTop: 65, marginBottom: 50}}>
-        {/* <Header size={25} style={{marginTop: 40}}>Header</Header> */}
-        {/* <Text size={16} color='8D'>Text with color 8D</Text> */}
-        {/* <Text size={16} color='RED'>Text with color RED</Text> */}
+
+        <Style_ backgroundColor='lightgrey' opacity={0.5} >
+          <Row height={200} >
+            <Style_ backgroundColor='red' >
+              <View width={50} />
+            </Style_>
+            <Style_ backgroundColor='green' >
+              <View width={50} />
+            </Style_>
+            <Style_ backgroundColor='blue' >
+              <View width={50} />
+            </Style_>
+          </Row>
+        </Style_>
+
+        <Style_ backgroundColor='grey' opacity={0.5} >
+          <Col height={200} >
+            <Style_ backgroundColor='red' >
+              <View height={50} />
+            </Style_>
+            <Style_ backgroundColor='green' >
+              <View height={50} />
+            </Style_>
+            <Style_ backgroundColor='blue' >
+              <View height={50} />
+            </Style_>
+          </Col>
+        </Style_>
+
       </ScrollView>
     )
   }

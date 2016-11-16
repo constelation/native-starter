@@ -8,8 +8,8 @@ import {
   StyleSheet,
   Text,
   TouchableOpacity,
-  View,
 } from 'react-native'
+import View from 'constelation-View'
 
 export default class Home extends React.Component {
 
@@ -23,7 +23,11 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <View
+        flex={1}
+        alignHorizontal='center'
+        alignVertical='center'
+      >
         <Image style={{width: 200, height: 200}} source={require('images/logo.png')} />
 
         <TouchableOpacity style={[styles.button, {marginTop: 60}]} onPress={this.handleShowFullScreenModal}>
@@ -44,11 +48,6 @@ export default class Home extends React.Component {
 }
 
 var styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
   button: {
     alignItems: 'center',
     justifyContent: 'center',

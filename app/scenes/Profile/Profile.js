@@ -8,8 +8,8 @@ import {
   StyleSheet,
   Text,
   TouchableOpacity,
-  View,
 } from 'react-native'
+import View from 'constelation-View'
 
 export default inject('counter')(observer(
   class Profile extends React.Component {
@@ -19,7 +19,10 @@ export default inject('counter')(observer(
 
     render() {
       return (
-        <View style={styles.container}>
+        <View
+          flex={1}
+          alignVertical='center'
+        >
           <Text style={styles.welcome}>
             This is the Profile scene
           </Text>
@@ -36,10 +39,6 @@ export default inject('counter')(observer(
 ))
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-  },
   welcome: {
     fontSize: 20,
     textAlign: 'center',

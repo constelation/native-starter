@@ -1351,6 +1351,38 @@ connect@^2.8.3:
     utils-merge "1.0.0"
     vhost "~3.0.1"
 
+constelation-Col@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/constelation-Col/-/constelation-Col-5.0.0.tgz#678350a691647c8e0e83c6a276338a6163fdc0eb"
+  dependencies:
+    constelation-display-component-factory "^5.0.0"
+
+constelation-Flex@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/constelation-Flex/-/constelation-Flex-5.0.0.tgz#7220cd3fab80cd227fbc754c4e414cf672f6ea74"
+  dependencies:
+    constelation-display-component-factory "^5.0.0"
+
+constelation-Row@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/constelation-Row/-/constelation-Row-5.0.0.tgz#d12f41ecafc2c0aa22cba3f7cc49841e75ac6f75"
+  dependencies:
+    constelation-display-component-factory "^5.0.0"
+
+constelation-Style_@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/constelation-Style_/-/constelation-Style_-4.0.0.tgz#821c739fdc96ad37885db4b968f7053f259a7d5a"
+
+constelation-View@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/constelation-View/-/constelation-View-5.0.0.tgz#1804e9627c38c94772946523d1f00ea54e81cef6"
+  dependencies:
+    constelation-display-component-factory "^5.0.0"
+
+constelation-display-component-factory@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/constelation-display-component-factory/-/constelation-display-component-factory-5.0.0.tgz#c6fdf13d70af8ef69983b37c806a2c25661c0ab3"
+
 content-type-parser@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/content-type-parser/-/content-type-parser-1.0.1.tgz#c3e56988c53c65127fb46d4032a3a900246fdc94"
@@ -1880,6 +1912,10 @@ escope@^3.6.0:
     es6-weak-map "^2.0.1"
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
+
+eslint-config-constelation@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-constelation/-/eslint-config-constelation-1.0.0.tgz#b5a961c6c0839a25451bb7f689c3f8370862f75d"
 
 eslint-config-kylpo@^2.0.0:
   version "2.0.0"
@@ -3525,9 +3561,9 @@ lodash@^3.1.0, lodash@^3.10.1, lodash@^3.2.0, lodash@^3.3.1, lodash@^3.5.0, loda
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
 
-lodash@^4.0.0, lodash@^4.14.0, lodash@^4.2.0, lodash@^4.3.0, lodash@^4.6.1:
-  version "4.17.0"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.0.tgz#93f4466e5ab73e5a1f1216c34eea11535f0a8df5"
+lodash@^4.0.0, lodash@^4.14.0, lodash@^4.17.2, lodash@^4.2.0, lodash@^4.3.0, lodash@^4.6.1:
+  version "4.17.2"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.2.tgz#34a3055babe04ce42467b607d700072c7ff6bf42"
 
 log-symbols@^1.0.1:
   version "1.0.2"
