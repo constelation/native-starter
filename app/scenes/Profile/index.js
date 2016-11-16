@@ -1,1 +1,3 @@
-export default from './Profile'
+// @flow
+
+export { default } from './Profile'

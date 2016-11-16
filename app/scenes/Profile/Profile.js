@@ -1,5 +1,8 @@
+// @flow
+
 import React from 'react'
-import { observer } from 'mobx-react/native'
+import { observer, inject } from 'mobx-react/native'
+import { CounterStore } from 'stores/counter'
 
 import {
   StyleSheet,
@@ -8,24 +11,29 @@ import {
   View,
 } from 'react-native'
 
-@observer(['counter'])
-export default class Profile extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          This is the Profile scene
-        </Text>
-        <Text style={{textAlign: 'center'}}>Click 'Detail' for a threaded view</Text>
+export default inject('counter')(observer(
+  class Profile extends React.Component {
+    props: {
+      counter: CounterStore
+    }
 
-        <TouchableOpacity onPress={() => this.props.counter.increase()} >
-          <Text style={styles.welcome}>{this.props.counter.value}</Text>
-        </TouchableOpacity>
+    render() {
+      return (
+        <View style={styles.container}>
+          <Text style={styles.welcome}>
+            This is the Profile scene
+          </Text>
+          <Text style={{textAlign: 'center'}}>Click 'Detail' for a threaded view</Text>
 
-      </View>
-    )
+          <TouchableOpacity onPress={() => this.props.counter.increase()} >
+            <Text style={styles.welcome}>{this.props.counter.value}</Text>
+          </TouchableOpacity>
+
+        </View>
+      )
+    }
   }
-}
+))
 
 const styles = StyleSheet.create({
   container: {

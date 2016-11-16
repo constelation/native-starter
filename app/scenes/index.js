@@ -1,10 +1,11 @@
+// @flow
+
 import React from 'react'
 import { Actions, Scene, Modal } from 'react-native-router-flux'
 
 import {
   Image,
 } from 'react-native'
-import Icon from 'react-native-vector-icons/FontAwesome'
 import Dummy from './Dummy'
 import Home from './Home'
 import Profile from './Profile'
@@ -13,13 +14,13 @@ import Showcase from './Showcase'
 
 const showcaseIconSource = require( 'images/icon-bonfire.png' )
 
-const VectorIcon = props => (
-  <Icon
-    name={props.iconName}
-    size={24}
-    color={props.selected ? 'black' : '#929292'}
-  />
-)
+// const VectorIcon = props => (
+//   <Icon
+//     name={props.iconName}
+//     size={24}
+//     color={props.selected ? 'black' : '#929292'}
+//   />
+// )
 
 const ImageIcon = props => (
   <Image
@@ -36,12 +37,12 @@ export default Actions.create(
 
       <Scene key='tabbar' tabs direction='vertical' >
 
-        <Scene key='homeTab' icon={VectorIcon} iconName='home' >
+        <Scene key='homeTab' icon={ImageIcon} imageSource={showcaseIconSource} >
           <Scene key='home' component={Home} title='Home' initial />
           <Scene key='fullDetail' component={Dummy} hideNavBar hideTabBar direction='horizontal' type='push' />
         </Scene>
 
-        <Scene key='profileTab' icon={VectorIcon} iconName='user' >
+        <Scene key='profileTab' icon={ImageIcon} imageSource={showcaseIconSource} >
           <Scene
             key='profile'
             component={Profile}

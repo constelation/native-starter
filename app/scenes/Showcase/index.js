@@ -1,1 +1,3 @@
-export default from './Showcase'
+// @flow
+
+export { default } from './Showcase'

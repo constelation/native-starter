@@ -1,1 +1,3 @@
-export default from './Dummy'
+// @flow
+
+export { default } from './Dummy'

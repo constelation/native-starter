@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react'
 import mobx from 'mobx'
 import scenes from '../index'

@@ -1,1 +1,3 @@
-export default from './Home'
+// @flow
+
+export { default } from './Home'
