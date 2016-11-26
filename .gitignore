@@ -40,9 +40,8 @@ buck-out/
 android/app/libs
 android/keystores/debug.keystore
 
-# -- put Instrument customizations below - copied by new_project task --
-
-# Instrument
+# -- custom ignores below -- #
 *.zip
 ios/main.jsbundle
 fastlane/report.xml
+.tern-port

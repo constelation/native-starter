@@ -7,10 +7,6 @@ import {
   Platform,
   ScrollView,
 } from 'react-native'
-import View from 'constelation-View'
-import Row from 'constelation-Row'
-import Col from 'constelation-Col'
-import Style_ from 'constelation-Style_'
 
 export default class Showcase extends React.Component {
   // What's this!? I can still define a custom navBar from within my component.

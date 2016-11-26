@@ -9,7 +9,6 @@ import {
   Text,
   TouchableOpacity,
 } from 'react-native'
-import View from 'constelation-View'
 
 export default inject('counter')(observer(
   class Profile extends React.Component {

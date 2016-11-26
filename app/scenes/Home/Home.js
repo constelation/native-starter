@@ -9,7 +9,6 @@ import {
   Text,
   TouchableOpacity,
 } from 'react-native'
-import View from 'constelation-View'
 
 export default class Home extends React.Component {
 
