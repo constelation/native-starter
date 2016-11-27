@@ -1,6 +1,7 @@
 // @flow
 
 import {action, reaction, observable, observe, computed, autorun, extendObservable} from 'mobx'
+import remotedev from 'mobx-remotedev'
 
 export class CounterStore {
   increase: () => null
@@ -25,4 +26,4 @@ export class CounterStore {
   // }
 }
 
-export default new CounterStore()
+export default remotedev(new CounterStore())
