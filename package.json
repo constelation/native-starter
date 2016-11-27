@@ -26,11 +26,11 @@
     ]
   },
   "dependencies": {
-    "constelation-Col": "^5.0.0",
-    "constelation-Flex": "^5.0.0",
-    "constelation-Row": "^5.0.0",
-    "constelation-Style_": "^4.0.0",
-    "constelation-View": "^5.0.0",
+    "constelation-Col": "^5.1.1",
+    "constelation-Flex": "^5.1.1",
+    "constelation-Row": "^5.1.1",
+    "constelation-Style_": "^5.1.1",
+    "constelation-View": "^5.1.1",
     "lodash": "^4.17.2",
     "mobx": "^2.3.7",
     "mobx-react": "^3.5.1",
@@ -39,22 +39,22 @@
     "react-native-router-flux": "^3.30.0"
   },
   "devDependencies": {
-    "babel-eslint": "^7.1.0",
+    "babel-eslint": "^7.1.1",
     "babel-jest": "17.0.2",
     "babel-preset-react-native": "1.9.0",
     "babel-preset-react-native-stage-0": "^1.0.1",
-    "eslint": "^3.0.1",
+    "eslint": "^3.11.0",
     "eslint-config-constelation": "^1.0.0",
     "eslint-config-kylpo": "^2.0.0",
     "eslint-plugin-react": "^6.2.0",
     "estraverse-fb": "^1.3.1",
-    "flow-bin": "0.33.0",
+    "flow-bin": "^0.33.0",
     "husky": "^0.11.5",
-    "jest": "17.0.2",
-    "jest-react-native": "17.0.2",
+    "jest": "^17.0.3",
+    "jest-react-native": "^17.0.3",
     "mobx-remotedev": "^0.2.3",
-    "react-native-debugger-open": "^0.3.1",
-    "react-test-renderer": "15.3.2"
+    "react-native-debugger-open": "^0.3.2",
+    "react-test-renderer": "^15.4.1"
   },
   "jest": {
     "preset": "jest-react-native"

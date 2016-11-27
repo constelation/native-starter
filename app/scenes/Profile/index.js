@@ -1,3 +1,3 @@
 // @flow
 
-export { default } from './Profile'
+export { default } from './ProfileContainer'

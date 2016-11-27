@@ -1,7 +1,6 @@
 // @flow
 
 import React from 'react'
-import { observer, inject } from 'mobx-react/native'
 
 import {
   StyleSheet,
@@ -9,26 +8,29 @@ import {
   TouchableOpacity,
 } from 'react-native'
 
-export default inject('counter')(observer(
-  class ProfileDetail extends React.Component {
-    render() {
-      return (
-        <View
-          flex={1}
-          alignVertical='center'
-        >
-          <Text style={styles.welcome}>
-            Profile Detail
-          </Text>
-
-          <TouchableOpacity onPress={() => this.props.counter.increase()} >
-            <Text style={styles.welcome}>{this.props.counter.value}</Text>
-          </TouchableOpacity>
-        </View>
-      )
-    }
+export default class ProfileDetail extends React.Component {
+  props: {
+    value: number,
+    onIncreaseCounter: Function,
   }
-))
+
+  render() {
+    return (
+      <View
+        flex={1}
+        alignVertical='center'
+      >
+        <Text style={styles.welcome}>
+          Profile Detail
+        </Text>
+
+        <TouchableOpacity onPress={this.props.onIncreaseCounter} >
+          <Text style={styles.welcome}>{this.props.value}</Text>
+        </TouchableOpacity>
+      </View>
+    )
+  }
+}
 
 const styles = StyleSheet.create({
   welcome: {

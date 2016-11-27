@@ -1,8 +1,8 @@
 // @flow
 
 import React from 'react'
-import { Actions, Scene, Modal } from 'react-native-router-flux'
 
+import { Actions, Scene, Modal } from 'react-native-router-flux'
 import {
   Image,
 } from 'react-native'

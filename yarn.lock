@@ -257,13 +257,14 @@ babel-core@^6.0.0, babel-core@^6.17.0, babel-core@^6.18.0, babel-core@^6.7.2:
     slash "^1.0.0"
     source-map "^0.5.0"
 
-babel-eslint@^7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/babel-eslint/-/babel-eslint-7.1.0.tgz#d506a5174ba224e25a2d17e128e2ba8987139ddc"
+babel-eslint@^7.1.1:
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/babel-eslint/-/babel-eslint-7.1.1.tgz#8a6a884f085aa7060af69cfc77341c2f99370fb2"
   dependencies:
+    babel-code-frame "^6.16.0"
     babel-traverse "^6.15.0"
     babel-types "^6.15.0"
-    babylon "^6.11.2"
+    babylon "^6.13.0"
     lodash.pickby "^4.6.0"
 
 babel-generator@^6.17.0, babel-generator@^6.18.0:
@@ -913,7 +914,7 @@ babel-types@^6.15.0, babel-types@^6.16.0, babel-types@^6.18.0, babel-types@^6.8.
     lodash "^4.2.0"
     to-fast-properties "^1.0.1"
 
-babylon@^6.11.0, babylon@^6.11.2, babylon@^6.13.0:
+babylon@^6.11.0, babylon@^6.13.0:
   version "6.13.1"
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.13.1.tgz#adca350e088f0467647157652bafead6ddb8dfdb"
 
@@ -1298,15 +1299,7 @@ concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
 
-concat-stream@^1.4.6, concat-stream@^1.4.7:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/concat-stream/-/concat-stream-1.5.2.tgz#708978624d856af41a5a741defdd261da752c266"
-  dependencies:
-    inherits "~2.0.1"
-    readable-stream "~2.0.0"
-    typedarray "~0.0.5"
-
-concat-stream@~1.4.5:
+concat-stream@^1.4.6, concat-stream@^1.4.7, concat-stream@~1.4.5:
   version "1.4.10"
   resolved "https://registry.yarnpkg.com/concat-stream/-/concat-stream-1.4.10.tgz#acc3bbf5602cb8cc980c6ac840fa7d8603e3ef36"
   dependencies:
@@ -1359,37 +1352,37 @@ connect@^2.8.3:
     utils-merge "1.0.0"
     vhost "~3.0.1"
 
-constelation-Col@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/constelation-Col/-/constelation-Col-5.0.0.tgz#678350a691647c8e0e83c6a276338a6163fdc0eb"
+constelation-Col@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/constelation-Col/-/constelation-Col-5.1.1.tgz#48453818f041827756694b075248541e7137c793"
   dependencies:
-    constelation-display-component-factory "^5.0.0"
+    constelation-display-component-factory "^5.1.1"
 
-constelation-Flex@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/constelation-Flex/-/constelation-Flex-5.0.0.tgz#7220cd3fab80cd227fbc754c4e414cf672f6ea74"
+constelation-Flex@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/constelation-Flex/-/constelation-Flex-5.1.1.tgz#b71943cef96ee626fd549cc2aaca3773372ad9ff"
   dependencies:
-    constelation-display-component-factory "^5.0.0"
+    constelation-display-component-factory "^5.1.1"
 
-constelation-Row@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/constelation-Row/-/constelation-Row-5.0.0.tgz#d12f41ecafc2c0aa22cba3f7cc49841e75ac6f75"
+constelation-Row@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/constelation-Row/-/constelation-Row-5.1.1.tgz#4b18be268d9c16f5fb7e56e98e847ae2c6d30ec4"
   dependencies:
-    constelation-display-component-factory "^5.0.0"
+    constelation-display-component-factory "^5.1.1"
 
-constelation-Style_@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/constelation-Style_/-/constelation-Style_-4.0.0.tgz#821c739fdc96ad37885db4b968f7053f259a7d5a"
+constelation-Style_@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/constelation-Style_/-/constelation-Style_-5.1.1.tgz#d17eb7622e0f7be57e6fe79836e789d7afe38559"
 
-constelation-View@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/constelation-View/-/constelation-View-5.0.0.tgz#1804e9627c38c94772946523d1f00ea54e81cef6"
+constelation-View@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/constelation-View/-/constelation-View-5.1.1.tgz#0c4101f6b60f83a4e607d2fdd76204822e1e3f9f"
   dependencies:
-    constelation-display-component-factory "^5.0.0"
+    constelation-display-component-factory "^5.1.1"
 
-constelation-display-component-factory@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/constelation-display-component-factory/-/constelation-display-component-factory-5.0.0.tgz#c6fdf13d70af8ef69983b37c806a2c25661c0ab3"
+constelation-display-component-factory@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/constelation-display-component-factory/-/constelation-display-component-factory-5.1.1.tgz#5509029351edd56fd67350068505a7254c1d9faa"
 
 content-type-parser@^1.0.1:
   version "1.0.1"
@@ -1955,9 +1948,9 @@ eslint-plugin-react@^6.2.0:
     doctrine "^1.2.2"
     jsx-ast-utils "^1.3.3"
 
-eslint@^3.0.1:
-  version "3.10.1"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-3.10.1.tgz#65544c7c171986899fa8a8f9abd71badf7981ba0"
+eslint@^3.11.0:
+  version "3.11.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-3.11.0.tgz#41d34f8b3e69949beee5c097ff4e75ad13ba2d00"
   dependencies:
     babel-code-frame "^6.16.0"
     chalk "^1.1.3"
@@ -2248,7 +2241,7 @@ flat-cache@^1.2.1:
     graceful-fs "^4.1.2"
     write "^0.2.1"
 
-flow-bin@0.33.0:
+flow-bin@^0.33.0:
   version "0.33.0"
   resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.33.0.tgz#ef011eace7a6100f1ae08b852db78279032b8750"
 
@@ -3081,9 +3074,9 @@ jest-changed-files@^17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/jest-changed-files/-/jest-changed-files-17.0.2.tgz#f5657758736996f590a51b87e5c9369d904ba7b7"
 
-jest-cli@^17.0.2:
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/jest-cli/-/jest-cli-17.0.2.tgz#beaf9e0315894bb95919b55db923502a66fd3c63"
+jest-cli@^17.0.3:
+  version "17.0.3"
+  resolved "https://registry.yarnpkg.com/jest-cli/-/jest-cli-17.0.3.tgz#700b8c02a9ea0ec9eab0cd5a9fd42d8a858ce146"
   dependencies:
     ansi-escapes "^1.4.0"
     callsites "^2.0.0"
@@ -3094,16 +3087,16 @@ jest-cli@^17.0.2:
     istanbul-lib-coverage "^1.0.0"
     istanbul-lib-instrument "^1.1.1"
     jest-changed-files "^17.0.2"
-    jest-config "^17.0.2"
+    jest-config "^17.0.3"
     jest-environment-jsdom "^17.0.2"
     jest-file-exists "^17.0.0"
-    jest-haste-map "^17.0.2"
-    jest-jasmine2 "^17.0.2"
+    jest-haste-map "^17.0.3"
+    jest-jasmine2 "^17.0.3"
     jest-mock "^17.0.2"
-    jest-resolve "^17.0.2"
-    jest-resolve-dependencies "^17.0.2"
-    jest-runtime "^17.0.2"
-    jest-snapshot "^17.0.2"
+    jest-resolve "^17.0.3"
+    jest-resolve-dependencies "^17.0.3"
+    jest-runtime "^17.0.3"
+    jest-snapshot "^17.0.3"
     jest-util "^17.0.2"
     json-stable-stringify "^1.0.0"
     node-notifier "^4.6.1"
@@ -3114,27 +3107,27 @@ jest-cli@^17.0.2:
     worker-farm "^1.3.1"
     yargs "^6.3.0"
 
-jest-config@^17.0.2:
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/jest-config/-/jest-config-17.0.2.tgz#23b9d8a87613ed3d71d11b0022e3fc6b31eed8eb"
+jest-config@^17.0.3:
+  version "17.0.3"
+  resolved "https://registry.yarnpkg.com/jest-config/-/jest-config-17.0.3.tgz#b6ed75d90d090b731fd894231904cadb7d5a5df2"
   dependencies:
     chalk "^1.1.1"
     istanbul "^0.4.5"
     jest-environment-jsdom "^17.0.2"
     jest-environment-node "^17.0.2"
-    jest-jasmine2 "^17.0.2"
+    jest-jasmine2 "^17.0.3"
     jest-mock "^17.0.2"
-    jest-resolve "^17.0.2"
+    jest-resolve "^17.0.3"
     jest-util "^17.0.2"
     json-stable-stringify "^1.0.0"
 
-jest-diff@^17.0.2:
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/jest-diff/-/jest-diff-17.0.2.tgz#c120236dc3e7c2c43077686852696a798e2d5e10"
+jest-diff@^17.0.3:
+  version "17.0.3"
+  resolved "https://registry.yarnpkg.com/jest-diff/-/jest-diff-17.0.3.tgz#8fb31efab3b314d7b61b7b66b0bdea617ef1c02f"
   dependencies:
     chalk "^1.1.3"
     diff "^3.0.0"
-    jest-matcher-utils "^17.0.1"
+    jest-matcher-utils "^17.0.3"
     pretty-format "~4.2.1"
 
 jest-environment-jsdom@^17.0.2:
@@ -3165,9 +3158,9 @@ jest-haste-map@15.0.1:
     multimatch "^2.1.0"
     worker-farm "^1.3.1"
 
-jest-haste-map@^17.0.2:
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/jest-haste-map/-/jest-haste-map-17.0.2.tgz#b1179fee9d7ba7eae2ade63d18d971a88d3b356b"
+jest-haste-map@^17.0.3:
+  version "17.0.3"
+  resolved "https://registry.yarnpkg.com/jest-haste-map/-/jest-haste-map-17.0.3.tgz#5232783e70577217b6b17d2a1c1766637a1d2fbd"
   dependencies:
     fb-watchman "^1.9.0"
     graceful-fs "^4.1.6"
@@ -3175,81 +3168,81 @@ jest-haste-map@^17.0.2:
     sane "~1.4.1"
     worker-farm "^1.3.1"
 
-jest-jasmine2@^17.0.2:
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/jest-jasmine2/-/jest-jasmine2-17.0.2.tgz#95205115bcb3c554d80b219d0153c2ac6853ff61"
+jest-jasmine2@^17.0.3:
+  version "17.0.3"
+  resolved "https://registry.yarnpkg.com/jest-jasmine2/-/jest-jasmine2-17.0.3.tgz#d4336b89f3ad288269a1c8e2bfc180dcf89c6ad1"
   dependencies:
     graceful-fs "^4.1.6"
-    jest-matchers "^17.0.2"
-    jest-snapshot "^17.0.2"
+    jest-matchers "^17.0.3"
+    jest-snapshot "^17.0.3"
     jest-util "^17.0.2"
 
-jest-matcher-utils@^17.0.1:
-  version "17.0.1"
-  resolved "https://registry.yarnpkg.com/jest-matcher-utils/-/jest-matcher-utils-17.0.1.tgz#0c56874301b5c8ace086dd6f8b84a6d87887dfab"
+jest-matcher-utils@^17.0.3:
+  version "17.0.3"
+  resolved "https://registry.yarnpkg.com/jest-matcher-utils/-/jest-matcher-utils-17.0.3.tgz#f108e49b956e152c6626dcc0aba864f59ab7b0d3"
   dependencies:
     chalk "^1.1.3"
     pretty-format "~4.2.1"
 
-jest-matchers@^17.0.2:
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/jest-matchers/-/jest-matchers-17.0.2.tgz#84ba28685c009d084c3351410ef61be9dc0595e1"
+jest-matchers@^17.0.3:
+  version "17.0.3"
+  resolved "https://registry.yarnpkg.com/jest-matchers/-/jest-matchers-17.0.3.tgz#88b95348c919343db86d08f12354a8650ae7eddf"
   dependencies:
-    jest-diff "^17.0.2"
-    jest-matcher-utils "^17.0.1"
+    jest-diff "^17.0.3"
+    jest-matcher-utils "^17.0.3"
     jest-util "^17.0.2"
 
 jest-mock@^17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/jest-mock/-/jest-mock-17.0.2.tgz#3dfe9221afd9aa61b3d9992840813a358bb2f429"
 
-jest-react-native@17.0.2:
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/jest-react-native/-/jest-react-native-17.0.2.tgz#de19183cd81ad4560fdaadff84badbdd92ecdf8d"
+jest-react-native@^17.0.3:
+  version "17.0.3"
+  resolved "https://registry.yarnpkg.com/jest-react-native/-/jest-react-native-17.0.3.tgz#f914c2445491d85ff188876d4ef565045040854f"
 
-jest-resolve-dependencies@^17.0.2:
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/jest-resolve-dependencies/-/jest-resolve-dependencies-17.0.2.tgz#585b041b970868ef5192a4874537c6bae040e2cc"
+jest-resolve-dependencies@^17.0.3:
+  version "17.0.3"
+  resolved "https://registry.yarnpkg.com/jest-resolve-dependencies/-/jest-resolve-dependencies-17.0.3.tgz#bbd37f4643704b97a980927212f3ab12b06e8894"
   dependencies:
     jest-file-exists "^17.0.0"
-    jest-resolve "^17.0.2"
+    jest-resolve "^17.0.3"
 
-jest-resolve@^17.0.2:
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/jest-resolve/-/jest-resolve-17.0.2.tgz#892324e785fee61c8ff252e6e1e8cbf9ca271122"
+jest-resolve@^17.0.3:
+  version "17.0.3"
+  resolved "https://registry.yarnpkg.com/jest-resolve/-/jest-resolve-17.0.3.tgz#7692a79de2831874375e9d664bc782c29e4da262"
   dependencies:
     browser-resolve "^1.11.2"
     jest-file-exists "^17.0.0"
-    jest-haste-map "^17.0.2"
+    jest-haste-map "^17.0.3"
     resolve "^1.1.6"
 
-jest-runtime@^17.0.2:
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/jest-runtime/-/jest-runtime-17.0.2.tgz#cb9a2a6264dee3f5dcca4c278574b9f8340ffb68"
+jest-runtime@^17.0.3:
+  version "17.0.3"
+  resolved "https://registry.yarnpkg.com/jest-runtime/-/jest-runtime-17.0.3.tgz#eff4055fe8c3e17c95ed1aaaf5f719c420b86b1f"
   dependencies:
     babel-core "^6.0.0"
     babel-jest "^17.0.2"
     babel-plugin-istanbul "^2.0.0"
     chalk "^1.1.3"
     graceful-fs "^4.1.6"
-    jest-config "^17.0.2"
+    jest-config "^17.0.3"
     jest-file-exists "^17.0.0"
-    jest-haste-map "^17.0.2"
+    jest-haste-map "^17.0.3"
     jest-mock "^17.0.2"
-    jest-resolve "^17.0.2"
-    jest-snapshot "^17.0.2"
+    jest-resolve "^17.0.3"
+    jest-snapshot "^17.0.3"
     jest-util "^17.0.2"
     json-stable-stringify "^1.0.0"
     multimatch "^2.1.0"
     yargs "^6.3.0"
 
-jest-snapshot@^17.0.2:
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/jest-snapshot/-/jest-snapshot-17.0.2.tgz#dc8ba024d083701696c23759909c584d01860734"
+jest-snapshot@^17.0.3:
+  version "17.0.3"
+  resolved "https://registry.yarnpkg.com/jest-snapshot/-/jest-snapshot-17.0.3.tgz#c8199db4ccbd5515cfecc8e800ab076bdda7abc0"
   dependencies:
-    jest-diff "^17.0.2"
+    jest-diff "^17.0.3"
     jest-file-exists "^17.0.0"
-    jest-matcher-utils "^17.0.1"
+    jest-matcher-utils "^17.0.3"
     jest-util "^17.0.2"
     natural-compare "^1.4.0"
     pretty-format "~4.2.1"
@@ -3265,11 +3258,11 @@ jest-util@^17.0.2:
     jest-mock "^17.0.2"
     mkdirp "^0.5.1"
 
-jest@17.0.2:
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/jest/-/jest-17.0.2.tgz#a095e19f0b28f3f9925ec16b5bd67d5276d2756b"
+jest@^17.0.3:
+  version "17.0.3"
+  resolved "https://registry.yarnpkg.com/jest/-/jest-17.0.3.tgz#89c43b30b0aaad42462e9ea701352dacbad4a354"
   dependencies:
-    jest-cli "^17.0.2"
+    jest-cli "^17.0.3"
 
 jodid25519@^1.0.0:
   version "1.0.2"
@@ -4314,9 +4307,9 @@ react-deep-force-update@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/react-deep-force-update/-/react-deep-force-update-1.0.1.tgz#f911b5be1d2a6fe387507dd6e9a767aa2924b4c7"
 
-react-native-debugger-open@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/react-native-debugger-open/-/react-native-debugger-open-0.3.1.tgz#bb07f4b9768a6aaeae4c1e18189a93e9c391da3c"
+react-native-debugger-open@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/react-native-debugger-open/-/react-native-debugger-open-0.3.2.tgz#ac90d33e97ab9aa9f815eb8c9f6f9efb4a09a733"
   dependencies:
     chalk "^1.1.3"
     es6-template "^1.0.4"
@@ -4434,9 +4427,9 @@ react-static-container@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/react-static-container/-/react-static-container-1.0.1.tgz#694c0dd68a896b879519afb548399cc1989c9ab0"
 
-react-test-renderer@15.3.2:
-  version "15.3.2"
-  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-15.3.2.tgz#d8f083d37d2d41e97bbdc26a1dd9282f0baf7857"
+react-test-renderer@^15.4.1:
+  version "15.4.1"
+  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-15.4.1.tgz#e38cd7057868d4a655d3764689735b4b97260706"
 
 react-timer-mixin@^0.13.2:
   version "0.13.3"
