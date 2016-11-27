@@ -1374,6 +1374,10 @@ constelation-Style_@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/constelation-Style_/-/constelation-Style_-5.1.1.tgz#d17eb7622e0f7be57e6fe79836e789d7afe38559"
 
+constelation-Text@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/constelation-Text/-/constelation-Text-5.2.0.tgz#58b5c1a374053877303e1f073aead61746c424ff"
+
 constelation-View@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/constelation-View/-/constelation-View-5.1.1.tgz#0c4101f6b60f83a4e607d2fdd76204822e1e3f9f"

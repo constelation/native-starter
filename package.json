@@ -30,6 +30,7 @@
     "constelation-Flex": "^5.1.1",
     "constelation-Row": "^5.1.1",
     "constelation-Style_": "^5.1.1",
+    "constelation-Text": "^5.2.0",
     "constelation-View": "^5.1.1",
     "lodash": "^4.17.2",
     "mobx": "^2.3.7",

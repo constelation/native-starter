@@ -6,7 +6,6 @@ import { Actions } from 'react-native-router-flux'
 import {
   Image,
   StyleSheet,
-  Text,
   TouchableOpacity,
 } from 'react-native'
 
@@ -30,13 +29,13 @@ export default class Home extends React.Component {
         <Image style={{width: 200, height: 200}} source={require('images/logo.png')} />
 
         <TouchableOpacity style={[styles.button, {marginTop: 60}]} onPress={this.handleShowFullScreenModal}>
-          <Text style={{color: 'black'}}>
+          <Text color='black'>
             Full screen Detail scene
           </Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={[styles.button, {marginTop: 30}]} onPress={this.handleShowFullScreenModalScene}>
-          <Text style={{color: 'black'}}>
+          <Text color='black'>
             Full screen Modal scene
           </Text>
         </TouchableOpacity>

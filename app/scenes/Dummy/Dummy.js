@@ -6,7 +6,6 @@ import { Actions } from 'react-native-router-flux'
 import {
   StatusBar,
   StyleSheet,
-  Text,
   TouchableOpacity,
 } from 'react-native'
 
@@ -23,7 +22,11 @@ export default class Dummy extends React.Component {
           barStyle='light-content'
         />
         <TouchableOpacity style={styles.container} onPress={this.handlePress}>
-          <Text style={styles.welcome}>
+          <Text
+            center
+            size={20}
+            color='white'
+          >
             HAI
           </Text>
         </TouchableOpacity>
@@ -38,11 +41,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: 'black',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-    color: 'white',
+    padding: 10,
   },
 })

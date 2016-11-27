@@ -36,6 +36,7 @@ node_modules/constelation-Row/dist/index.native.js.flow
 node_modules/constelation-Style_/dist/index.native.js.flow
 node_modules/constelation-View/dist/index.native.js.flow
 node_modules/constelation-Flex/dist/index.native.js.flow
+node_modules/constelation-Text/dist/index.native.js.flow
 
 
 [options]

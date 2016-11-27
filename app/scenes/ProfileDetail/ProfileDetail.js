@@ -3,8 +3,6 @@
 import React from 'react'
 
 import {
-  StyleSheet,
-  Text,
   TouchableOpacity,
 } from 'react-native'
 
@@ -20,22 +18,24 @@ export default class ProfileDetail extends React.Component {
         flex={1}
         alignVertical='center'
       >
-        <Text style={styles.welcome}>
+        <Text
+          center
+          size={20}
+        >
           Profile Detail
         </Text>
 
         <TouchableOpacity onPress={this.props.onIncreaseCounter} >
-          <Text style={styles.welcome}>{this.props.value}</Text>
+          <View margin={10}>
+            <Text
+              center
+              size={20}
+            >
+              {this.props.value}
+            </Text>
+          </View>
         </TouchableOpacity>
       </View>
     )
   }
 }
-
-const styles = StyleSheet.create({
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-})

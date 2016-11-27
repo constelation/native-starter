@@ -15,5 +15,6 @@ global.View = require('constelation-View')
 global.Row = require('constelation-Row')
 global.Col = require('constelation-Col')
 global.Style_ = require('constelation-Style_')
+global.Text = require('constelation-Text')
 
 AppRegistry.registerComponent( 'NativeStarter', () => App )
