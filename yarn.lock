@@ -143,9 +143,21 @@ array-equal@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/array-equal/-/array-equal-1.0.0.tgz#8c2a5ef2472fd9ea742b04c77a75093ba2757c93"
 
+array-filter@~0.0.0:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/array-filter/-/array-filter-0.0.1.tgz#7da8cf2e26628ed732803581fd21f67cacd2eeec"
+
 array-find-index@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/array-find-index/-/array-find-index-1.0.2.tgz#df010aa1287e164bbda6f9723b0a96a1ec4187a1"
+
+array-map@~0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/array-map/-/array-map-0.0.0.tgz#88a2bab73d1cf7bcd5c1b118a003f66f665fa662"
+
+array-reduce@~0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/array-reduce/-/array-reduce-0.0.0.tgz#173899d3ffd1c7d9383e4479525dbe278cab5f2b"
 
 array-union@^1.0.1:
   version "1.0.2"
@@ -233,7 +245,7 @@ babel-code-frame@^6.16.0:
     esutils "^2.0.2"
     js-tokens "^2.0.0"
 
-babel-core@^6.0.0, babel-core@^6.17.0, babel-core@^6.18.0, babel-core@^6.7.2:
+babel-core@^6.0.0, babel-core@^6.18.0, babel-core@^6.18.2, babel-core@^6.7.2:
   version "6.18.2"
   resolved "https://registry.yarnpkg.com/babel-core/-/babel-core-6.18.2.tgz#d8bb14dd6986fa4f3566a26ceda3964fa0e04e5b"
   dependencies:
@@ -267,7 +279,7 @@ babel-eslint@^7.1.1:
     babylon "^6.13.0"
     lodash.pickby "^4.6.0"
 
-babel-generator@^6.17.0, babel-generator@^6.18.0:
+babel-generator@^6.18.0:
   version "6.18.0"
   resolved "https://registry.yarnpkg.com/babel-generator/-/babel-generator-6.18.0.tgz#e4f104cb3063996d9850556a45aae4a022060a07"
   dependencies:
@@ -399,7 +411,7 @@ babel-plugin-check-es2015-constants@^6.5.0, babel-plugin-check-es2015-constants@
   dependencies:
     babel-runtime "^6.0.0"
 
-babel-plugin-external-helpers@^6.8.0:
+babel-plugin-external-helpers@^6.18.0:
   version "6.18.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-external-helpers/-/babel-plugin-external-helpers-6.18.0.tgz#c6bbf87a4448eb49616f24a8b8088503863488da"
   dependencies:
@@ -662,7 +674,7 @@ babel-plugin-transform-export-extensions@^6.5.0:
     babel-plugin-syntax-export-extensions "^6.8.0"
     babel-runtime "^6.0.0"
 
-babel-plugin-transform-flow-strip-types@^6.14.0, babel-plugin-transform-flow-strip-types@^6.5.0, babel-plugin-transform-flow-strip-types@^6.7.0, babel-plugin-transform-flow-strip-types@^6.8.0:
+babel-plugin-transform-flow-strip-types@^6.18.0, babel-plugin-transform-flow-strip-types@^6.5.0, babel-plugin-transform-flow-strip-types@^6.7.0, babel-plugin-transform-flow-strip-types@^6.8.0:
   version "6.18.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-flow-strip-types/-/babel-plugin-transform-flow-strip-types-6.18.0.tgz#4d3e642158661e9b40db457c004a30817fa32592"
   dependencies:
@@ -862,7 +874,7 @@ babel-preset-react-native@1.9.0, babel-preset-react-native@^1.5.6, babel-preset-
     babel-plugin-transform-regenerator "^6.5.0"
     react-transform-hmr "^1.0.4"
 
-babel-register@^6.16.3, babel-register@^6.18.0:
+babel-register@^6.18.0:
   version "6.18.0"
   resolved "https://registry.yarnpkg.com/babel-register/-/babel-register-6.18.0.tgz#892e2e03865078dd90ad2c715111ec4449b32a68"
   dependencies:
@@ -914,7 +926,7 @@ babel-types@^6.15.0, babel-types@^6.16.0, babel-types@^6.18.0, babel-types@^6.8.
     lodash "^4.2.0"
     to-fast-properties "^1.0.1"
 
-babylon@^6.11.0, babylon@^6.13.0:
+babylon@^6.11.0, babylon@^6.13.0, babylon@^6.13.1:
   version "6.13.1"
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.13.1.tgz#adca350e088f0467647157652bafead6ddb8dfdb"
 
@@ -2142,7 +2154,7 @@ fbjs-scripts@^0.7.0:
     semver "^5.1.0"
     through2 "^2.0.0"
 
-fbjs@^0.8.1, fbjs@^0.8.3, fbjs@^0.8.4:
+fbjs@^0.8.1, fbjs@^0.8.4, fbjs@^0.8.5:
   version "0.8.6"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.6.tgz#7eb67d6986b2d5007a9b6e92e0e7cb6f75cad290"
   dependencies:
@@ -2670,11 +2682,11 @@ husky@^0.11.5:
     is-ci "^1.0.9"
     normalize-path "^1.0.0"
 
-iconv-lite@0.4.11, iconv-lite@^0.4.5:
+iconv-lite@0.4.11:
   version "0.4.11"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.11.tgz#2ecb42fd294744922209a2e7c404dac8793d8ade"
 
-iconv-lite@0.4.13, iconv-lite@^0.4.13, iconv-lite@~0.4.13:
+iconv-lite@0.4.13, iconv-lite@^0.4.13, iconv-lite@^0.4.5, iconv-lite@~0.4.13:
   version "0.4.13"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.13.tgz#1f88aba4ab0b1508e8312acc39345f36e992e2f2"
 
@@ -3601,7 +3613,7 @@ lodash@^3.1.0, lodash@^3.10.1, lodash@^3.2.0, lodash@^3.3.1, lodash@^3.5.0, loda
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
 
-lodash@^4.0.0, lodash@^4.14.0, lodash@^4.17.2, lodash@^4.2.0, lodash@^4.3.0, lodash@^4.6.1:
+lodash@^4.0.0, lodash@^4.14.0, lodash@^4.16.6, lodash@^4.17.2, lodash@^4.2.0, lodash@^4.3.0, lodash@^4.6.1:
   version "4.17.2"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.2.tgz#34a3055babe04ce42467b607d700072c7ff6bf42"
 
@@ -3762,13 +3774,13 @@ mime-db@~1.24.0:
   version "1.24.0"
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.24.0.tgz#e2d13f939f0016c6e4e9ad25a8652f126c467f0c"
 
-mime-types@2.1.11, mime-types@~2.1.11, mime-types@~2.1.6, mime-types@~2.1.7, mime-types@~2.1.9:
+mime-types@2.1.11, mime-types@~2.1.11, mime-types@~2.1.7, mime-types@~2.1.9:
   version "2.1.11"
   resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.11.tgz#c259c471bda808a85d6cd193b430a5fae4473b3c"
   dependencies:
     mime-db "~1.23.0"
 
-mime-types@^2.1.12:
+mime-types@^2.1.12, mime-types@~2.1.6:
   version "2.1.12"
   resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.12.tgz#152ba256777020dd4663f54c2e7bc26381e71729"
   dependencies:
@@ -3810,9 +3822,9 @@ mkdirp@0.5.x, mkdirp@^0.5.0, mkdirp@^0.5.1:
   dependencies:
     minimist "0.0.8"
 
-mobx-react@^3.5.1:
-  version "3.5.9"
-  resolved "https://registry.yarnpkg.com/mobx-react/-/mobx-react-3.5.9.tgz#b710299539d58d7af1189b5e86bc0be4198a43c1"
+mobx-react@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/mobx-react/-/mobx-react-4.0.3.tgz#40eb31d25e0b8d63048eda2376cc56bfabd14f75"
   dependencies:
     hoist-non-react-statics "^1.2.0"
 
@@ -3824,9 +3836,9 @@ mobx-remotedev@^0.2.3:
     remotedev "^0.2.2"
     remotedev-utils "^0.0.3"
 
-mobx@^2.3.7:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/mobx/-/mobx-2.6.2.tgz#55722706e485b56d88be2ff1811267b1e6703f5a"
+mobx@^2.6.3:
+  version "2.6.3"
+  resolved "https://registry.yarnpkg.com/mobx/-/mobx-2.6.3.tgz#f2d8fac660edde38a9df5e37b924065ff0f1104a"
 
 module-deps@^3.9.1:
   version "3.9.1"
@@ -4343,26 +4355,26 @@ react-native-tabs@^1.0.9:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/react-native-tabs/-/react-native-tabs-1.0.9.tgz#75d3c35e8b5b6970869eab282372cb32e2a782cd"
 
-react-native@^0.37.0:
-  version "0.37.0"
-  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.37.0.tgz#d871c752b4d87e46b569fd8be2921d4f9248c87d"
+react-native@^0.38.0:
+  version "0.38.0"
+  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.38.0.tgz#fa553d467a9e75cbd6a0c15eb1ab88346e0d5d5c"
   dependencies:
     absolute-path "^0.0.0"
     art "^0.10.0"
     async "^2.0.1"
-    babel-core "^6.17.0"
-    babel-generator "^6.17.0"
-    babel-plugin-external-helpers "^6.8.0"
+    babel-core "^6.18.2"
+    babel-generator "^6.18.0"
+    babel-plugin-external-helpers "^6.18.0"
     babel-plugin-syntax-trailing-function-commas "^6.13.0"
-    babel-plugin-transform-flow-strip-types "^6.14.0"
+    babel-plugin-transform-flow-strip-types "^6.18.0"
     babel-plugin-transform-object-rest-spread "^6.16.0"
     babel-polyfill "^6.16.0"
     babel-preset-es2015-node "^6.1.1"
     babel-preset-fbjs "^2.1.0"
     babel-preset-react-native "^1.9.0"
-    babel-register "^6.16.3"
-    babel-types "^6.16.0"
-    babylon "^6.13.0"
+    babel-register "^6.18.0"
+    babel-types "^6.18.0"
+    babylon "^6.13.1"
     base64-js "^1.1.2"
     bser "^1.0.2"
     chalk "^1.1.1"
@@ -4372,7 +4384,7 @@ react-native@^0.37.0:
     debug "^2.2.0"
     denodeify "^1.2.1"
     event-target-shim "^1.0.5"
-    fbjs "^0.8.3"
+    fbjs "^0.8.5"
     fbjs-scripts "^0.7.0"
     fs-extra "^0.26.2"
     glob "^5.0.15"
@@ -4385,7 +4397,7 @@ react-native@^0.37.0:
     json-stable-stringify "^1.0.1"
     json5 "^0.4.0"
     jstransform "^11.0.3"
-    lodash "^3.10.1"
+    lodash "^4.16.6"
     mime "^1.3.4"
     mime-types "2.1.11"
     minimist "^1.2.0"
@@ -4405,6 +4417,7 @@ react-native@^0.37.0:
     regenerator-runtime "^0.9.5"
     sane "~1.4.1"
     semver "^5.0.3"
+    shell-quote "1.6.1"
     source-map "^0.5.6"
     stacktrace-parser "^0.1.3"
     temp "0.8.3"
@@ -4446,9 +4459,9 @@ react-transform-hmr@^1.0.4:
     global "^4.3.0"
     react-proxy "^1.1.7"
 
-react@15.3.2:
-  version "15.3.2"
-  resolved "https://registry.yarnpkg.com/react/-/react-15.3.2.tgz#a7bccd2fee8af126b0317e222c28d1d54528d09e"
+react@^15.4.1:
+  version "15.4.1"
+  resolved "https://registry.yarnpkg.com/react/-/react-15.4.1.tgz#498e918602677a3983cd0fd206dfe700389a0dd6"
   dependencies:
     fbjs "^0.8.4"
     loose-envify "^1.1.0"
@@ -4810,6 +4823,15 @@ set-blocking@^2.0.0:
 set-immediate-shim@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/set-immediate-shim/-/set-immediate-shim-1.0.1.tgz#4b2b1b27eb808a9f8dcc481a58e5e56f599f3f61"
+
+shell-quote@1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.6.1.tgz#f4781949cce402697127430ea3b3c5476f481767"
+  dependencies:
+    array-filter "~0.0.0"
+    array-map "~0.0.0"
+    array-reduce "~0.0.0"
+    jsonify "~0.0.0"
 
 shelljs@^0.5.0:
   version "0.5.3"
