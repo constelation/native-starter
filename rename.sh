@@ -2,7 +2,7 @@
 
 # taken from https://github.com/futurice/pepperoni-app-kit/blob/master/support/rename.sh
 
-oldAppName='NikeNativeStarter'
+oldAppName='NativeStarter'
 oldLowerCaseName=`echo $oldAppName | tr '[:upper:]' '[:lower:]'`
 
 newAppName=$1
