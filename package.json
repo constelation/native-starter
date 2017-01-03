@@ -3,10 +3,11 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "postcheckout": "yarn",
+    "postpull": "yarn",
     "start": "react-native start",
     "cleanstart": "watchman watch-del-all && npm cache clean && react-native start -- --reset-cache",
-    "postmerge": "git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD | grep --quiet package.json && npm install",
-    "reinstall": "rm -rf ./node_modules && watchman watch-del-all && npm cache clean && rm -rf $TMPDIR/react-* && npm install",
+    "reinstall": "rm -rf ./node_modules && watchman watch-del-all && npm cache clean && rm -rf $TMPDIR/react-* && yarn",
     "link": "react-native link",
     "lint": "eslint app lib",
     "postinstall": "rndebugger-open",
