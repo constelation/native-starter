@@ -1,13 +1,15 @@
 // @flow
+// Imports {{{
 
-import React from 'react'
 import { Actions } from 'react-native-router-flux'
-
 import {
   Image,
   StyleSheet,
   TouchableOpacity,
 } from 'react-native'
+import React from 'react';
+
+// }}}
 
 export default class Home extends React.Component {
 
