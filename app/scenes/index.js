@@ -29,6 +29,10 @@ const ImageIcon = props => (
   />
 )
 
+function handleShowProfileDetail() {
+  Actions.profileDetail()
+}
+
 // Root is wrapped in a Modal for the full screen from bottom scenes, like Dummy
 // The first 2 Scenes are important configuration for the rest of the app!
 export default Actions.create(
@@ -48,7 +52,7 @@ export default Actions.create(
             component={Profile}
             title='Profile'
             rightTitle='Detail'
-            onRight={() => Actions.profileDetail()}
+            onRight={handleShowProfileDetail}
           />
 
           <Scene key='profileDetail' component={ProfileDetail} title='Profile Detail' hideTabBar />
