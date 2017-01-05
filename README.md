@@ -46,7 +46,7 @@ $ npm run android               # Deploy the app to the already running emulator
 * Be sure to enable live reload if you want your file changes to immediately reload the app
 * [YellowBox](https://github.com/iamdustan/yellowbox-react) is disabled. See `index.android.js` and `index.ios.js` to re-enable it if you'd like.
 
-### Directory Layout
+#### Directory Layout
 
 ```
 .
@@ -84,6 +84,10 @@ $ npm run android               # Deploy the app to the already running emulator
 - `npm run reinstall` - wipe out `node_modules`, reset `watchman`, then install `node_modules` again
 - `npm run upgrade` - `react-native upgrade`, then `react-native link` (BE SURE TO READ THE UPGRADE DOC ABOVE!)
 
+#### [import-js](https://github.com/Galooshi/import-js) for auto-imports
+This project is set up for [import-js](https://github.com/Galooshi/import-js) to organize and include your imports. Just
+create a new file, start writing the code that matters, then fire off a `ImportJSFix` from your editor to have it
+auto-populate.
 
 ### Support
 
