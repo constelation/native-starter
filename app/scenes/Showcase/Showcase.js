@@ -1,12 +1,17 @@
 // @flow
-
-import React from 'react'
-
+// Imports {{{
 import {
   Animated,
   Platform,
   ScrollView,
 } from 'react-native'
+import Col from 'constelation-Col'
+import React from 'react'
+import Row from 'constelation-Row'
+import Style_ from 'constelation-Style_'
+import View from 'constelation-View'
+
+// }}}
 
 export default class Showcase extends React.Component {
   // What's this!? I can still define a custom navBar from within my component.
@@ -49,7 +54,10 @@ export default class Showcase extends React.Component {
     return (
       <ScrollView style={{flex: 1, marginTop: 65, marginBottom: 50}}>
 
-        <Style_ backgroundColor='lightgrey' opacity={0.5} >
+        <Style_
+          backgroundColor='lightgrey'
+          opacity={0.5}
+        >
           <Row height={200} >
             <Style_ backgroundColor='red' >
               <View width={50} />

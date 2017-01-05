@@ -29,12 +29,12 @@
     ]
   },
   "dependencies": {
-    "constelation-Col": "^5.1.1",
-    "constelation-Flex": "^5.1.1",
-    "constelation-Row": "^5.1.1",
-    "constelation-Style_": "^5.1.1",
-    "constelation-Text": "^5.2.0",
-    "constelation-View": "^5.1.1",
+    "constelation-Col": "^6.0.0",
+    "constelation-Flex": "^6.0.0",
+    "constelation-Row": "^6.0.0",
+    "constelation-Style_": "^6.0.0",
+    "constelation-Text": "^6.0.0",
+    "constelation-View": "^6.0.0",
     "lodash": "^4.17.2",
     "mobx": "^2.6.3",
     "mobx-react": "^4.0.3",

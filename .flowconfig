@@ -1,5 +1,6 @@
 [ignore]
 .*/node_modules/react-native-experimental-navigation/.*
+.*/node_modules/react-static-container/.*
 
 # We fork some components by platform.
 .*/*[.]android.js
@@ -32,16 +33,24 @@
 node_modules/react-native/Libraries/react-native/react-native-interface.js
 node_modules/react-native/flow
 flow/
-node_modules/constelation-Col/dist/index.native.js.flow
-node_modules/constelation-Row/dist/index.native.js.flow
-node_modules/constelation-Style_/dist/index.native.js.flow
-node_modules/constelation-View/dist/index.native.js.flow
-node_modules/constelation-Flex/dist/index.native.js.flow
-node_modules/constelation-Text/dist/index.native.js.flow
+
+# Hopefully this'll be removed when https://github.com/facebook/flow/issues/945 is addressed
+#
+node_modules/constelation-Col/index.native.js.flow
+node_modules/constelation-Row/index.native.js.flow
+node_modules/constelation-Style_/index.native.js.flow
+node_modules/constelation-View/index.native.js.flow
+node_modules/constelation-Flex/index.native.js.flow
+node_modules/constelation-Text/index.native.js.flow
 
 
 [options]
 module.system=haste
+
+# Hopefully this'll be useful when https://github.com/facebook/flow/issues/945 is addressed
+#
+# module.file_ext=.native.js
+# module.file_ext=.js
 
 esproposal.class_static_fields=enable
 esproposal.class_instance_fields=enable

@@ -1,10 +1,14 @@
 // @flow
-
-import React from 'react'
+// Imports {{{
 
 import {
   TouchableOpacity,
 } from 'react-native'
+import React from 'react'
+import Text from 'constelation-Text'
+import View from 'constelation-View'
+
+// }}}
 
 export default class ProfileDetail extends React.Component {
   props: {

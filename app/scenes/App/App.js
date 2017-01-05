@@ -1,12 +1,16 @@
 // @flow
+// Imports {{{
 
+import { Provider } from 'mobx-react/native'
+import { Router } from 'react-native-router-flux'
 import React from 'react'
 import mobx from 'mobx'
-import scenes from '../index'
+
 import counter from 'stores/counter'
 
-import { Router } from 'react-native-router-flux'
-import { Provider } from 'mobx-react/native'
+import scenes from '..'
+
+// }}}
 
 // throw an exception on any attempt to modify MobX state outside an action
 mobx.useStrict( true )

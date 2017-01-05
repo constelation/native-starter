@@ -1,16 +1,19 @@
 // @flow
-
-import React from 'react'
+// Imports {{{
 
 import { Actions, Scene, Modal } from 'react-native-router-flux'
 import {
   Image,
 } from 'react-native'
+import React from 'react'
+
 import Dummy from './Dummy'
 import Home from './Home'
 import Profile from './Profile'
 import ProfileDetail from './ProfileDetail'
 import Showcase from './Showcase'
+
+// }}}
 
 const showcaseIconSource = require( 'images/icon-bonfire.png' )
 

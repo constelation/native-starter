@@ -1,7 +1,11 @@
 // @flow
+// Imports {{{
 
 import {action, extendObservable} from 'mobx'
+
 import remotedev from 'mobx-remotedev'
+
+// }}}
 
 export class Counter {
   value: number

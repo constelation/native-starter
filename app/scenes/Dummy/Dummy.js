@@ -1,13 +1,17 @@
 // @flow
+// Imports {{{
 
-import React from 'react'
 import { Actions } from 'react-native-router-flux'
-
 import {
   StatusBar,
   StyleSheet,
   TouchableOpacity,
 } from 'react-native'
+import React from 'react'
+import Text from 'constelation-Text'
+import View from 'constelation-View'
+
+// }}}
 
 export default class Dummy extends React.Component {
   handlePress = () => {
