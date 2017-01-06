@@ -42,6 +42,6 @@ android/keystores/debug.keystore
 
 # -- custom ignores below -- #
 *.zip
-ios/main.jsbundle
+ios/main.jsbundle*
 fastlane/report.xml
 .tern-port
