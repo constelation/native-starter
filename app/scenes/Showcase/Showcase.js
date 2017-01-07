@@ -50,9 +50,39 @@ export default class Showcase extends React.Component {
     )
   }
 
+  animatedSize = new Animated.Value(20)
+  animatedOpacity = new Animated.Value(0)
+
+  componentDidMount() {
+    Animated.parallel([
+      Animated.spring(
+        this.animatedSize,
+        {
+          toValue: 200,
+          friction: 1,
+        }
+      ),
+      Animated.spring(
+        this.animatedOpacity,
+        {
+          toValue: 1,
+          friction: 1,
+        }
+      )
+    ]).start()
+  }
+
   render() {
     return (
       <ScrollView style={{flex: 1, marginTop: 65, marginBottom: 50}}>
+
+        <Style_ backgroundColor='purple' opacity={this.animatedOpacity} >
+          <View
+            animated
+            width={this.animatedSize}
+            height={this.animatedSize}
+          />
+        </Style_>
 
         <Style_
           backgroundColor='lightgrey'
@@ -84,6 +114,7 @@ export default class Showcase extends React.Component {
             </Style_>
           </Col>
         </Style_>
+
 
       </ScrollView>
     )

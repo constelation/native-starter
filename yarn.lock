@@ -1245,23 +1245,23 @@ connect@^2.8.3:
     utils-merge "1.0.0"
     vhost "~3.0.1"
 
-constelation-Col@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/constelation-Col/-/constelation-Col-6.0.0.tgz#610ff4e06564ab9a7928e449bef2c38430c35669"
+constelation-Col@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/constelation-Col/-/constelation-Col-6.1.0.tgz#8d1ded447cfcdcf399ec89802c1c0a9afc6780bf"
   dependencies:
-    constelation-display-component-factory "^5.1.1"
+    constelation-flex-component-factory "^6.1.0"
 
-constelation-Flex@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/constelation-Flex/-/constelation-Flex-6.0.0.tgz#a67030ff09ae68aafcda27d4bc2d399636211674"
+constelation-Flex@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/constelation-Flex/-/constelation-Flex-6.1.0.tgz#3b4663ac80af64fd2b73edb6ba3a1e51389a49d0"
   dependencies:
-    constelation-display-component-factory "^5.1.1"
+    constelation-flex-component-factory "^6.1.0"
 
-constelation-Row@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/constelation-Row/-/constelation-Row-6.0.0.tgz#244cf7b422129423e2ee8fc1f177f8e08933834b"
+constelation-Row@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/constelation-Row/-/constelation-Row-6.1.0.tgz#363a5ed3674508535d32943dade5919a3e4e51d2"
   dependencies:
-    constelation-display-component-factory "^5.1.1"
+    constelation-flex-component-factory "^6.1.0"
 
 constelation-Style_@^6.0.0:
   version "6.0.0"
@@ -1271,15 +1271,15 @@ constelation-Text@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/constelation-Text/-/constelation-Text-6.0.0.tgz#c6f1c324994aa85250e9ce20ed224c45cb3ac6a3"
 
-constelation-View@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/constelation-View/-/constelation-View-6.0.0.tgz#c9287b7174e9d8f6cf8103ec36b91889e8cd1580"
+constelation-View@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/constelation-View/-/constelation-View-6.1.0.tgz#afab7e1db774c73e9296f9c1f7a8930b5b981b14"
   dependencies:
-    constelation-display-component-factory "^5.1.1"
+    constelation-flex-component-factory "^6.1.0"
 
-constelation-display-component-factory@^5.1.1:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/constelation-display-component-factory/-/constelation-display-component-factory-5.1.1.tgz#5509029351edd56fd67350068505a7254c1d9faa"
+constelation-flex-component-factory@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/constelation-flex-component-factory/-/constelation-flex-component-factory-6.1.0.tgz#d9cfed5c1630e12bd2cd4819b6cb0759715d9557"
 
 content-type-parser@^1.0.1:
   version "1.0.1"
@@ -3078,13 +3078,13 @@ mime-db@~1.23.0:
   version "1.23.0"
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.23.0.tgz#a31b4070adaea27d732ea333740a64d0ec9a6659"
 
-mime-types@2.1.11, mime-types@~2.1.7:
+mime-types@2.1.11, mime-types@~2.1.11, mime-types@~2.1.6, mime-types@~2.1.7, mime-types@~2.1.9:
   version "2.1.11"
   resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.11.tgz#c259c471bda808a85d6cd193b430a5fae4473b3c"
   dependencies:
     mime-db "~1.23.0"
 
-mime-types@^2.1.12, mime-types@~2.1.11, mime-types@~2.1.6, mime-types@~2.1.9:
+mime-types@^2.1.12:
   version "2.1.12"
   resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.12.tgz#152ba256777020dd4663f54c2e7bc26381e71729"
   dependencies:
