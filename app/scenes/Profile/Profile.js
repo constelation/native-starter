@@ -19,7 +19,7 @@ export default class Profile extends React.Component {
   render() {
     return (
       <View
-        flex={1}
+        grow
         alignVertical='center'
       >
         <View margin={10}>

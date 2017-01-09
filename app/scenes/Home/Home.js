@@ -26,9 +26,8 @@ export default class Home extends React.Component {
   render() {
     return (
       <View
-        flex={1}
-        alignHorizontal='center'
-        alignVertical='center'
+        center
+        grow
       >
         <Image style={{width: 200, height: 200}} source={require('images/logo.png')} />
 

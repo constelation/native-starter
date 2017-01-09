@@ -152,6 +152,13 @@ array-unique@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/array-unique/-/array-unique-0.2.1.tgz#a1d97ccafcbc2625cc70fadceb36a50c58b01a53"
 
+array.prototype.find@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/array.prototype.find/-/array.prototype.find-2.0.1.tgz#1557f888df6c57e4d1256f20852d687a25b51fde"
+  dependencies:
+    define-properties "^1.1.2"
+    es-abstract "^1.5.0"
+
 arrify@^1.0.0, arrify@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
@@ -1225,23 +1232,23 @@ connect@^2.8.3:
     utils-merge "1.0.0"
     vhost "~3.0.1"
 
-constelation-Col@^6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/constelation-Col/-/constelation-Col-6.1.0.tgz#8d1ded447cfcdcf399ec89802c1c0a9afc6780bf"
+constelation-Col@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/constelation-Col/-/constelation-Col-6.2.0.tgz#9fa7f676d0a24485ccc3c664ec6c75b9f2b1e242"
   dependencies:
-    constelation-flex-component-factory "^6.1.0"
+    constelation-flex-component-factory "^6.2.0"
 
-constelation-Flex@^6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/constelation-Flex/-/constelation-Flex-6.1.0.tgz#3b4663ac80af64fd2b73edb6ba3a1e51389a49d0"
+constelation-Flex@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/constelation-Flex/-/constelation-Flex-6.2.0.tgz#f292e38dd13ec5c4e7312ffcd288e729fb32057e"
   dependencies:
-    constelation-flex-component-factory "^6.1.0"
+    constelation-flex-component-factory "^6.2.0"
 
-constelation-Row@^6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/constelation-Row/-/constelation-Row-6.1.0.tgz#363a5ed3674508535d32943dade5919a3e4e51d2"
+constelation-Row@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/constelation-Row/-/constelation-Row-6.2.0.tgz#8a23f318c28430c15cd9c1d703d19e1144c3ee94"
   dependencies:
-    constelation-flex-component-factory "^6.1.0"
+    constelation-flex-component-factory "^6.2.0"
 
 constelation-Style_@^6.0.0:
   version "6.0.0"
@@ -1251,15 +1258,19 @@ constelation-Text@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/constelation-Text/-/constelation-Text-6.0.0.tgz#c6f1c324994aa85250e9ce20ed224c45cb3ac6a3"
 
-constelation-View@^6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/constelation-View/-/constelation-View-6.1.0.tgz#afab7e1db774c73e9296f9c1f7a8930b5b981b14"
+constelation-View@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/constelation-View/-/constelation-View-6.2.0.tgz#e1a3f6dda650a93a1db43df5440b19af3584f38b"
   dependencies:
-    constelation-flex-component-factory "^6.1.0"
+    constelation-flex-component-factory "^6.2.0"
 
-constelation-flex-component-factory@^6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/constelation-flex-component-factory/-/constelation-flex-component-factory-6.1.0.tgz#d9cfed5c1630e12bd2cd4819b6cb0759715d9557"
+constelation-flex-component-factory@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/constelation-flex-component-factory/-/constelation-flex-component-factory-6.2.0.tgz#6e398abd60c2a0c1f17655ea3656b8409c002024"
+
+constelation-scroll-view@^6.2.1:
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/constelation-scroll-view/-/constelation-scroll-view-6.2.1.tgz#0164c41031294efb4321c69c2c2999c2d08dfa0c"
 
 content-type-parser@^1.0.1:
   version "1.0.1"
@@ -1391,6 +1402,13 @@ deep-is@~0.1.3:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
 
+define-properties@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/define-properties/-/define-properties-1.1.2.tgz#83a73f2fea569898fb737193c8f873caf6d45c94"
+  dependencies:
+    foreach "^2.0.5"
+    object-keys "^1.0.8"
+
 del@^2.0.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/del/-/del-2.2.2.tgz#c12c981d067846c84bcaf862cff930d907ffd1a8"
@@ -1488,6 +1506,23 @@ errorhandler@~1.4.2:
   dependencies:
     accepts "~1.3.0"
     escape-html "~1.0.3"
+
+es-abstract@^1.5.0:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/es-abstract/-/es-abstract-1.6.1.tgz#bb8a2064120abcf928a086ea3d9043114285ec99"
+  dependencies:
+    es-to-primitive "^1.1.1"
+    function-bind "^1.1.0"
+    is-callable "^1.1.3"
+    is-regex "^1.0.3"
+
+es-to-primitive@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/es-to-primitive/-/es-to-primitive-1.1.1.tgz#45355248a88979034b6792e19bb81f2b7975dd0d"
+  dependencies:
+    is-callable "^1.1.1"
+    is-date-object "^1.0.1"
+    is-symbol "^1.0.1"
 
 es5-ext@^0.10.7, es5-ext@^0.10.8, es5-ext@~0.10.11, es5-ext@~0.10.2, es5-ext@~0.10.7:
   version "0.10.12"
@@ -1596,10 +1631,11 @@ eslint-config-kylpo@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/eslint-config-kylpo/-/eslint-config-kylpo-2.0.0.tgz#154cbe901fbd9abcdd366d90a5b3eb9bec2bac3b"
 
-eslint-plugin-react@^6.8.0:
-  version "6.8.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-6.8.0.tgz#741ab5438a094532e5ce1bbb935d6832356f492d"
+eslint-plugin-react@^6.9.0:
+  version "6.9.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-6.9.0.tgz#54c2e9906b76f9d10142030bdc34e9d6840a0bb2"
   dependencies:
+    array.prototype.find "^2.0.1"
     doctrine "^1.2.2"
     jsx-ast-utils "^1.3.4"
 
@@ -1875,6 +1911,10 @@ for-own@^0.1.4:
   dependencies:
     for-in "^0.1.5"
 
+foreach@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/foreach/-/foreach-2.0.5.tgz#0bee005018aeb260d0a3af3ae658dd0136ec1b99"
+
 forever-agent@~0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/forever-agent/-/forever-agent-0.6.1.tgz#fbc71f0c41adeb37f96c577ad1ed42d8fdacca91"
@@ -1904,6 +1944,10 @@ fs-extra@^0.26.2:
 fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
+
+function-bind@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.0.tgz#16176714c801798e4e8f2cf7f7529467bb4a5771"
 
 gauge@~1.2.5:
   version "1.2.7"
@@ -2227,11 +2271,19 @@ is-builtin-module@^1.0.0:
   dependencies:
     builtin-modules "^1.0.0"
 
+is-callable@^1.1.1, is-callable@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/is-callable/-/is-callable-1.1.3.tgz#86eb75392805ddc33af71c92a0eedf74ee7604b2"
+
 is-ci@^1.0.9:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/is-ci/-/is-ci-1.0.10.tgz#f739336b2632365061a9d48270cd56ae3369318e"
   dependencies:
     ci-info "^1.0.0"
+
+is-date-object@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/is-date-object/-/is-date-object-1.0.1.tgz#9aa20eb6aeebbff77fbd33e74ca01b33581d3a16"
 
 is-dotfile@^1.0.0:
   version "1.0.2"
@@ -2316,6 +2368,10 @@ is-property@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/is-property/-/is-property-1.0.2.tgz#57fe1c4e48474edd65b09911f26b1cd4095dda84"
 
+is-regex@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/is-regex/-/is-regex-1.0.3.tgz#0d55182bddf9f2fde278220aec3a75642c908637"
+
 is-resolvable@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/is-resolvable/-/is-resolvable-1.0.0.tgz#8df57c61ea2e3c501408d100fb013cf8d6e0cc62"
@@ -2325,6 +2381,10 @@ is-resolvable@^1.0.0:
 is-stream@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
+
+is-symbol@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/is-symbol/-/is-symbol-1.0.1.tgz#3cc59f00025194b6ab2e38dbae6689256b660572"
 
 is-typedarray@~1.0.0:
   version "1.0.0"
@@ -3229,6 +3289,10 @@ object-assign@^3.0.0:
 object-assign@^4.0.1, object-assign@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.0.tgz#7a3b3d0e98063d43f4c03f2e8ae6cd51a86883a0"
+
+object-keys@^1.0.8:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-1.0.11.tgz#c54601778ad560f1142ce0e01bcca8b56d13426d"
 
 object.omit@^2.0.0:
   version "2.0.1"

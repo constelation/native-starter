@@ -19,7 +19,7 @@ export default class ProfileDetail extends React.Component {
   render() {
     return (
       <View
-        flex={1}
+        grow
         alignVertical='center'
       >
         <Text

@@ -2,13 +2,13 @@
 // Imports {{{
 import {
   Animated,
-  Platform,
-  ScrollView,
 } from 'react-native'
 import Col from 'constelation-Col'
 import React from 'react'
 import Row from 'constelation-Row'
+import ScrollView from 'constelation-scroll-view'
 import Style_ from 'constelation-Style_'
+import Text from 'constelation-Text'
 import View from 'constelation-View'
 
 // }}}
@@ -18,35 +18,30 @@ export default class Showcase extends React.Component {
   // Will likely need this for a NavBar that animates up on scroll.
   static renderNavigationBar( /*props*/ ) {
     return (
-      <Animated.View
-        style={{
-          backgroundColor: '#EFEFEF',
-          paddingTop: 0,
-          top: 0,
-          height: Platform.OS === 'ios' || Platform.Version > 19 ? 64 : 44,
-          right: 0,
-          left: 0,
-          borderBottomWidth: 0.5,
-          borderBottomColor: '#828287',
-          position: 'absolute',
-        }}
+      <Style_
+        backgroundColor='#EFEFEF'
+        borderBottomWidth={0.5}
+        borderBottomColor='#828287'
       >
-        <Animated.Text
-          style={{
-            textAlign: 'center',
-            marginTop: 10,
-            fontSize: 18,
-            fontWeight: '500',
-            color: '#111111',
-            position: 'absolute',
-            top: Platform.OS === 'ios' || Platform.Version > 19 ? 20 : 0,
-            left: 0,
-            right: 0,
-          }}
+        <View
+          alignVertical='center'
+          paddingTop={10}
+          position='absolute'
+          top={0}
+          height={64}
+          right={0}
+          left={0}
         >
-          Showcase
-        </Animated.Text>
-      </Animated.View>
+          <Text
+            center
+            weight={500}
+            size={18}
+            color='#111111'
+          >
+            Showcase
+          </Text>
+        </View>
+      </Style_>
     )
   }
 
@@ -68,15 +63,22 @@ export default class Showcase extends React.Component {
           toValue: 1,
           friction: 1,
         }
-      )
+      ),
     ]).start()
   }
 
   render() {
     return (
-      <ScrollView style={{flex: 1, marginTop: 65, marginBottom: 50}}>
+      <ScrollView
+        grow
+        marginTop={65}
+        marginBottom={50}
+      >
 
-        <Style_ backgroundColor='purple' opacity={this.animatedOpacity} >
+        <Style_
+          backgroundColor='purple'
+          opacity={this.animatedOpacity}
+        >
           <View
             animated
             width={this.animatedSize}
@@ -101,7 +103,10 @@ export default class Showcase extends React.Component {
           </Row>
         </Style_>
 
-        <Style_ backgroundColor='grey' opacity={0.5} >
+        <Style_
+          backgroundColor='grey'
+          opacity={0.5}
+        >
           <Col height={200} >
             <Style_ backgroundColor='red' >
               <View height={50} />

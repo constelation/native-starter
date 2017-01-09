@@ -4,6 +4,7 @@ module.exports = {
     mobx: 'mobx',
     Text: 'constelation-Text',
     View: 'constelation-View',
+    ScrollView: 'constelation-scroll-view',
     Col: 'constelation-Col',
     Row: 'constelation-Row',
     Style_: 'constelation-Style_',

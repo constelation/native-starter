@@ -29,6 +29,7 @@ node_modules/constelation-Col/index.native.js.flow
 node_modules/constelation-Row/index.native.js.flow
 node_modules/constelation-Style_/index.native.js.flow
 node_modules/constelation-View/index.native.js.flow
+node_modules/constelation-scroll-view/index.native.js.flow
 node_modules/constelation-Flex/index.native.js.flow
 node_modules/constelation-Text/index.native.js.flow
 

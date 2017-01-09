@@ -20,7 +20,7 @@ export default class Dummy extends React.Component {
 
   render() {
     return (
-      <View flex={1}>
+      <View grow >
         <StatusBar
           animated
           barStyle='light-content'
