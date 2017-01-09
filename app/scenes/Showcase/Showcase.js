@@ -34,7 +34,7 @@ export default class Showcase extends React.Component {
         >
           <Text
             center
-            weight={500}
+            weight='500'
             size={18}
             color='#111111'
           >

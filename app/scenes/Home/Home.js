@@ -3,9 +3,7 @@
 
 import { Actions } from 'react-native-router-flux'
 import Event_ from 'constelation-Event_'
-import {
-  Image,
-} from 'react-native'
+import Image from 'constelation-image'
 import React from 'react'
 import Text from 'constelation-Text'
 import Style_ from 'constelation-Style_'
@@ -53,7 +51,11 @@ export default class Home extends React.Component {
         center
         grow
       >
-        <Image style={{width: 200, height: 200}} source={require('images/logo.png')} />
+        <Image
+          width={200}
+          height={200}
+          source={require('images/logo.png')}
+        />
 
         <Button
           marginTop={60}

@@ -33,6 +33,7 @@ export default class Profile extends React.Component {
 
         <Event_
           onPress={this.props.onIncreaseCounter}
+          pressEffect='opacity'
         >
           <View margin={10}>
             <Text

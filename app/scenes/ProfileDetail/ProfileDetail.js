@@ -17,6 +17,7 @@ export default class ProfileDetail extends React.Component {
   render() {
     return (
       <View
+        grow
         alignVertical='center'
       >
         <Text
@@ -28,6 +29,7 @@ export default class ProfileDetail extends React.Component {
 
         <Event_
           onPress={this.props.onIncreaseCounter}
+          pressEffect='opacity'
         >
           <View margin={10}>
             <Text

@@ -1232,9 +1232,9 @@ connect@^2.8.3:
     utils-merge "1.0.0"
     vhost "~3.0.1"
 
-constelation-Col@^6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/constelation-Col/-/constelation-Col-6.2.0.tgz#9fa7f676d0a24485ccc3c664ec6c75b9f2b1e242"
+constelation-Col@^6.3.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/constelation-Col/-/constelation-Col-6.3.0.tgz#18bb646309bb3b91fb4b12795acfebff4de22eb8"
   dependencies:
     constelation-flex-component-factory "^6.2.0"
 
@@ -1244,15 +1244,15 @@ constelation-Event_@^6.2.2:
   dependencies:
     hammerjs "^2.0.8"
 
-constelation-Flex@^6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/constelation-Flex/-/constelation-Flex-6.2.0.tgz#f292e38dd13ec5c4e7312ffcd288e729fb32057e"
+constelation-Flex@^6.3.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/constelation-Flex/-/constelation-Flex-6.3.0.tgz#b9193f3e02e87e48f33086142f8c36577a0d8fda"
   dependencies:
     constelation-flex-component-factory "^6.2.0"
 
-constelation-Row@^6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/constelation-Row/-/constelation-Row-6.2.0.tgz#8a23f318c28430c15cd9c1d703d19e1144c3ee94"
+constelation-Row@^6.3.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/constelation-Row/-/constelation-Row-6.3.0.tgz#eccf503e355a331b4922261c7438fd468a9bbdf4"
   dependencies:
     constelation-flex-component-factory "^6.2.0"
 
@@ -1260,13 +1260,13 @@ constelation-Style_@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/constelation-Style_/-/constelation-Style_-6.0.0.tgz#3b5d1e6d7cbd2f707374795a635fb9ad707c6ce9"
 
-constelation-Text@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/constelation-Text/-/constelation-Text-6.0.0.tgz#c6f1c324994aa85250e9ce20ed224c45cb3ac6a3"
+constelation-Text@^6.3.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/constelation-Text/-/constelation-Text-6.3.0.tgz#b6c3743ef96c973f356de24a8a36cb179f9fdc17"
 
-constelation-View@^6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/constelation-View/-/constelation-View-6.2.0.tgz#e1a3f6dda650a93a1db43df5440b19af3584f38b"
+constelation-View@^6.3.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/constelation-View/-/constelation-View-6.3.0.tgz#abeb4aa5dddbbbd8af0382f58d63a437c5a66890"
   dependencies:
     constelation-flex-component-factory "^6.2.0"
 
@@ -1274,9 +1274,13 @@ constelation-flex-component-factory@^6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/constelation-flex-component-factory/-/constelation-flex-component-factory-6.2.0.tgz#6e398abd60c2a0c1f17655ea3656b8409c002024"
 
-constelation-scroll-view@^6.2.1:
-  version "6.2.1"
-  resolved "https://registry.yarnpkg.com/constelation-scroll-view/-/constelation-scroll-view-6.2.1.tgz#0164c41031294efb4321c69c2c2999c2d08dfa0c"
+constelation-image@^6.3.1:
+  version "6.3.1"
+  resolved "https://registry.yarnpkg.com/constelation-image/-/constelation-image-6.3.1.tgz#126bbdb68b36ca50365d9841325e880f80f09b30"
+
+constelation-scroll-view@^6.3.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/constelation-scroll-view/-/constelation-scroll-view-6.3.0.tgz#e1aed0d3dad6897af755d591f5838422dda5450f"
 
 content-type-parser@^1.0.1:
   version "1.0.1"
