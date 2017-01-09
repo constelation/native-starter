@@ -2,13 +2,13 @@
 // Imports {{{
 
 import { Actions } from 'react-native-router-flux'
+import Event_ from 'constelation-Event_'
 import {
   StatusBar,
-  StyleSheet,
-  TouchableOpacity,
 } from 'react-native'
 import React from 'react'
 import Text from 'constelation-Text'
+import Style_ from 'constelation-Style_'
 import View from 'constelation-View'
 
 // }}}
@@ -20,31 +20,35 @@ export default class Dummy extends React.Component {
 
   render() {
     return (
-      <View grow >
+      <View
+        grow
+      >
         <StatusBar
           animated
           barStyle='light-content'
         />
-        <TouchableOpacity style={styles.container} onPress={this.handlePress}>
-          <Text
-            center
-            size={20}
-            color='white'
+
+        <Event_
+          onPress={this.handlePress}
+        >
+          <Style_
+            backgroundColor='black'
           >
-            HAI
-          </Text>
-        </TouchableOpacity>
+            <View
+              grow
+              center
+              padding={10}
+            >
+              <Text
+                size={20}
+                color='white'
+              >
+                HAI
+              </Text>
+            </View>
+          </Style_>
+        </Event_>
       </View>
     )
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'black',
-    padding: 10,
-  },
-})

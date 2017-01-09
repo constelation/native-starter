@@ -1,9 +1,7 @@
 // @flow
 // Imports {{{
 
-import {
-  TouchableOpacity,
-} from 'react-native'
+import Event_ from 'constelation-Event_'
 import React from 'react'
 import Text from 'constelation-Text'
 import View from 'constelation-View'
@@ -33,7 +31,9 @@ export default class Profile extends React.Component {
 
         <Text center >Click 'Detail' for a threaded view</Text>
 
-        <TouchableOpacity onPress={this.props.onIncreaseCounter} >
+        <Event_
+          onPress={this.props.onIncreaseCounter}
+        >
           <View margin={10}>
             <Text
               center
@@ -42,7 +42,7 @@ export default class Profile extends React.Component {
               {this.props.value}
             </Text>
           </View>
-        </TouchableOpacity>
+        </Event_>
 
       </View>
     )

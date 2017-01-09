@@ -1,9 +1,7 @@
 // @flow
 // Imports {{{
 
-import {
-  TouchableOpacity,
-} from 'react-native'
+import Event_ from 'constelation-Event_'
 import React from 'react'
 import Text from 'constelation-Text'
 import View from 'constelation-View'
@@ -19,7 +17,6 @@ export default class ProfileDetail extends React.Component {
   render() {
     return (
       <View
-        grow
         alignVertical='center'
       >
         <Text
@@ -29,7 +26,9 @@ export default class ProfileDetail extends React.Component {
           Profile Detail
         </Text>
 
-        <TouchableOpacity onPress={this.props.onIncreaseCounter} >
+        <Event_
+          onPress={this.props.onIncreaseCounter}
+        >
           <View margin={10}>
             <Text
               center
@@ -38,7 +37,7 @@ export default class ProfileDetail extends React.Component {
               {this.props.value}
             </Text>
           </View>
-        </TouchableOpacity>
+        </Event_>
       </View>
     )
   }

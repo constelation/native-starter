@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "constelation-Col": "^6.2.0",
+    "constelation-Event_": "^6.2.2",
     "constelation-Flex": "^6.2.0",
     "constelation-Row": "^6.2.0",
     "constelation-Style_": "^6.0.0",

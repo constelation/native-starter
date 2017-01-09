@@ -27,6 +27,7 @@ flow/
 ; Hopefully this'll be removed when https://github.com/facebook/flow/issues/945 is addressed
 node_modules/constelation-Col/index.native.js.flow
 node_modules/constelation-Row/index.native.js.flow
+node_modules/constelation-Event_/index.native.js.flow
 node_modules/constelation-Style_/index.native.js.flow
 node_modules/constelation-View/index.native.js.flow
 node_modules/constelation-scroll-view/index.native.js.flow

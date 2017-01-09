@@ -8,6 +8,7 @@ module.exports = {
     Col: 'constelation-Col',
     Row: 'constelation-Row',
     Style_: 'constelation-Style_',
+    Event_: 'constelation-Event_',
 
     counter: 'stores/counter',
   },

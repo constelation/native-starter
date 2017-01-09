@@ -2,16 +2,40 @@
 // Imports {{{
 
 import { Actions } from 'react-native-router-flux'
+import Event_ from 'constelation-Event_'
 import {
   Image,
-  StyleSheet,
-  TouchableOpacity,
 } from 'react-native'
 import React from 'react'
 import Text from 'constelation-Text'
+import Style_ from 'constelation-Style_'
 import View from 'constelation-View'
 
 // }}}
+
+const Button = props => (
+  <Event_
+    onPress={props.onPress}
+    pressEffect='opacity'
+  >
+    <Style_
+      borderColor='black'
+      borderWidth={1}
+      borderRadius={1}
+    >
+      <View
+        center
+        paddingVertical={5}
+        paddingHorizontal={10}
+        marginTop={props.marginTop}
+      >
+        <Text color='black'>
+          {props.label}
+        </Text>
+      </View>
+    </Style_>
+  </Event_>
+)
 
 export default class Home extends React.Component {
 
@@ -31,32 +55,18 @@ export default class Home extends React.Component {
       >
         <Image style={{width: 200, height: 200}} source={require('images/logo.png')} />
 
-        <TouchableOpacity style={[styles.button, {marginTop: 60}]} onPress={this.handleShowFullScreenModal}>
-          <Text color='black'>
-            Full screen Detail scene
-          </Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={[styles.button, {marginTop: 30}]} onPress={this.handleShowFullScreenModalScene}>
-          <Text color='black'>
-            Full screen Modal scene
-          </Text>
-        </TouchableOpacity>
+        <Button
+          marginTop={60}
+          label='Full screen Detail scene'
+          onPress={this.handleShowFullScreenModal}
+        />
+        <Button
+          marginTop={30}
+          label='Full screen Modal scene'
+          onPress={this.handleShowFullScreenModalScene}
+        />
 
       </View>
     )
   }
 }
-
-var styles = StyleSheet.create({
-  button: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: 'white',
-    borderColor: 'black',
-    borderWidth: 1,
-    paddingVertical: 5,
-    paddingHorizontal: 10,
-    borderRadius: 1,
-  },
-})
