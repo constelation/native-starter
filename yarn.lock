@@ -1274,9 +1274,9 @@ constelation-flex-component-factory@^6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/constelation-flex-component-factory/-/constelation-flex-component-factory-6.2.0.tgz#6e398abd60c2a0c1f17655ea3656b8409c002024"
 
-constelation-image@^6.3.1:
-  version "6.3.1"
-  resolved "https://registry.yarnpkg.com/constelation-image/-/constelation-image-6.3.1.tgz#126bbdb68b36ca50365d9841325e880f80f09b30"
+constelation-image@^6.3.6:
+  version "6.3.6"
+  resolved "https://registry.yarnpkg.com/constelation-image/-/constelation-image-6.3.6.tgz#514479a790c6f0c9f3d2ccff99898ddf8f094f17"
 
 constelation-scroll-view@^6.3.5:
   version "6.3.5"
