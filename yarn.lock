@@ -1260,9 +1260,9 @@ constelation-Style_@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/constelation-Style_/-/constelation-Style_-6.0.0.tgz#3b5d1e6d7cbd2f707374795a635fb9ad707c6ce9"
 
-constelation-Text@^6.3.0:
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/constelation-Text/-/constelation-Text-6.3.0.tgz#b6c3743ef96c973f356de24a8a36cb179f9fdc17"
+constelation-Text@^6.3.3:
+  version "6.3.3"
+  resolved "https://registry.yarnpkg.com/constelation-Text/-/constelation-Text-6.3.3.tgz#902423c2c57ff1d2460c8b2dd9c1340e33695b2b"
 
 constelation-View@^6.3.0:
   version "6.3.0"
@@ -1278,9 +1278,9 @@ constelation-image@^6.3.1:
   version "6.3.1"
   resolved "https://registry.yarnpkg.com/constelation-image/-/constelation-image-6.3.1.tgz#126bbdb68b36ca50365d9841325e880f80f09b30"
 
-constelation-scroll-view@^6.3.0:
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/constelation-scroll-view/-/constelation-scroll-view-6.3.0.tgz#e1aed0d3dad6897af755d591f5838422dda5450f"
+constelation-scroll-view@^6.3.5:
+  version "6.3.5"
+  resolved "https://registry.yarnpkg.com/constelation-scroll-view/-/constelation-scroll-view-6.3.5.tgz#d7c1bd5668f8434efb4ef7a39e076a76fa9a9ba1"
 
 content-type-parser@^1.0.1:
   version "1.0.1"
@@ -1633,9 +1633,9 @@ escope@^3.6.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-config-constelation@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-constelation/-/eslint-config-constelation-1.0.0.tgz#b5a961c6c0839a25451bb7f689c3f8370862f75d"
+eslint-config-constelation@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-constelation/-/eslint-config-constelation-1.0.1.tgz#b274027699a03ae8098d4cc7d6fa49d7224cc63f"
 
 eslint-config-kylpo@^2.0.0:
   version "2.0.0"
@@ -1649,9 +1649,9 @@ eslint-plugin-react@^6.9.0:
     doctrine "^1.2.2"
     jsx-ast-utils "^1.3.4"
 
-eslint@^3.13.0:
-  version "3.13.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-3.13.0.tgz#636925fd163c9babe2e8be7ae43caf518d469577"
+eslint@^3.13.1:
+  version "3.13.1"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-3.13.1.tgz#564d2646b5efded85df96985332edd91a23bff25"
   dependencies:
     babel-code-frame "^6.16.0"
     chalk "^1.1.3"
@@ -3162,9 +3162,9 @@ mobx-remotedev@^0.2.5:
     remotedev "^0.2.2"
     remotedev-utils "^0.0.3"
 
-mobx@^2.7.0:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/mobx/-/mobx-2.7.0.tgz#cf3d82d18c0ca7f458d8f2a240817b3dc7e54a01"
+mobx@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/mobx/-/mobx-3.0.0.tgz#6d9fb326d51bac9994dd8fe6762ace6ba2bef2ac"
 
 moment@2.x.x:
   version "2.17.1"
