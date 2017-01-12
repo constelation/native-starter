@@ -2,13 +2,13 @@
 // Imports {{{
 
 import { Actions } from 'react-native-router-flux'
-import Event_ from 'constelation-Event_'
 import {
   StatusBar,
 } from 'react-native'
+import Event_ from 'constelation-Event_'
 import React from 'react'
-import Text from 'constelation-Text'
 import Style_ from 'constelation-Style_'
+import Text from 'constelation-Text'
 import View from 'constelation-View'
 
 // }}}

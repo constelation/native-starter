@@ -1,8 +1,9 @@
 // @flow
 // Imports {{{
 
-import React from 'react'
 import { observer, inject } from 'mobx-react/native'
+import React from 'react'
+
 import type { Counter } from 'stores/counter'
 
 import ProfileDetail from './ProfileDetail'
