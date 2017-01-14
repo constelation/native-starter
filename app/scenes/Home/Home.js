@@ -2,38 +2,13 @@
 // Imports {{{
 
 import { Actions } from 'react-native-router-flux'
-import Event_ from 'constelation-Event_'
 import Image from 'constelation-image'
 import React from 'react'
-import Style_ from 'constelation-Style_'
-import Text from 'constelation-Text'
 import View from 'constelation-View'
 
-// }}}
+import Button from 'shared/Button'
 
-const Button = props => (
-  <Event_
-    onPress={props.onPress}
-    pressEffect='opacity'
-  >
-    <Style_
-      borderColor='black'
-      borderWidth={1}
-      borderRadius={1}
-    >
-      <View
-        center
-        paddingVertical={5}
-        paddingHorizontal={10}
-        marginTop={props.marginTop}
-      >
-        <Text color='black'>
-          {props.label}
-        </Text>
-      </View>
-    </Style_>
-  </Event_>
-)
+// }}}
 
 export default class Home extends React.Component {
 
