@@ -1,5 +1,7 @@
 // @flow
 // Imports {{{
+
+import Animate_ from 'constelation-Animate_'
 import Col from 'constelation-Col'
 import Event_ from 'constelation-Event_'
 import Image from 'constelation-image'
@@ -9,8 +11,6 @@ import ScrollView from 'constelation-scroll-view'
 import Style_ from 'constelation-Style_'
 import Text from 'constelation-Text'
 import View from 'constelation-View'
-
-import Animate_ from 'lib/Animate_'
 
 // }}}
 
@@ -70,32 +70,39 @@ export default class Showcase extends React.Component {
         marginTop={65}
         marginBottom={50}
       >
-        <Event_
-          onPress={this.triggerBox1Animation}
-          // Note: this effect doesn't work because Animate_ replaces Opacity
-          pressEffect='opacity'
-        >
-          <Animate_
-            // repeat
-            ref='box1'
-            autoplay={false}
-            duration={1000}
-            delay={200}
-            easing='in-out-quad'
-            // animation='fade-in'
-            animation={box1Animation}
-            onStart={() => {console.log('onStart')}}
-            onEnd={() => {console.log('onEnd')}}
+        <Row>
+          <Event_
+            onPress={this.triggerBox1Animation}
+            // Note: this effect doesn't work because Animate_ replaces Opacity
+            pressEffect='opacity'
           >
-            <Style_
-              backgroundColor='purple'
+            <Animate_
+              // repeat
+              ref='box1'
+              autoplay={false}
+              duration={1000}
+              delay={200}
+              easing='inOut'
+              // animation='fade-in'
+              animation={box1Animation}
+              onStart={() => {console.log('onStart')}}
+              onEnd={() => {console.log('onEnd')}}
             >
-              <View
-                height={200}
-              />
+              <Style_ backgroundColor='purple' >
+                <View height={200} />
+              </Style_>
+            </Animate_>
+          </Event_>
+
+          <Animate_
+            duration={400}
+            animation='fadeOut'
+          >
+            <Style_ backgroundColor='green' >
+              <View height={200} width={200} />
             </Style_>
           </Animate_>
-        </Event_>
+        </Row>
 
         <Animate_
           animation={{
@@ -114,9 +121,7 @@ export default class Showcase extends React.Component {
           // easing={Easing.sin}
           duration={400}
         >
-          <Image
-            source={require('images/logo.png')}
-          />
+          <Image source={require('images/logo.png')} />
         </Animate_>
 
         <Style_

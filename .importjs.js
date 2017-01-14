@@ -9,6 +9,7 @@ module.exports = {
     Col: 'constelation-Col',
     Row: 'constelation-Row',
     Style_: 'constelation-Style_',
+    Animate_: 'constelation-Animate_',
     Event_: 'constelation-Event_',
 
     counter: 'stores/counter',

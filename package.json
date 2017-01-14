@@ -30,6 +30,7 @@
     ]
   },
   "dependencies": {
+    "constelation-Animate_": "^6.4.0",
     "constelation-Col": "^6.3.0",
     "constelation-Event_": "^6.2.2",
     "constelation-Flex": "^6.3.0",

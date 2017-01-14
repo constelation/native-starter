@@ -1232,6 +1232,13 @@ connect@^2.8.3:
     utils-merge "1.0.0"
     vhost "~3.0.1"
 
+constelation-Animate_@^6.4.0:
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/constelation-Animate_/-/constelation-Animate_-6.4.0.tgz#8cf4c211fd79df9fa1bc8bcd45cdb0ad530f8c5b"
+  dependencies:
+    raf "^3.3.0"
+    react-addons-shallow-compare "^15.3.1"
+
 constelation-Col@^6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/constelation-Col/-/constelation-Col-6.3.0.tgz#18bb646309bb3b91fb4b12795acfebff4de22eb8"
@@ -3434,6 +3441,10 @@ pegjs@0.9.0:
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/pegjs/-/pegjs-0.9.0.tgz#f6aefa2e3ce56169208e52179dfe41f89141a369"
 
+performance-now@~0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-0.2.0.tgz#33ef30c5c77d4ea21c5a53869d91b56d8f2555e5"
+
 pify@^2.0.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/pify/-/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
@@ -3521,6 +3532,12 @@ querystring@0.2.0, querystring@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/querystring/-/querystring-0.2.0.tgz#b209849203bb25df820da756e747005878521620"
 
+raf@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/raf/-/raf-3.3.0.tgz#93845eeffc773f8129039f677f80a36044eee2c3"
+  dependencies:
+    performance-now "~0.2.0"
+
 random-bytes@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/random-bytes/-/random-bytes-1.0.0.tgz#4f68a1dc0ae58bd3fb95848c30324db75d64360b"
@@ -3547,6 +3564,13 @@ raw-body@~2.1.2:
 react-addons-pure-render-mixin@15.0.2, react-addons-pure-render-mixin@^15.0.2:
   version "15.0.2"
   resolved "https://registry.yarnpkg.com/react-addons-pure-render-mixin/-/react-addons-pure-render-mixin-15.0.2.tgz#b7731c5cc7f21214d68a78c84f40df3aefdf462f"
+
+react-addons-shallow-compare@^15.3.1:
+  version "15.4.2"
+  resolved "https://registry.yarnpkg.com/react-addons-shallow-compare/-/react-addons-shallow-compare-15.4.2.tgz#027ffd9720e3a1e0b328dcd8fc62e214a0d174a5"
+  dependencies:
+    fbjs "^0.8.4"
+    object-assign "^4.1.0"
 
 react-clone-referenced-element@^1.0.1:
   version "1.0.1"
