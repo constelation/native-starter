@@ -52,8 +52,6 @@ export default class Home extends React.Component {
         grow
       >
         <Image
-          width={200}
-          height={200}
           source={require('images/logo.png')}
         />
 
