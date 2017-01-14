@@ -1,9 +1,8 @@
 // @flow
 // Imports {{{
-import {
-  Animated,
-} from 'react-native'
 import Col from 'constelation-Col'
+import Event_ from 'constelation-Event_'
+import Image from 'constelation-image'
 import React from 'react'
 import Row from 'constelation-Row'
 import ScrollView from 'constelation-scroll-view'
@@ -11,7 +10,22 @@ import Style_ from 'constelation-Style_'
 import Text from 'constelation-Text'
 import View from 'constelation-View'
 
+import Animate_ from 'lib/Animate_'
+
 // }}}
+
+const box1Animation = {
+  from: {
+    opacity: 0.2,
+    width: 20,
+    height: 20,
+  },
+  to: {
+    opacity: 1,
+    width: 200,
+    height: 200,
+  }
+}
 
 export default class Showcase extends React.Component {
   // What's this!? I can still define a custom navBar from within my component.
@@ -45,26 +59,8 @@ export default class Showcase extends React.Component {
     )
   }
 
-  animatedSize = new Animated.Value(20)
-  animatedOpacity = new Animated.Value(0)
-
-  componentDidMount() {
-    Animated.parallel([
-      Animated.spring(
-        this.animatedSize,
-        {
-          toValue: 200,
-          friction: 1,
-        }
-      ),
-      Animated.spring(
-        this.animatedOpacity,
-        {
-          toValue: 1,
-          friction: 1,
-        }
-      ),
-    ]).start()
+  triggerBox1Animation = () => {
+    this.refs.box1.trigger()
   }
 
   render() {
@@ -74,17 +70,54 @@ export default class Showcase extends React.Component {
         marginTop={65}
         marginBottom={50}
       >
-
-        <Style_
-          backgroundColor='purple'
-          opacity={this.animatedOpacity}
+        <Event_
+          onPress={this.triggerBox1Animation}
+          // Note: this effect doesn't work because Animate_ replaces Opacity
+          pressEffect='opacity'
         >
-          <View
-            animated
-            width={this.animatedSize}
-            height={this.animatedSize}
+          <Animate_
+            // repeat
+            ref='box1'
+            autoplay={false}
+            duration={1000}
+            delay={200}
+            easing='in-out-quad'
+            // animation='fade-in'
+            animation={box1Animation}
+            onStart={() => {console.log('onStart')}}
+            onEnd={() => {console.log('onEnd')}}
+          >
+            <Style_
+              backgroundColor='purple'
+            >
+              <View
+                height={200}
+              />
+            </Style_>
+          </Animate_>
+        </Event_>
+
+        <Animate_
+          animation={{
+            0: {
+              opacity: 0.5,
+            },
+            0.5: {
+              opacity: 0,
+              left: 20,
+            },
+            1: {
+              opacity: 1,
+              left: 0,
+            }
+          }}
+          // easing={Easing.sin}
+          duration={400}
+        >
+          <Image
+            source={require('images/logo.png')}
           />
-        </Style_>
+        </Animate_>
 
         <Style_
           backgroundColor='lightgrey'
