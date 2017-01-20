@@ -13,6 +13,7 @@ export default class Button extends React.Component {
   render() {
     return (
       <Event_
+        hitSlop={10}
         onPress={this.props.onPress}
         pressEffect='opacity'
       >

@@ -1239,29 +1239,29 @@ constelation-Animate_@^6.4.0:
     raf "^3.3.0"
     react-addons-shallow-compare "^15.3.1"
 
-constelation-Col@^6.3.0:
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/constelation-Col/-/constelation-Col-6.3.0.tgz#18bb646309bb3b91fb4b12795acfebff4de22eb8"
+constelation-Col@^6.5.0:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/constelation-Col/-/constelation-Col-6.5.0.tgz#b22454c9396e456be7d59a349447319e1808c836"
   dependencies:
-    constelation-flex-component-factory "^6.2.0"
+    constelation-flex-component-factory "^6.5.0"
 
-constelation-Event_@^6.2.2:
-  version "6.2.2"
-  resolved "https://registry.yarnpkg.com/constelation-Event_/-/constelation-Event_-6.2.2.tgz#51954c9c6305eec85c7e0fd17acf8e217f51ef6b"
+constelation-Event_@^6.5.1:
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/constelation-Event_/-/constelation-Event_-6.5.1.tgz#e2a682e66b6c8ff18ada54198d7f83224da7602f"
   dependencies:
     hammerjs "^2.0.8"
 
-constelation-Flex@^6.3.0:
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/constelation-Flex/-/constelation-Flex-6.3.0.tgz#b9193f3e02e87e48f33086142f8c36577a0d8fda"
+constelation-Flex@^6.5.0:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/constelation-Flex/-/constelation-Flex-6.5.0.tgz#a82e0e8255c6839f9e36588bc5cded9a25807f2d"
   dependencies:
-    constelation-flex-component-factory "^6.2.0"
+    constelation-flex-component-factory "^6.5.0"
 
-constelation-Row@^6.3.0:
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/constelation-Row/-/constelation-Row-6.3.0.tgz#eccf503e355a331b4922261c7438fd468a9bbdf4"
+constelation-Row@^6.5.0:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/constelation-Row/-/constelation-Row-6.5.0.tgz#6dfcc8204215a7f0cfebf96f2f450dea37ed4839"
   dependencies:
-    constelation-flex-component-factory "^6.2.0"
+    constelation-flex-component-factory "^6.5.0"
 
 constelation-Style_@^6.0.0:
   version "6.0.0"
@@ -1271,15 +1271,15 @@ constelation-Text@^6.3.3:
   version "6.3.3"
   resolved "https://registry.yarnpkg.com/constelation-Text/-/constelation-Text-6.3.3.tgz#902423c2c57ff1d2460c8b2dd9c1340e33695b2b"
 
-constelation-View@^6.3.0:
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/constelation-View/-/constelation-View-6.3.0.tgz#abeb4aa5dddbbbd8af0382f58d63a437c5a66890"
+constelation-View@^6.5.0:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/constelation-View/-/constelation-View-6.5.0.tgz#0c9cd4b6fa2831af432966d27787870629ea9c6b"
   dependencies:
-    constelation-flex-component-factory "^6.2.0"
+    constelation-flex-component-factory "^6.5.0"
 
-constelation-flex-component-factory@^6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/constelation-flex-component-factory/-/constelation-flex-component-factory-6.2.0.tgz#6e398abd60c2a0c1f17655ea3656b8409c002024"
+constelation-flex-component-factory@^6.5.0:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/constelation-flex-component-factory/-/constelation-flex-component-factory-6.5.0.tgz#a6a5e0e49f6f7003891fbd9423cf45a4337e0485"
 
 constelation-image@^6.3.7:
   version "6.3.7"
@@ -3169,9 +3169,9 @@ mobx-remotedev@^0.2.5:
     remotedev "^0.2.2"
     remotedev-utils "^0.0.3"
 
-mobx@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/mobx/-/mobx-3.0.0.tgz#6d9fb326d51bac9994dd8fe6762ace6ba2bef2ac"
+mobx@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/mobx/-/mobx-3.0.2.tgz#ade8e83434f7a73868d2632603b6d17da530427c"
 
 moment@2.x.x:
   version "2.17.1"

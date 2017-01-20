@@ -72,6 +72,7 @@ export default class Showcase extends React.Component {
       >
         <Row>
           <Event_
+            hitSlop={20}
             onPress={this.triggerBox1Animation}
             // Note: this effect doesn't work because Animate_ replaces Opacity
             pressEffect='opacity'
