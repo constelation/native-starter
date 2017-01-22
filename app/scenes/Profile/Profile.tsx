@@ -8,7 +8,7 @@ import View from 'constelation-View'
 
 // }}}
 
-export default class ProfileDetail extends React.Component {
+export default class Profile extends React.Component<any,any> {
   props: {
     value: number,
     onIncreaseCounter: Function,
@@ -20,12 +20,16 @@ export default class ProfileDetail extends React.Component {
         grow
         alignVertical='center'
       >
-        <Text
-          center
-          size={20}
-        >
-          Profile Detail
-        </Text>
+        <View margin={10}>
+          <Text
+            center
+            size={20}
+          >
+            This is the Profile scene
+          </Text>
+        </View>
+
+        <Text center >Click 'Detail' for a threaded view</Text>
 
         <Event_
           onPress={this.props.onIncreaseCounter}
@@ -40,6 +44,7 @@ export default class ProfileDetail extends React.Component {
             </Text>
           </View>
         </Event_>
+
       </View>
     )
   }

@@ -4,18 +4,12 @@
 import { observer, inject } from 'mobx-react/native'
 import React from 'react'
 
-import type { Counter } from 'stores/counter'
-
 import Profile from './Profile'
 
 // }}}
 
 export default inject('counter')(observer(
-  class ProfileContainer extends React.Component {
-    props: {
-      counter: Counter
-    }
-
+  class ProfileContainer extends React.Component<any,any> {
     handleIncreaseCounter = () => {
       this.props.counter.increase()
     }

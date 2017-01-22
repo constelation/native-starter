@@ -9,7 +9,6 @@ import remotedev from 'mobx-remotedev'
 
 export class Counter {
   value: number
-  increase: () => {}
 
   // initialize observable properties on a new instance
   constructor() {

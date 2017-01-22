@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+        "target": "es2015",
+        "module": "es2015",
+        "jsx": "react",
+        "outDir": "build",
+        "rootDir": "app",
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "paths": {
+            "stores/*": ["app/stores/*"],
+            "shared/*": ["app/shared/*"]
+        },
+        "allowSyntheticDefaultImports": true,
+        // TODO: set back to true
+        "noImplicitAny": false,
+        "experimentalDecorators": true,
+        "preserveConstEnums": true,
+        "allowJs": true,
+        "sourceMap": true
+    },
+    "filesGlob": [
+        "app/**/*.ts",
+        "app/**/*.tsx"
+    ],
+    "exclude": [
+        "index.android.js",
+        "index.ios.js",
+        "build",
+        "node_modules",
+        "__tests__"
+    ],
+    "compileOnSave": false
+}

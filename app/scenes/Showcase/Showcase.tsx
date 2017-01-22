@@ -27,7 +27,9 @@ const box1Animation = {
   }
 }
 
-export default class Showcase extends React.Component {
+export default class Showcase extends React.Component<any,any> {
+  box1: any
+
   // What's this!? I can still define a custom navBar from within my component.
   // Will likely need this for a NavBar that animates up on scroll.
   static renderNavigationBar( /*props*/ ) {
@@ -60,7 +62,11 @@ export default class Showcase extends React.Component {
   }
 
   triggerBox1Animation = () => {
-    this.refs.box1.trigger()
+    this.box1.trigger()
+  }
+
+  setBox1Ref = ref => {
+    this.box1 = ref
   }
 
   render() {
@@ -79,7 +85,7 @@ export default class Showcase extends React.Component {
           >
             <Animate_
               // repeat
-              ref='box1'
+              ref={this.setBox1Ref}
               autoplay={false}
               duration={1000}
               delay={200}

@@ -1,4 +1,3 @@
-// @flow
 // Imports {{{
 
 import { Provider } from 'mobx-react/native'
@@ -31,7 +30,7 @@ const getSceneStyle = (/*props*/) => ({
 
 const stores = { counter }
 
-export default class App extends React.Component {
+export default class App extends React.Component<any,any> {
   render() {
     return (
       <Provider {...stores} >

@@ -29,7 +29,7 @@ const ImageIcon = props => (
 )
 
 function handleShowProfileDetail() {
-  Actions.profileDetail()
+  Actions['profileDetail']()
 }
 
 const showcaseIconSource = require( 'images/icon-bonfire.png' )
@@ -59,6 +59,7 @@ export default Actions.create(
           <Scene key='profileDetail' component={ProfileDetail} title='Profile Detail' hideTabBar />
 
         </Scene>
+
 
         <Scene key='showcase' component={Showcase} title='Showcase' icon={ImageIcon} imageSource={showcaseIconSource} />
       </Scene>

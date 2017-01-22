@@ -13,7 +13,7 @@ import View from 'constelation-View'
 
 // }}}
 
-export default class Dummy extends React.Component {
+export default class Dummy extends React.Component<any,any> {
   handlePress = () => {
     Actions.pop()
   }

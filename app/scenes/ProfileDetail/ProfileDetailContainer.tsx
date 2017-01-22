@@ -4,17 +4,11 @@
 import { observer, inject } from 'mobx-react/native'
 import React from 'react'
 
-import type { Counter } from 'stores/counter'
-
 import ProfileDetail from './ProfileDetail'
 
 // }}}
 
-class ProfileDetailContainer extends React.Component {
-  props: {
-    counter: Counter
-  }
-
+class ProfileDetailContainer extends React.Component<any,any> {
   handleIncreaseCounter = () => {
     this.props.counter.increase()
   }

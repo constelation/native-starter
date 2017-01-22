@@ -9,7 +9,7 @@ import View from 'constelation-View'
 
 // }}}
 
-export default class Button extends React.Component {
+export default class Button extends React.Component<any,any> {
   render() {
     return (
       <Event_

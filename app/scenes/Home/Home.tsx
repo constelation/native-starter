@@ -10,14 +10,14 @@ import Button from 'shared/Button'
 
 // }}}
 
-export default class Home extends React.Component {
+export default class Home extends React.Component<any,any> {
 
   handleShowFullScreenModal = () => {
-    Actions.fullDetail()
+    Actions['fullDetail']()
   }
 
   handleShowFullScreenModalScene = () => {
-    Actions.fullModal()
+    Actions['fullModal']()
   }
 
   render() {
@@ -32,7 +32,7 @@ export default class Home extends React.Component {
 
         <Button
           marginTop={60}
-          label='Full screen Detail scene'
+          label='Full screen Detail'
           onPress={this.handleShowFullScreenModal}
         />
         <Button
