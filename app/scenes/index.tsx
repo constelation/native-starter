@@ -1,6 +1,3 @@
-// @flow
-// Imports {{{
-
 import { Actions, Scene, Modal } from 'react-native-router-flux'
 import Image from 'constelation-image'
 import React from 'react'
@@ -10,8 +7,6 @@ import Home from './Home'
 import Profile from './Profile'
 import ProfileDetail from './ProfileDetail'
 import Showcase from './Showcase'
-
-// }}}
 
 // const VectorIcon = props => (
 //   <Icon
@@ -24,7 +19,7 @@ import Showcase from './Showcase'
 const ImageIcon = props => (
   <Image
     source={props.imageSource}
-    style={props.selected && {tintColor: 'black'}}
+    style={props.selected && { tintColor: 'black' }}
   />
 )
 
@@ -32,7 +27,7 @@ function handleShowProfileDetail() {
   Actions['profileDetail']()
 }
 
-const showcaseIconSource = require( 'images/icon-bonfire.png' )
+const showcaseIconSource = require('images/icon-bonfire.png')
 
 // Root is wrapped in a Modal for the full screen from bottom scenes, like Dummy
 // The first 2 Scenes are important configuration for the rest of the app!

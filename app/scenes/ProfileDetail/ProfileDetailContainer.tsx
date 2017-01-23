@@ -1,14 +1,14 @@
-// @flow
-// Imports {{{
-
 import { observer, inject } from 'mobx-react/native'
 import React from 'react'
-
+import { Counter } from 'stores/counter'
 import ProfileDetail from './ProfileDetail'
 
-// }}}
+interface Props {
+  counter: Counter
+}
 
-class ProfileDetailContainer extends React.Component<any,any> {
+@inject('counter') @observer
+export default class ProfileDetailContainer extends React.Component<Props, void> {
   handleIncreaseCounter = () => {
     this.props.counter.increase()
   }
@@ -22,5 +22,3 @@ class ProfileDetailContainer extends React.Component<any,any> {
     )
   }
 }
-
-export default inject('counter')(observer(ProfileDetailContainer))

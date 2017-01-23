@@ -1,6 +1,3 @@
-// @flow
-// Imports {{{
-
 import { Actions } from 'react-native-router-flux'
 import Image from 'constelation-image'
 import React from 'react'
@@ -8,9 +5,7 @@ import View from 'constelation-View'
 
 import Button from 'shared/Button'
 
-// }}}
-
-export default class Home extends React.Component<any,any> {
+export default class Home extends React.Component<void, void> {
 
   handleShowFullScreenModal = () => {
     Actions['fullDetail']()

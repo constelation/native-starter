@@ -1,6 +1,3 @@
-// @flow
-// Imports {{{
-
 import Animate_ from 'constelation-Animate_'
 import Col from 'constelation-Col'
 import Event_ from 'constelation-Event_'
@@ -11,8 +8,6 @@ import ScrollView from 'constelation-scroll-view'
 import Style_ from 'constelation-Style_'
 import Text from 'constelation-Text'
 import View from 'constelation-View'
-
-// }}}
 
 const box1Animation = {
   from: {
@@ -27,12 +22,13 @@ const box1Animation = {
   }
 }
 
-export default class Showcase extends React.Component<any,any> {
+export default class Showcase extends React.Component<void, void> {
+  // box1: React.ReactElement<Animate_>
   box1: any
 
   // What's this!? I can still define a custom navBar from within my component.
   // Will likely need this for a NavBar that animates up on scroll.
-  static renderNavigationBar( /*props*/ ) {
+  static renderNavigationBar( /*props*/) {
     return (
       <Style_
         backgroundColor='#EFEFEF'
@@ -92,8 +88,8 @@ export default class Showcase extends React.Component<any,any> {
               easing='inOut'
               // animation='fade-in'
               animation={box1Animation}
-              onStart={() => {console.log('onStart')}}
-              onEnd={() => {console.log('onEnd')}}
+              onStart={() => { console.log('onStart') }}
+              onEnd={() => { console.log('onEnd') }}
             >
               <Style_ backgroundColor='purple' >
                 <View height={200} />

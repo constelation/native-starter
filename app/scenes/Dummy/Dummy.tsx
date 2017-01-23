@@ -1,6 +1,3 @@
-// @flow
-// Imports {{{
-
 import { Actions } from 'react-native-router-flux'
 import {
   StatusBar,
@@ -11,9 +8,7 @@ import Style_ from 'constelation-Style_'
 import Text from 'constelation-Text'
 import View from 'constelation-View'
 
-// }}}
-
-export default class Dummy extends React.Component<any,any> {
+export default class Dummy extends React.Component<void, void> {
   handlePress = () => {
     Actions.pop()
   }

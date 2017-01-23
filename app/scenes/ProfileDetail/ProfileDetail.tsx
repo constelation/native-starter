@@ -1,19 +1,14 @@
-// @flow
-// Imports {{{
-
 import Event_ from 'constelation-Event_'
 import React from 'react'
 import Text from 'constelation-Text'
 import View from 'constelation-View'
 
-// }}}
+interface Props {
+  value: number,
+  onIncreaseCounter: Function,
+}
 
-export default class ProfileDetail extends React.Component<any,any> {
-  props: {
-    value: number,
-    onIncreaseCounter: Function,
-  }
-
+export default class ProfileDetail extends React.Component<Props, void> {
   render() {
     return (
       <View

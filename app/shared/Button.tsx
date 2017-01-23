@@ -1,19 +1,19 @@
-// @flow
-// imports {{{
-
 import Event_ from 'constelation-Event_'
 import React from 'react'
 import Style_ from 'constelation-Style_'
 import Text from 'constelation-Text'
 import View from 'constelation-View'
 
-// }}}
+interface Props {
+  marginTop: number,
+  label: string,
+  onPress: Function,
+}
 
-export default class Button extends React.Component<any,any> {
+export default class Button extends React.Component<Props, void> {
   render() {
     return (
       <Event_
-        hitSlop={10}
         onPress={this.props.onPress}
         pressEffect='opacity'
       >
