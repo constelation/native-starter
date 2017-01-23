@@ -1,0 +1,81 @@
+{
+    "extends": [
+        "tslint:latest",
+        "tslint-react"
+    ],
+    "rules": {
+        //-- Style --\\
+        "align": [
+            true,
+            "arguments",
+            "parameters",
+            "statements"
+        ],
+        "semicolon": [
+            true,
+            "never"
+        ],
+        "quotemark": [
+            true,
+            "single",
+            "avoid-escape"
+        ],
+        "whitespace": [
+            true,
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-module",
+            "check-separator",
+            "check-type",
+            "check-typecast"
+        ],
+        // if, else blocks on new lines, not same line as closing curly
+        "one-line": [
+            false,
+            "check-catch",
+            "check-else",
+            "check-finally",
+            "check-open-brace",
+            "check-whitespace"
+        ],
+        "object-literal-sort-keys": false,
+        //-- JS --\\
+        "arrow-parens": [
+            true,
+            "ban-single-arg-parens"
+        ],
+        "ordered-imports": [
+            true,
+            {
+                "named-imports-order": "case-insensitive"
+            }
+        ],
+        "import-spacing": true,
+        // we have a few edge cases that require object['key']
+        "no-string-literal": false,
+        // needed for RN images
+        "no-var-requires": false,
+        //-- TS --\\
+        // why? see http://stackoverflow.com/questions/37233735/typescript-interfaces-vs-types
+        "interface-over-type-literal": true,
+        // Would enforce public, private keywords on methods like render()
+        "member-access": false,
+        "member-ordering": [
+            true,
+            {
+                "order": "fields-first"
+            }
+        ],
+        // React
+        "jsx-alignment": true,
+        "jsx-curly-spacing": [
+            true,
+            "never"
+        ],
+        "jsx-no-lambda": true,
+        "jsx-no-multiline-js": false,
+        "jsx-no-string-ref": true,
+        "jsx-self-close": true
+    }
+}

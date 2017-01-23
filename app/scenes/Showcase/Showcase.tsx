@@ -2,12 +2,12 @@ import Animate_ from 'constelation-Animate_'
 import Col from 'constelation-Col'
 import Event_ from 'constelation-Event_'
 import Image from 'constelation-image'
-import React from 'react'
 import Row from 'constelation-Row'
 import ScrollView from 'constelation-scroll-view'
 import Style_ from 'constelation-Style_'
 import Text from 'constelation-Text'
 import View from 'constelation-View'
+import React from 'react'
 
 const box1Animation = {
   from: {
@@ -19,7 +19,7 @@ const box1Animation = {
     opacity: 1,
     width: 200,
     height: 200,
-  }
+  },
 }
 
 export default class Showcase extends React.Component<void, void> {
@@ -88,7 +88,9 @@ export default class Showcase extends React.Component<void, void> {
               easing='inOut'
               // animation='fade-in'
               animation={box1Animation}
+              // tslint:disable-next-line:no-console jsx-no-lambda
               onStart={() => { console.log('onStart') }}
+              // tslint:disable-next-line:no-console jsx-no-lambda
               onEnd={() => { console.log('onEnd') }}
             >
               <Style_ backgroundColor='purple' >
@@ -119,7 +121,7 @@ export default class Showcase extends React.Component<void, void> {
             1: {
               opacity: 1,
               left: 0,
-            }
+            },
           }}
           // easing={Easing.sin}
           duration={400}
@@ -160,7 +162,6 @@ export default class Showcase extends React.Component<void, void> {
             </Style_>
           </Col>
         </Style_>
-
 
       </ScrollView>
     )

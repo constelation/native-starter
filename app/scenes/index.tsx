@@ -1,12 +1,14 @@
-import { Actions, Scene, Modal } from 'react-native-router-flux'
 import Image from 'constelation-image'
 import React from 'react'
+import { Actions, Modal, Scene } from 'react-native-router-flux'
 
 import Dummy from './Dummy'
 import Home from './Home'
 import Profile from './Profile'
 import ProfileDetail from './ProfileDetail'
 import Showcase from './Showcase'
+
+const showcaseIconSource = require('images/icon-bonfire.png')
 
 // const VectorIcon = props => (
 //   <Icon
@@ -27,7 +29,6 @@ function handleShowProfileDetail() {
   Actions['profileDetail']()
 }
 
-const showcaseIconSource = require('images/icon-bonfire.png')
 
 // Root is wrapped in a Modal for the full screen from bottom scenes, like Dummy
 // The first 2 Scenes are important configuration for the rest of the app!
@@ -62,5 +63,5 @@ export default Actions.create(
       <Scene key='fullModal' component={Dummy} direction='vertical' hideNavBar />
 
     </Scene>
-  </Scene>
+  </Scene>,
 )

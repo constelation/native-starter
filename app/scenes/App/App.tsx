@@ -1,7 +1,7 @@
-import { Provider } from 'mobx-react/native'
-import { Router } from 'react-native-router-flux'
-import React from 'react'
 import mobx from 'mobx'
+import { Provider } from 'mobx-react/native'
+import React from 'react'
+import { Router } from 'react-native-router-flux'
 import counter from 'stores/counter'
 
 import scenes from '..'
@@ -13,6 +13,7 @@ mobx.useStrict(true)
 if (__DEV__) {
   mobx.spy(ev => {
     if (ev.type === 'action') {
+      // tslint:disable-next-line:no-console
       console.log(ev.name)
     }
   })

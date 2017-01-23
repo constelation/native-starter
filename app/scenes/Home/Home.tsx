@@ -1,7 +1,7 @@
-import { Actions } from 'react-native-router-flux'
 import Image from 'constelation-image'
-import React from 'react'
 import View from 'constelation-View'
+import React from 'react'
+import { Actions } from 'react-native-router-flux'
 
 import Button from 'shared/Button'
 
@@ -27,7 +27,7 @@ export default class Home extends React.Component<void, void> {
 
         <Button
           marginTop={60}
-          label='Full screen Detail'
+          label='Full screen Detail scene'
           onPress={this.handleShowFullScreenModal}
         />
         <Button

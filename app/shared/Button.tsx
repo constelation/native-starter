@@ -1,16 +1,16 @@
 import Event_ from 'constelation-Event_'
-import React from 'react'
 import Style_ from 'constelation-Style_'
 import Text from 'constelation-Text'
 import View from 'constelation-View'
+import React from 'react'
 
-interface Props {
+interface IProps {
   marginTop: number,
   label: string,
   onPress: Function,
 }
 
-export default class Button extends React.Component<Props, void> {
+export default class Button extends React.Component<IProps, void> {
   render() {
     return (
       <Event_

@@ -1,12 +1,12 @@
-import { Actions } from 'react-native-router-flux'
-import {
-  StatusBar,
-} from 'react-native'
 import Event_ from 'constelation-Event_'
-import React from 'react'
 import Style_ from 'constelation-Style_'
 import Text from 'constelation-Text'
 import View from 'constelation-View'
+import React from 'react'
+import {
+  StatusBar,
+} from 'react-native'
+import { Actions } from 'react-native-router-flux'
 
 export default class Dummy extends React.Component<void, void> {
   handlePress = () => {
