@@ -1,12 +1,18 @@
 {
     "presets": [
+        // this is required for debugging with react-native/packager/transformer
         "react-native"
     ],
+    // must be true react-native/packager/transformer using with node-module-debug
+    // because of some bugs from vscode-node-debug & vscode-react-native, "sourceMaps" cannot be "inline" or "both"
+    "sourceMaps": true,
     "plugins": [
         [
             "module-resolver",
             {
-                "root": ["./build"],
+                "root": [
+                    "./build"
+                ],
                 "alias": {
                     "stores": "./build/stores",
                     "shared": "./build/shared"
