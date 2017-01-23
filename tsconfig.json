@@ -9,7 +9,8 @@
         "baseUrl": ".",
         "paths": {
             "stores/*": ["app/stores/*"],
-            "shared/*": ["app/shared/*"]
+            "shared/*": ["app/shared/*"],
+            "*": ["*.native", "*.ios", "*.android", "*"]
         },
         "allowSyntheticDefaultImports": true,
         // TODO: set back to true
