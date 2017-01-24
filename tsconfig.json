@@ -8,15 +8,25 @@
         "moduleResolution": "node",
         "baseUrl": ".",
         "paths": {
-            "stores/*": ["app/stores/*"],
-            "shared/*": ["app/shared/*"],
-            "*": ["*.native", "*.ios", "*.android", "*"]
+            "stores/*": [
+                "app/stores/*"
+            ],
+            "shared/*": [
+                "app/shared/*"
+            ],
+            // this magic enables our universal components to see the correct platform-specific types
+            "*": [
+                "node_modules/*/index.native",
+                "node_modules/*/index.ios",
+                "node_modules/*/index.android",
+                "*"
+            ]
         },
         "allowSyntheticDefaultImports": true,
-        // TODO: set back to true
-        "noImplicitAny": false,
+        "noImplicitAny": true,
         "experimentalDecorators": true,
         "preserveConstEnums": true,
+        "removeComments": true,
         "allowJs": true,
         "sourceMap": true
     },

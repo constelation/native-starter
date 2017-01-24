@@ -18,7 +18,12 @@ const showcaseIconSource = require('images/icon-bonfire.png')
 //   />
 // )
 
-const ImageIcon = props => (
+interface IPropsImageIcon {
+  imageSource?: number,
+  selected?: boolean,
+}
+
+const ImageIcon = (props: IPropsImageIcon) => (
   <Image
     source={props.imageSource}
     style={props.selected && { tintColor: 'black' }}
