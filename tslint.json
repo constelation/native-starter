@@ -1,5 +1,6 @@
 {
     "rulesDirectory": [
+        // "node_modules/vrsource-tslint-rules/rules",
         "node_modules/tslint-eslint-rules/dist/rules"
     ],
     "extends": [
@@ -7,6 +8,23 @@
         "tslint-react"
     ],
     "rules": {
+        //-- vrsource --\\
+        // So close! Almost allows the spacing I want
+        // "literal-spacing": [
+        //     true,
+        //     {
+        //         "array": [
+        //             "never"
+        //         ],
+        //         "object": [
+        //             "never"
+        //         ],
+        //         "import": [
+        //             "always"
+        //         ]
+        //     }
+        // ],
+        // "prefer-case-blocks": true,
         //-- eslint --\\
         "array-bracket-spacing": [
             true,
@@ -23,6 +41,12 @@
             true,
             "stroustrup"
         ],
+        // "object-curly-spacing": [
+        //     true,
+        //     "never"
+        // ],
+        // NOTE: not able to use this while vscode curly formatter is not configurable
+        // see https://github.com/Microsoft/TypeScript/issues/9613
         // "object-curly-spacing": [
         //     true,
         //     "never"
