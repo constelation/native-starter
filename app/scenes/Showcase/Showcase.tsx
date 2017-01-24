@@ -88,9 +88,9 @@ export default class Showcase extends React.Component<void, void> {
               easing='inOut'
               // animation='fade-in'
               animation={box1Animation}
-              // tslint:disable-next-line:no-console jsx-no-lambda
+              // tslint:disable-next-line:no-console jsx-no-lambda brace-style
               onStart={() => { console.log('onStart') }}
-              // tslint:disable-next-line:no-console jsx-no-lambda
+              // tslint:disable-next-line:no-console jsx-no-lambda brace-style
               onEnd={() => { console.log('onEnd') }}
             >
               <Style_ backgroundColor='purple' >

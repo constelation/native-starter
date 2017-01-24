@@ -1,9 +1,32 @@
 {
+    "rulesDirectory": [
+        "node_modules/tslint-eslint-rules/dist/rules"
+    ],
     "extends": [
         "tslint:latest",
         "tslint-react"
     ],
     "rules": {
+        //-- eslint --\\
+        "array-bracket-spacing": [
+            true,
+            "never"
+        ],
+        // single line blocks
+        "block-spacing": [
+            true,
+            "always"
+        ],
+        "no-duplicate-case": true,
+        // if and else on separate lines
+        "brace-style": [
+            true,
+            "stroustrup"
+        ],
+        // "object-curly-spacing": [
+        //     true,
+        //     "never"
+        // ],
         //-- Style --\\
         "align": [
             true,

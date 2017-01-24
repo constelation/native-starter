@@ -20,10 +20,17 @@
             ]
         },
         {
+            "taskName": "lint",
+            "args": [
+                "run",
+                "lint"
+            ]
+        },
+        {
             "taskName": "build",
             "args": [
                 "run",
-                "build-watch"
+                "build:watch"
             ]
         },
         {
