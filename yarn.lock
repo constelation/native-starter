@@ -3342,6 +3342,10 @@ react-native-router-flux@^3.30.0:
     react-native-tabs "^1.0.9"
     react-static-container "1.0.1"
 
+react-native-sm-transformer@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-native-sm-transformer/-/react-native-sm-transformer-1.0.2.tgz#5a4ec6ef0ab0c0f23a817fb5805cea70711721fc"
+
 react-native-tabs@^1.0.9:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/react-native-tabs/-/react-native-tabs-1.0.9.tgz#75d3c35e8b5b6970869eab282372cb32e2a782cd"
