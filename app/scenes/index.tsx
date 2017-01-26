@@ -3,7 +3,7 @@ import React from 'react'
 // import { Actions, Modal, Scene } from 'react-native-router-flux'
 // HACK: type Scene to any while typedef is invalid
 import { Actions, Modal } from 'react-native-router-flux'
-const Scene: any = require('react-native-router-flux')
+const Scene: any = require('react-native-router-flux').Scene
 
 import Dummy from './Dummy'
 import Home from './Home'
