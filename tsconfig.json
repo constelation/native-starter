@@ -39,6 +39,7 @@
         "index.ios.js",
         "build",
         "node_modules",
+        "node_modules/react-native-router-flux/index.d.ts",
         "__tests__"
     ],
     "compileOnSave": false

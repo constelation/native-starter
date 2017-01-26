@@ -1,7 +1,7 @@
-import Event_ from 'constelation-Event_'
-import Style_ from 'constelation-Style_'
-import Text from 'constelation-Text'
-import View from 'constelation-View'
+import Event_ from 'constelation-event_'
+import Style_ from 'constelation-style_'
+import Text from 'constelation-text'
+import View from 'constelation-view'
 import React from 'react'
 
 interface IProps {

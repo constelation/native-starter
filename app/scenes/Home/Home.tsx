@@ -1,5 +1,5 @@
 import Image from 'constelation-image'
-import View from 'constelation-View'
+import View from 'constelation-view'
 import React from 'react'
 import { Actions } from 'react-native-router-flux'
 

@@ -28,9 +28,9 @@ flow/
 node_modules/constelation-Col/index.native.js.flow
 node_modules/constelation-image/index.native.js.flow
 node_modules/constelation-Row/index.native.js.flow
-node_modules/constelation-Event_/index.native.js.flow
-node_modules/constelation-Style_/index.native.js.flow
-node_modules/constelation-View/index.native.js.flow
+node_modules/constelation-event_/index.native.js.flow
+node_modules/constelation-style_/index.native.js.flow
+node_modules/constelation-view/index.native.js.flow
 node_modules/constelation-scroll-view/index.native.js.flow
 node_modules/constelation-Flex/index.native.js.flow
 node_modules/constelation-Text/index.native.js.flow
