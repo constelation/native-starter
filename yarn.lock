@@ -8,9 +8,9 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^15.0.2":
-  version "15.0.2"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-15.0.2.tgz#146c80453467d7189838b52622e71086eca17cab"
+"@types/react@*", "@types/react@^15.0.4":
+  version "15.0.4"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-15.0.4.tgz#97aedbba00448a137331aa8450232124aeb8d426"
 
 abab@^1.0.0:
   version "1.0.3"
@@ -1167,9 +1167,9 @@ constelation-style_@^7.0.1:
   optionalDependencies:
     glamor "^2.17.12"
 
-constelation-text@^7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/constelation-text/-/constelation-text-7.0.1.tgz#615cb3da61871a9713e88267804560ffe4d792dc"
+constelation-text@^7.0.2:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/constelation-text/-/constelation-text-7.0.2.tgz#1c7c5bd8298c9699ce07220c7e19fe9ec4b9f47a"
   optionalDependencies:
     glamor "^2.17.12"
 
@@ -1643,10 +1643,6 @@ findup-sync@~0.3.0:
   resolved "https://registry.yarnpkg.com/findup-sync/-/findup-sync-0.3.0.tgz#37930aa5d816b777c03445e1966cc6790a4c0b16"
   dependencies:
     glob "~5.0.0"
-
-flow-bin@^0.36.0:
-  version "0.36.0"
-  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.36.0.tgz#557907bd9c2ab0670cfad9e7e906a74b0631e39a"
 
 for-in@^0.1.5:
   version "0.1.6"
@@ -3342,10 +3338,6 @@ react-native-router-flux@^3.30.0:
     react-native-tabs "^1.0.9"
     react-static-container "1.0.1"
 
-react-native-sm-transformer@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/react-native-sm-transformer/-/react-native-sm-transformer-1.0.2.tgz#5a4ec6ef0ab0c0f23a817fb5805cea70711721fc"
-
 react-native-tabs@^1.0.9:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/react-native-tabs/-/react-native-tabs-1.0.9.tgz#75d3c35e8b5b6970869eab282372cb32e2a782cd"
@@ -3897,7 +3889,7 @@ spdx-license-ids@^1.0.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/spdx-license-ids/-/spdx-license-ids-1.2.2.tgz#c9df7a3424594ade6bd11900d596696dc06bac57"
 
-sprintf-js@^1.0.3, sprintf-js@~1.0.2:
+sprintf-js@~1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
 
@@ -4063,9 +4055,9 @@ tslint-react@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/tslint-react/-/tslint-react-2.3.0.tgz#4d10ea96de278458aac3f9a7f616a442a18634a2"
 
-tslint@^4.0.0, tslint@^4.3.1:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/tslint/-/tslint-4.3.1.tgz#28f679c53ca4b273688bcb6fcf0dde7ff1bb2169"
+tslint@^4.0.0, tslint@^4.4.2:
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/tslint/-/tslint-4.4.2.tgz#b14cb79ae039c72471ab4c2627226b940dda19c6"
   dependencies:
     babel-code-frame "^6.20.0"
     colors "^1.1.2"
@@ -4074,7 +4066,6 @@ tslint@^4.0.0, tslint@^4.3.1:
     glob "^7.1.1"
     optimist "~0.6.0"
     resolve "^1.1.7"
-    underscore.string "^3.3.4"
     update-notifier "^1.0.2"
 
 tsscmp@1.0.5:
@@ -4140,13 +4131,6 @@ ultron@1.0.x:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/ultron/-/ultron-1.0.2.tgz#ace116ab557cd197386a4e88f4685378c8b2e4fa"
 
-underscore.string@^3.3.4:
-  version "3.3.4"
-  resolved "https://registry.yarnpkg.com/underscore.string/-/underscore.string-3.3.4.tgz#2c2a3f9f83e64762fdc45e6ceac65142864213db"
-  dependencies:
-    sprintf-js "^1.0.3"
-    util-deprecate "^1.0.2"
-
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
@@ -4174,7 +4158,7 @@ url-parse-lax@^1.0.0:
   dependencies:
     prepend-http "^1.0.1"
 
-util-deprecate@1.0.2, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
+util-deprecate@1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
 

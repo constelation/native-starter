@@ -1,4 +1,4 @@
-# Native-Starter
+# Constelation's Typescript React-Native Starter
 A starter repo for iOS and Android with a Navigator, TabBar, and MobX store for app state.
 
 ### Up and Running
@@ -11,13 +11,10 @@ $ git remote set-url origin <YOUR_NEWLY_CREATED_GIT_REPO_URL>
 $ npm install
 ```
 
-#### Environment Setup
-
-ToDo
-
 #### How to Run
 ##### iOS
 ```shell
+$ npm run build:dev             # Start tsc in watch mode to convert .ts -> babel
 $ npm start                     # Start react-native packager server, which serves up the js bundle to the emulators
 $ npm run xcode                 # Open xcode for the project
 ```
@@ -28,7 +25,8 @@ Click on Play button (cmd+r) to run the app on the ios Simulator
 You will need a maximum of 3 terminal tabs/windows to run the React Native packager, Android Virtual Devices, and view the Android logs
 
 ```shell
-$ npm start                     # note: not needed if it is already running (from ios step)
+$ npm run build:dev
+$ npm start
 $ npm run android-emulator      # Open the android emulator manager
 ```
 
@@ -83,11 +81,6 @@ $ npm run android               # Deploy the app to the already running emulator
 - `npm run android` - run app on emulator and show logs in terminal
 - `npm run reinstall` - wipe out `node_modules`, reset `watchman`, then install `node_modules` again
 - `npm run upgrade` - `react-native upgrade`, then `react-native link` (BE SURE TO READ THE UPGRADE DOC ABOVE!)
-
-#### [import-js](https://github.com/Galooshi/import-js) for auto-imports
-This project is set up for [import-js](https://github.com/Galooshi/import-js) to organize and include your imports. Just
-create a new file, start writing the code that matters, then fire off a `ImportJSFix` from your editor to have it
-auto-populate.
 
 ### Support
 
