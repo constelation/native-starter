@@ -4,7 +4,7 @@ A starter repo for iOS and Android with a Navigator, TabBar, and MobX store for 
 ### Up and Running
 
 ```shell
-$ git clone git@github.com:constelation/native-starter.git <YOUR_REPO_NAME>
+$ git clone git@github.com:constelation/ts-native-starter.git <YOUR_REPO_NAME>
 $ cd <YOUR_REPO_NAME>
 $ ./rename.sh <YourProjectName>    # this script will rename your project from NativeStarter
 $ git remote set-url origin <YOUR_NEWLY_CREATED_GIT_REPO_URL>
