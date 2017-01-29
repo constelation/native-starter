@@ -1,4 +1,4 @@
-# Native-Starter
+# Constelation's React-Native Starter (FlowType)
 A starter repo for iOS and Android with a Navigator, TabBar, and MobX store for app state.
 
 ### Up and Running
@@ -10,10 +10,6 @@ $ ./rename.sh <YourProjectName>    # this script will rename your project from N
 $ git remote set-url origin <YOUR_NEWLY_CREATED_GIT_REPO_URL>
 $ npm install
 ```
-
-#### Environment Setup
-
-ToDo
 
 #### How to Run
 ##### iOS
@@ -82,7 +78,7 @@ $ npm run android               # Deploy the app to the already running emulator
 - `npm run android-emulator` - launch Android Virtual Device Manager (to start emulator)
 - `npm run android` - run app on emulator and show logs in terminal
 - `npm run reinstall` - wipe out `node_modules`, reset `watchman`, then install `node_modules` again
-- `npm run upgrade` - `react-native upgrade`, then `react-native link` (BE SURE TO READ THE UPGRADE DOC ABOVE!)
+- `npm run upgrade` - `react-native upgrade`, then `react-native link`
 
 #### [import-js](https://github.com/Galooshi/import-js) for auto-imports
 This project is set up for [import-js](https://github.com/Galooshi/import-js) to organize and include your imports. Just
