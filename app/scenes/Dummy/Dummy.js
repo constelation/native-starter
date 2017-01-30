@@ -1,7 +1,6 @@
 // @flow
 // Imports {{{
 
-import { Actions } from 'react-native-router-flux'
 import {
   StatusBar,
 } from 'react-native'
@@ -13,9 +12,16 @@ import View from 'constelation-View'
 
 // }}}
 
-export default class Dummy extends React.Component {
+type Props = {
+  navigation: {
+    goBack: Function,
+  },
+}
+
+export default class Dummy extends React.Component<void, Props, void> {
+
   handlePress = () => {
-    Actions.pop()
+    this.props.navigation.goBack()
   }
 
   render() {

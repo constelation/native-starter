@@ -8,12 +8,12 @@ import View from 'constelation-View'
 
 // }}}
 
-export default class Profile extends React.Component {
-  props: {
-    value: number,
-    onIncreaseCounter: Function,
-  }
+type Props = {
+  value: number,
+  onIncreaseCounter: Function,
+}
 
+export default class Profile extends React.Component<void, Props, void> {
   render() {
     return (
       <View

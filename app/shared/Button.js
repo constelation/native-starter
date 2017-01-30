@@ -9,7 +9,12 @@ import View from 'constelation-View'
 
 // }}}
 
-export default class Button extends React.Component {
+type Props = {
+  label: string,
+  marginTop?: number,
+  onPress: Function
+}
+export default class Button extends React.Component<void, Props, void> {
   render() {
     return (
       <Event_

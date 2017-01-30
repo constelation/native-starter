@@ -16,6 +16,7 @@
 
 .*/node_modules/react-native-experimental-navigation/.*
 .*/node_modules/react-static-container/.*
+.*/node_modules/react-navigation/.*
 
 [include]
 
@@ -44,6 +45,9 @@ esproposal.class_instance_fields=enable
 experimental.strict_type_args=true
 
 munge_underscores=true
+
+; ignore react-navigation for now
+module.name_mapper='^react-navigation$' -> 'emptyObject'
 
 module.name_mapper='^[./a-zA-Z0-9$_-]+\.\(bmp\|gif\|jpg\|jpeg\|png\|psd\|svg\|webp\|m4v\|mov\|mp4\|mpeg\|mpg\|webm\|aac\|aiff\|caf\|m4a\|mp3\|wav\|html\|pdf\)$' -> 'RelativeImageStub'
 

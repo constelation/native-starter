@@ -9,7 +9,6 @@ import React from 'react'
 import Row from 'constelation-Row'
 import ScrollView from 'constelation-scroll-view'
 import Style_ from 'constelation-Style_'
-import Text from 'constelation-Text'
 import View from 'constelation-View'
 
 // }}}
@@ -24,39 +23,21 @@ const box1Animation = {
     opacity: 1,
     width: 200,
     height: 200,
-  }
+  },
 }
 
 export default class Showcase extends React.Component {
-  // What's this!? I can still define a custom navBar from within my component.
-  // Will likely need this for a NavBar that animates up on scroll.
-  static renderNavigationBar( /*props*/ ) {
-    return (
-      <Style_
-        backgroundColor='#EFEFEF'
-        borderBottomWidth={0.5}
-        borderBottomColor='#828287'
-      >
-        <View
-          alignVertical='center'
-          paddingTop={10}
-          position='absolute'
-          top={0}
-          height={64}
-          right={0}
-          left={0}
-        >
-          <Text
-            center
-            weight='500'
-            size={18}
-            color='#111111'
-          >
-            Showcase
-          </Text>
-        </View>
-      </Style_>
-    )
+
+  static navigationOptions = {
+    tabBar: {
+      label: 'Showcase',
+      icon: ({ tintColor }) => (
+        <Image
+          source={require('images/icon-lab.png')}
+          tintColor={tintColor}
+        />
+       ),
+    },
   }
 
   triggerBox1Animation = () => {
@@ -117,7 +98,7 @@ export default class Showcase extends React.Component {
             1: {
               opacity: 1,
               left: 0,
-            }
+            },
           }}
           // easing={Easing.sin}
           duration={400}

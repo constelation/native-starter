@@ -10,9 +10,14 @@ import ProfileDetail from './ProfileDetail'
 
 // }}}
 
-class ProfileDetailContainer extends React.Component {
-  props: {
-    counter: Counter
+type Props = {
+  counter: Counter
+}
+
+class ProfileDetailContainer extends React.Component<void, Props, void> {
+
+  static navigationOptions = {
+    title: () => `Profile Detail`,
   }
 
   handleIncreaseCounter = () => {

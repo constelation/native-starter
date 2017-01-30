@@ -1,7 +1,6 @@
 // @flow
 // Imports {{{
 
-import { Actions } from 'react-native-router-flux'
 import Image from 'constelation-image'
 import React from 'react'
 import View from 'constelation-View'
@@ -10,14 +9,35 @@ import Button from 'shared/Button'
 
 // }}}
 
-export default class Home extends React.Component {
+type Props = {
+  navigation: {
+    navigate: Function,
+  },
+}
+
+export default class Home extends React.Component<void, Props, void> {
+
+  static navigationOptions = {
+    tabBar: {
+      label: 'Home',
+      icon: ({ tintColor }) => (
+        <Image
+          source={require('images/icon-home.png')}
+          tintColor={tintColor}
+        />
+      ),
+    },
+  }
 
   handleShowFullScreenModal = () => {
-    Actions.fullDetail()
+    this.props.navigation.navigate('Dummy')
   }
 
   handleShowFullScreenModalScene = () => {
-    Actions.fullModal()
+    //TODO use custom Transition to support modal transition here
+    // see CardStack https://github.com/react-community/react-navigation/blob/master/src/views/CardStack.js
+    // and TransitionConfigs https://github.com/react-community/react-navigation/blob/master/src/views/TransitionConfigs.js
+    this.props.navigation.navigate('Dummy')
   }
 
   render() {
