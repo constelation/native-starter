@@ -29,18 +29,7 @@ NSString *wifiIP = nil; // no need to set this now (set only as a manual overrid
 {
   NSURL *jsCodeLocation = nil;
 
-#ifndef DEBUG // PRODUCTION
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
-  /* jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"]; */
-#else
-  if (!useBundle) {
-    NSString *address = @"localhost";
-    if (isDevice && !wifiIP) {
-      address = [self readAddressFromFile] ?: address;
-    }
-    jsCodeLocation = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@:8081/index.ios.bundle?platform=ios&dev=true", address]];
-  }
-#endif
 
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"NativeStarter"
