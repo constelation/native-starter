@@ -3,7 +3,7 @@
 
 import Image from 'constelation-image'
 import React from 'react'
-import View from 'constelation-View'
+import View from 'constelation-view'
 
 import Button from 'shared/Button'
 

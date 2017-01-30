@@ -4,11 +4,11 @@
 import {
   StatusBar,
 } from 'react-native'
-import Event_ from 'constelation-Event_'
+import Event_ from 'constelation-event_'
 import React from 'react'
-import Style_ from 'constelation-Style_'
-import Text from 'constelation-Text'
-import View from 'constelation-View'
+import Style_ from 'constelation-style_'
+import Text from 'constelation-text'
+import View from 'constelation-view'
 
 // }}}
 

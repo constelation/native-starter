@@ -1,15 +1,13 @@
 // @flow
 // Imports {{{
 
-import Animate_ from 'constelation-Animate_'
-import Col from 'constelation-Col'
-import Event_ from 'constelation-Event_'
+import Animate_ from 'constelation-animate_'
+import Event_ from 'constelation-event_'
 import Image from 'constelation-image'
 import React from 'react'
-import Row from 'constelation-Row'
 import ScrollView from 'constelation-scroll-view'
-import Style_ from 'constelation-Style_'
-import View from 'constelation-View'
+import Style_ from 'constelation-style_'
+import View from 'constelation-view'
 
 // }}}
 
@@ -51,7 +49,7 @@ export default class Showcase extends React.Component {
         marginTop={65}
         marginBottom={50}
       >
-        <Row>
+        <View horizontal>
           <Event_
             hitSlop={20}
             onPress={this.triggerBox1Animation}
@@ -84,7 +82,7 @@ export default class Showcase extends React.Component {
               <View height={200} width={200} />
             </Style_>
           </Animate_>
-        </Row>
+        </View>
 
         <Animate_
           animation={{
@@ -110,7 +108,7 @@ export default class Showcase extends React.Component {
           backgroundColor='lightgrey'
           opacity={0.5}
         >
-          <Row height={200} >
+          <View horizontal height={200} >
             <Style_ backgroundColor='red' >
               <View width={50} />
             </Style_>
@@ -120,14 +118,14 @@ export default class Showcase extends React.Component {
             <Style_ backgroundColor='blue' >
               <View width={50} />
             </Style_>
-          </Row>
+          </View>
         </Style_>
 
         <Style_
           backgroundColor='grey'
           opacity={0.5}
         >
-          <Col height={200} >
+          <View height={200} >
             <Style_ backgroundColor='red' >
               <View height={50} />
             </Style_>
@@ -137,7 +135,7 @@ export default class Showcase extends React.Component {
             <Style_ backgroundColor='blue' >
               <View height={50} />
             </Style_>
-          </Col>
+          </View>
         </Style_>
 
 

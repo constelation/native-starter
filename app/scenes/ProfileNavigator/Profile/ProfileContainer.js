@@ -2,10 +2,10 @@
 // Imports {{{
 
 import { observer, inject } from 'mobx-react/native'
-import Event_ from 'constelation-Event_'
+import Event_ from 'constelation-event_'
 import React from 'react'
-import Text from 'constelation-Text'
-import View from 'constelation-View'
+import Text from 'constelation-text'
+import View from 'constelation-view'
 
 import type { Counter } from 'stores/counter'
 
