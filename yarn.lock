@@ -1236,10 +1236,29 @@ connect@^2.8.3:
     utils-merge "1.0.0"
     vhost "~3.0.1"
 
-constelation-animate_@^7.0.3:
-  version "7.0.3"
-  resolved "https://registry.yarnpkg.com/constelation-animate_/-/constelation-animate_-7.0.3.tgz#a4a9af5700b87fbe3f4c03feaa6f1f2a40532afc"
+constelation-Col@^6.5.0:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/constelation-Col/-/constelation-Col-6.5.0.tgz#b22454c9396e456be7d59a349447319e1808c836"
   dependencies:
+    constelation-flex-component-factory "^6.5.0"
+
+constelation-Flex@^6.5.0:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/constelation-Flex/-/constelation-Flex-6.5.0.tgz#a82e0e8255c6839f9e36588bc5cded9a25807f2d"
+  dependencies:
+    constelation-flex-component-factory "^6.5.0"
+
+constelation-Row@^6.5.0:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/constelation-Row/-/constelation-Row-6.5.0.tgz#6dfcc8204215a7f0cfebf96f2f450dea37ed4839"
+  dependencies:
+    constelation-flex-component-factory "^6.5.0"
+
+constelation-animate_@^8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/constelation-animate_/-/constelation-animate_-8.2.0.tgz#2ce60e8016439739083e20c84ebd0df2249ed368"
+  dependencies:
+    mitt "^1.0.1"
     raf "^3.3.0"
     react-addons-shallow-compare "^15.3.1"
   optionalDependencies:
@@ -1250,6 +1269,10 @@ constelation-event_@^7.0.3:
   resolved "https://registry.yarnpkg.com/constelation-event_/-/constelation-event_-7.0.3.tgz#ae153ab3d649b28ced15ef974faa05bee4015d80"
   optionalDependencies:
     hammerjs "^2.0.8"
+
+constelation-flex-component-factory@^6.5.0:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/constelation-flex-component-factory/-/constelation-flex-component-factory-6.5.0.tgz#a6a5e0e49f6f7003891fbd9423cf45a4337e0485"
 
 constelation-image@^7.0.3:
   version "7.0.3"
@@ -1263,9 +1286,9 @@ constelation-scroll-view@^7.0.3:
   optionalDependencies:
     glamor "^2.17.12"
 
-constelation-style_@^7.0.3:
-  version "7.0.3"
-  resolved "https://registry.yarnpkg.com/constelation-style_/-/constelation-style_-7.0.3.tgz#795cfd4b3100ef69f1bf51f9d7da22da781d1f68"
+constelation-style_@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/constelation-style_/-/constelation-style_-8.0.0.tgz#75764d8f5231923cd52cc0dbede8503455a755c7"
   optionalDependencies:
     glamor "^2.17.12"
 
@@ -3149,6 +3172,10 @@ minimist@0.0.8, minimist@~0.0.1:
 minimist@^1.1.0, minimist@^1.1.1, minimist@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
+
+mitt@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/mitt/-/mitt-1.0.1.tgz#dd7f850967acc0b13420ac0e3e1ff69a3b1b029c"
 
 mkdirp@^0.5.0, mkdirp@^0.5.1:
   version "0.5.1"
