@@ -30,11 +30,14 @@
     ]
   },
   "dependencies": {
-    "constelation-animate_": "^7.0.3",
+    "constelation-Col": "^6.5.0",
+    "constelation-Flex": "^6.5.0",
+    "constelation-Row": "^6.5.0",
+    "constelation-animate_": "^8.2.0",
     "constelation-event_": "^7.0.3",
     "constelation-image": "^7.0.3",
     "constelation-scroll-view": "^7.0.3",
-    "constelation-style_": "^7.0.3",
+    "constelation-style_": "^8.0.0",
     "constelation-text": "^7.0.3",
     "constelation-view": "^7.0.3",
     "lodash": "^4.17.4",
