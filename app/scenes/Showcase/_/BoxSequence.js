@@ -74,7 +74,7 @@ export default class BoxSequence extends React.Component {
           animation={box1Animation}
           onEndEvent='BOX_2_END'
         >
-          <Style_ backgroundColor='purple' >
+          <Style_ backgroundColor='black' >
             <View height={200} />
           </Style_>
         </Animate_>

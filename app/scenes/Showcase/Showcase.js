@@ -79,13 +79,13 @@ export default class Showcase extends React.Component {
                 rotate: '360deg',
               },
             `}
-            duration={800}
-            easing='linear'
-            onEnd={this.handleEndLogoAnimation}
-          >
-            <Image source={require('images/logo.png')} />
-          </Animate_>
-        </Event_>
+              duration={800}
+              easing='linear'
+              onEnd={this.handleEndLogoAnimation}
+            >
+              <Image source={require('images/logo.png')} />
+            </Animate_>
+          </Event_>
 
           <Style_
             backgroundColor='lightgrey'
