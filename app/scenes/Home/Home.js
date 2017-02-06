@@ -105,7 +105,7 @@ export default class Home extends React.Component<void, Props, void> {
         grow
       >
         <Animate_
-          autostart
+          start
           animation={`
             0: {
               translateY: 100,
@@ -127,9 +127,9 @@ export default class Home extends React.Component<void, Props, void> {
         </Animate_>
 
         <Animate_
+          startOnEvent={EVENTS.END_HERO}
           animation='fadeIn'
           duration={300}
-          startEvent={EVENTS.END_HERO}
         >
           <View>
             <Button

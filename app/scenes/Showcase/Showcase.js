@@ -1,7 +1,8 @@
 // @flow
 // Imports {{{
 
-import Animate_, { AnimationConfig, emit } from 'constelation-animate_'
+import Animate_, { AnimationConfig, emitAnimationEvent } from 'constelation-animate_'
+import Event_ from 'constelation-event_'
 import Image from 'constelation-image'
 import React from 'react'
 import ScrollView from 'constelation-scroll-view'
@@ -27,10 +28,22 @@ export default class Showcase extends React.Component {
     },
   }
 
+  state = {
+    startLogoAnimation: false,
+  }
+
   componentDidMount() {
     // Note the global event emitted
     // Not the best example. but showing that it is possible
-    setTimeout(() => {emit('BOX_SEQUENCE')}, 1000)
+    setTimeout(() => {emitAnimationEvent('BOX_SEQUENCE')}, 1000)
+  }
+
+  handleStartLogoAnimation = () => {
+    this.setState({startLogoAnimation: true})
+  }
+
+  handleEndLogoAnimation = () => {
+    this.setState( {startLogoAnimation: false} )
   }
 
   render() {
@@ -44,11 +57,12 @@ export default class Showcase extends React.Component {
 
           <BoxSequence />
 
-          <Animate_
-            autostart
-            repeat={8}
-            direction='alternate'
-            animation={`
+          <Event_ onPress={this.handleStartLogoAnimation} >
+            <Animate_
+              start={this.state.startLogoAnimation}
+              repeat={2}
+              direction='alternate'
+              animation={`
               0: {
                 opacity: 0.5,
                 translateX: 0,
@@ -67,9 +81,11 @@ export default class Showcase extends React.Component {
             `}
             duration={800}
             easing='linear'
+            onEnd={this.handleEndLogoAnimation}
           >
             <Image source={require('images/logo.png')} />
           </Animate_>
+        </Event_>
 
           <Style_
             backgroundColor='lightgrey'

@@ -1236,9 +1236,9 @@ connect@^2.8.3:
     utils-merge "1.0.0"
     vhost "~3.0.1"
 
-constelation-animate_@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/constelation-animate_/-/constelation-animate_-9.0.0.tgz#02b771503a5baab72aed38a5c73284adac823687"
+constelation-animate_@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/constelation-animate_/-/constelation-animate_-10.0.0.tgz#1f829e153fac3073952ffe36565a075fd85346ba"
   dependencies:
     json5 "^0.5.1"
     mitt "^1.0.1"

@@ -30,7 +30,7 @@
     ]
   },
   "dependencies": {
-    "constelation-animate_": "^9.0.0",
+    "constelation-animate_": "^10.0.0",
     "constelation-event_": "^7.0.3",
     "constelation-image": "^7.0.3",
     "constelation-scroll-view": "^7.0.3",
