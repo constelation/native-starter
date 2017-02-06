@@ -1,30 +1,19 @@
 // @flow
 // Imports {{{
 
-import Animate_ from 'constelation-animate_'
-import Event_ from 'constelation-event_'
+import Animate_, { AnimationConfig, emit } from 'constelation-animate_'
 import Image from 'constelation-image'
 import React from 'react'
 import ScrollView from 'constelation-scroll-view'
 import Style_ from 'constelation-style_'
 import View from 'constelation-view'
 
+import BoxSequence from './_/BoxSequence'
+
 // }}}
 
-const box1Animation = {
-  from: {
-    opacity: 0.2,
-    width: 20,
-    height: 20,
-  },
-  to: {
-    opacity: 1,
-    width: 200,
-    height: 200,
-  },
-}
-
 export default class Showcase extends React.Component {
+  constelation: Animate_
 
   static navigationOptions = {
     tabBar: {
@@ -38,108 +27,88 @@ export default class Showcase extends React.Component {
     },
   }
 
-  triggerBox1Animation = () => {
-    this.refs.box1.trigger()
+  componentDidMount() {
+    // Note the global event emitted
+    // Not the best example. but showing that it is possible
+    setTimeout(() => {emit('BOX_SEQUENCE')}, 1000)
   }
 
   render() {
     return (
-      <ScrollView
-        grow
-        marginTop={65}
-        marginBottom={50}
-      >
-        <View horizontal>
-          <Event_
-            hitSlop={20}
-            onPress={this.triggerBox1Animation}
-            // Note: this effect doesn't work because Animate_ replaces Opacity
-            pressEffect='opacity'
-          >
-            <Animate_
-              // repeat
-              ref='box1'
-              autoplay={false}
-              duration={1000}
-              delay={200}
-              easing='inOut'
-              // animation='fade-in'
-              animation={box1Animation}
-              onStart={() => {console.log('onStart')}}
-              onEnd={() => {console.log('onEnd')}}
-            >
-              <Style_ backgroundColor='purple' >
-                <View height={200} />
-              </Style_>
-            </Animate_>
-          </Event_>
+      <AnimationConfig timingMultiplier={10} >
+        <ScrollView
+          grow
+          marginTop={65}
+          marginBottom={50}
+        >
+
+          <BoxSequence />
 
           <Animate_
-            duration={400}
-            animation='fadeOut'
+            autostart
+            repeat={8}
+            direction='alternate'
+            animation={`
+              0: {
+                opacity: 0.5,
+                translateX: 0,
+                rotate: '0deg',
+              },
+              0.5: {
+                opacity: 0,
+                translateX: 100,
+                rotate: '180deg',
+              },
+              1: {
+                opacity: 1,
+                translateX: 200,
+                rotate: '360deg',
+              },
+            `}
+            duration={800}
+            easing='linear'
           >
-            <Style_ backgroundColor='green' >
-              <View height={200} width={200} />
-            </Style_>
+            <Image source={require('images/logo.png')} />
           </Animate_>
-        </View>
 
-        <Animate_
-          animation={{
-            0: {
-              opacity: 0.5,
-            },
-            0.5: {
-              opacity: 0,
-              left: 20,
-            },
-            1: {
-              opacity: 1,
-              left: 0,
-            },
-          }}
-          // easing={Easing.sin}
-          duration={400}
-        >
-          <Image source={require('images/logo.png')} />
-        </Animate_>
+          <Style_
+            backgroundColor='lightgrey'
+            opacity={0.5}
+            rotate='123deg'
+            translateX={40}
+          >
+            <View horizontal height={200} >
+              <Style_ backgroundColor='red' >
+                <View width={50} />
+              </Style_>
+              <Style_ backgroundColor='green' >
+                <View width={50} />
+              </Style_>
+              <Style_ backgroundColor='blue' >
+                <View width={50} />
+              </Style_>
+            </View>
+          </Style_>
 
-        <Style_
-          backgroundColor='lightgrey'
-          opacity={0.5}
-        >
-          <View horizontal height={200} >
-            <Style_ backgroundColor='red' >
-              <View width={50} />
-            </Style_>
-            <Style_ backgroundColor='green' >
-              <View width={50} />
-            </Style_>
-            <Style_ backgroundColor='blue' >
-              <View width={50} />
-            </Style_>
-          </View>
-        </Style_>
+          <Style_
+            backgroundColor='grey'
+            opacity={0.5}
+          >
+            <View height={200} >
+              <Style_ backgroundColor='red' >
+                <View height={50} />
+              </Style_>
+              <Style_ backgroundColor='green' >
+                <View height={50} />
+              </Style_>
+              <Style_ backgroundColor='blue' >
+                <View height={50} />
+              </Style_>
+            </View>
+          </Style_>
 
-        <Style_
-          backgroundColor='grey'
-          opacity={0.5}
-        >
-          <View height={200} >
-            <Style_ backgroundColor='red' >
-              <View height={50} />
-            </Style_>
-            <Style_ backgroundColor='green' >
-              <View height={50} />
-            </Style_>
-            <Style_ backgroundColor='blue' >
-              <View height={50} />
-            </Style_>
-          </View>
-        </Style_>
-
-
-      </ScrollView>
+        </ScrollView>
+      </AnimationConfig>
     )
   }
 }

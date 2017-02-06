@@ -1,6 +1,8 @@
 // @flow
 // Imports {{{
 
+import Animate_ from 'constelation-animate_'
+import Event_ from 'constelation-event_'
 import Image from 'constelation-image'
 import React from 'react'
 import View from 'constelation-view'
@@ -13,6 +15,62 @@ type Props = {
   navigation: {
     navigate: Function,
   },
+}
+
+const EVENTS = {
+  END_HERO: 'HOME_END_HERO',
+}
+
+// Showing controls of Animate_ with refs
+
+class Logo extends React.Component<void, any, void> {
+  node: Animate_
+  rotating: boolean
+  // rotating: boolean = true
+
+  handleToggleRotation = () => {
+    if (this.rotating === true) {
+      this.node.stop()
+      this.rotating = false
+    }
+    else {
+      this.node.start()
+      this.rotating = true
+    }
+  }
+
+  setRef = node => {
+    this.node = node
+  }
+
+  render() {
+    return (
+      <Event_
+        onPress={this.handleToggleRotation}
+        pressEffect='opacity'
+      >
+        <Animate_
+          ref={this.setRef}
+          repeat
+          // Note what happens if useNativeDriver is commented when opening modal
+          useNativeDriver
+          animation={`
+            0: {
+              rotate: '0deg',
+            },
+            1: {
+              rotate: '360deg',
+            }
+          `}
+          duration={20000}
+          easing='linear'
+          // startEvent={EVENTS.END_HERO}
+        >
+          <Image source={require('images/logo.png')} />
+        </Animate_>
+      </Event_>
+    )
+  }
 }
 
 export default class Home extends React.Component<void, Props, void> {
@@ -46,20 +104,46 @@ export default class Home extends React.Component<void, Props, void> {
         center
         grow
       >
-        <Image
-          source={require('images/logo.png')}
-        />
+        <Animate_
+          autostart
+          animation={`
+            0: {
+              translateY: 100,
+              scale: 0.70
+            },
+            1: {
+              translateY: 0,
+              scale: 1
+            }
+          `}
+          duration={400}
+          delay={700}
+          easing='out'
+          onEndEvent={EVENTS.END_HERO}
+        >
+          <View>
+            <Logo />
+          </View>
+        </Animate_>
 
-        <Button
-          marginTop={60}
-          label='Full screen Detail scene'
-          onPress={this.handleShowFullScreenModal}
-        />
-        <Button
-          marginTop={30}
-          label='Full screen Modal scene'
-          onPress={this.handleShowFullScreenModalScene}
-        />
+        <Animate_
+          animation='fadeIn'
+          duration={300}
+          startEvent={EVENTS.END_HERO}
+        >
+          <View>
+            <Button
+              marginTop={60}
+              label='Full screen Detail scene'
+              onPress={this.handleShowFullScreenModal}
+            />
+            <Button
+              marginTop={30}
+              label='Full screen Modal scene'
+              onPress={this.handleShowFullScreenModalScene}
+            />
+          </View>
+        </Animate_>
 
       </View>
     )

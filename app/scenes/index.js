@@ -61,6 +61,7 @@ const App = StackNavigator({
   },
 }, {
   headerMode: 'none',
+  // mode: 'modal',
 },
 )
 

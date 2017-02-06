@@ -43,6 +43,7 @@ NSString *wifiIP = nil; // no need to set this now (set only as a manual overrid
   launchView.translatesAutoresizingMaskIntoConstraints = YES;
   launchView.bounds = [UIScreen mainScreen].bounds;
   rootView.loadingView = launchView;
+  
 
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   UIViewController *rootViewController = [UIViewController new];
