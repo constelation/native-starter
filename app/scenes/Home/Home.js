@@ -66,7 +66,11 @@ class Logo extends React.Component<void, any, void> {
           easing='linear'
           // startEvent={EVENTS.END_HERO}
         >
-          <Image source={require('images/logo.png')} />
+          <Image
+            source={require('images/logo.png')}
+            width={134}
+            height={121}
+          />
         </Animate_>
       </Event_>
     )
@@ -109,11 +113,11 @@ export default class Home extends React.Component<void, Props, void> {
           animation={`
             0: {
               translateY: 100,
-              scale: 0.70
+              scale: 1
             },
             1: {
               translateY: 0,
-              scale: 1
+              scale: 1.3
             }
           `}
           duration={400}
