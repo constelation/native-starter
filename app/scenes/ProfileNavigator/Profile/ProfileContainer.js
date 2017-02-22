@@ -27,8 +27,8 @@ export default inject('counter')(observer(
         return {
           right: (
             <Event_
-              onPress={() => props.navigate('ProfileDetail')}
               pressEffect='opacity'
+              onPress={() => props.navigate('ProfileDetail')} // eslint-disable-line react/jsx-no-bind
             >
               <View marginRight={20}>
                 <Text>Detail</Text>

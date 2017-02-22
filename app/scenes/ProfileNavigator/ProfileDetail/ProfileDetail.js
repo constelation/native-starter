@@ -28,8 +28,8 @@ export default class ProfileDetail extends React.Component<void, Props, void> {
         </Text>
 
         <Event_
-          onPress={this.props.onIncreaseCounter}
           pressEffect='opacity'
+          onPress={this.props.onIncreaseCounter}
         >
           <View margin={10}>
             <Text

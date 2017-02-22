@@ -1,3 +1,14 @@
 {
-    "extends": "constelation"
+    "extends": "constelation",
+    "rules": {
+      "react/jsx-sort-props": [1, {
+        "ignoreCase": true,
+        "shorthandFirst": true,
+        "callbacksLast": true,
+        "noSortAlphabetically": true,
+      }],
+      "react/jsx-max-props-per-line": [1, { "maximum": 1}],
+      "react/require-default-props": 2,
+      "react/jsx-handler-names": 0, // disabled for on_ props in Animate_
+    }
 }

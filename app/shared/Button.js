@@ -19,8 +19,8 @@ export default class Button extends React.Component<void, Props, void> {
     return (
       <Event_
         hitSlop={10}
-        onPress={this.props.onPress}
         pressEffect='opacity'
+        onPress={this.props.onPress}
       >
         <Style_
           borderColor='black'

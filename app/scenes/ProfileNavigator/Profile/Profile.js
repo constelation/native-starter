@@ -32,8 +32,8 @@ export default class Profile extends React.Component<void, Props, void> {
         <Text center >Click 'Detail' for a threaded view</Text>
 
         <Event_
-          onPress={this.props.onIncreaseCounter}
           pressEffect='opacity'
+          onPress={this.props.onIncreaseCounter}
         >
           <View margin={10}>
             <Text

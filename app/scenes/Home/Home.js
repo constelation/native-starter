@@ -46,11 +46,10 @@ class Logo extends React.Component<void, any, void> {
   render() {
     return (
       <Event_
-        onPress={this.handleToggleRotation}
         pressEffect='opacity'
+        onPress={this.handleToggleRotation}
       >
         <Animate_
-          ref={this.setRef}
           repeat
           // Note what happens if useNativeDriver is commented when opening modal
           useNativeDriver
@@ -64,6 +63,7 @@ class Logo extends React.Component<void, any, void> {
           `}
           duration={20000}
           easing='linear'
+          ref={this.setRef}
           // startEvent={EVENTS.END_HERO}
         >
           <Image

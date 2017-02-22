@@ -10,12 +10,12 @@ import View from 'constelation-view'
 // }}}
 
 const box1Animation = {
-  0: {
+  '0': {
     opacity: 0.2,
     width: 20,
     height: 20,
   },
-  1: {
+  '1': {
     opacity: 1,
     width: 200,
     height: 200,
@@ -48,9 +48,9 @@ export default class BoxSequence extends React.Component {
       <View>
         <Event_
           hitSlop={20}
-          onPress={this.handleTriggerBox1Animation}
           // Note: this effect doesn't work because Animate_ replaces Opacity
           pressEffect='opacity'
+          onPress={this.handleTriggerBox1Animation}
         >
           <Animate_
             startOnEvent={this.state.count < 2 ? 'BOX_SEQUENCE' : undefined}

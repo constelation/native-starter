@@ -1,6 +1,7 @@
 // @flow
 // Imports {{{
 
+import { Dimensions } from 'react-native'
 import Animate_, { AnimationConfig, emitAnimationEvent } from 'constelation-animate_'
 import Event_ from 'constelation-event_'
 import Image from 'constelation-image'
@@ -9,9 +10,12 @@ import ScrollView from 'constelation-scroll-view'
 import Style_ from 'constelation-style_'
 import View from 'constelation-view'
 
+import SIZE from 'constants/SIZE'
+
 import BoxSequence from './_/BoxSequence'
 
 // }}}
+
 
 export default class Showcase extends React.Component {
   constelation: Animate_
@@ -52,7 +56,7 @@ export default class Showcase extends React.Component {
         <ScrollView
           grow
           marginTop={65}
-          marginBottom={50}
+          maxHeight={Dimensions.get('window').height - SIZE.BOTTOM_BAR_HEIGHT}
         >
 
           <BoxSequence />
@@ -93,7 +97,10 @@ export default class Showcase extends React.Component {
             rotate='123deg'
             translateX={40}
           >
-            <View horizontal height={200} >
+            <View
+              horizontal
+              height={200}
+            >
               <Style_ backgroundColor='red' >
                 <View width={50} />
               </Style_>

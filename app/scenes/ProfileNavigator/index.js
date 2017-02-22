@@ -2,7 +2,6 @@
 // Imports {{{
 
 import { StackNavigator } from 'react-navigation'
-import { StyleSheet } from 'react-native'
 import Image from 'constelation-image'
 import React from 'react'
 
@@ -20,6 +19,9 @@ const Navigator = StackNavigator({
   },
 }, {
   headerMode: 'float',
+  cardStyle: {
+    backgroundColor: 'white',
+  },
 })
 
 export default class ProfileStack extends React.Component {
@@ -37,15 +39,6 @@ export default class ProfileStack extends React.Component {
   }
 
   render() {
-    return <Navigator cardStyle={styles.card} />
+    return <Navigator />
   }
 }
-
-// Kind of a bummer that this style override is necessary to need see the grey default here:
-// https://github.com/react-community/react-navigation/blob/master/src/views/Card.js#L81
-const styles = StyleSheet.create({
-  card: {
-    backgroundColor: 'white',
-  },
-})
-

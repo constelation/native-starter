@@ -2,7 +2,6 @@
 // Imports {{{
 
 import { Provider } from 'mobx-react/native'
-import { StyleSheet } from 'react-native'
 import { TabNavigator, TabView, StackNavigator } from 'react-navigation'
 import React from 'react'
 import mobx from 'mobx'
@@ -61,6 +60,9 @@ const App = StackNavigator({
   },
 }, {
   headerMode: 'none',
+  cardStyle: {
+    backgroundColor: 'white',
+  },
   // mode: 'modal',
 },
 )
@@ -69,16 +71,8 @@ export default class Root extends React.Component {
   render() {
     return (
       <Provider {...stores} >
-        <App cardStyle={styles.card} />
+        <App />
       </Provider>
     )
   }
 }
-
-// Kind of a bummer that this style override is necessary to need see the grey default here:
-// https://github.com/react-community/react-navigation/blob/master/src/views/Card.js#L81
-const styles = StyleSheet.create({
-  card: {
-    backgroundColor: 'white',
-  },
-})
