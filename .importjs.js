@@ -12,6 +12,19 @@ module.exports = {
 
     counter: 'stores/counter',
   },
+
+  namedExports: {
+    'constelation-animate_': [
+      'Animate',
+      'emitAnimationEvent',
+    ],
+    'constelation-style_': [
+      'Style',
+    ],
+    'constelation-event_': [
+      'Event',
+    ],
+  },
   groupImports: true,
   useRelativePaths: false,
   importStatementFormatter({ importStatement }) {
