@@ -4,7 +4,6 @@
 import Animate_, { emitAnimationEvent } from 'constelation-animate_'
 import Event_ from 'constelation-event_'
 import React from 'react'
-import { StyleSheet } from 'react-native'
 import Style_ from 'constelation-style_'
 import View from 'constelation-view'
 
