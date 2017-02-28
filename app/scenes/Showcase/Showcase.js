@@ -56,6 +56,7 @@ export default class Showcase extends React.Component {
         <ScrollView
           grow
           marginTop={65}
+          padding={35}
           maxHeight={Dimensions.get('window').height - SIZE.BOTTOM_BAR_HEIGHT}
         >
 

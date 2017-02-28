@@ -865,14 +865,14 @@ babel-register@^6.18.0:
     mkdirp "^0.5.1"
     source-map-support "^0.4.2"
 
-babel-runtime@^6.0.0, babel-runtime@^6.18.0, babel-runtime@^6.20.0:
+babel-runtime@^6.0.0, babel-runtime@^6.20.0:
   version "6.20.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.20.0.tgz#87300bdcf4cd770f09bf0048c64204e17806d16f"
   dependencies:
     core-js "^2.4.0"
     regenerator-runtime "^0.10.0"
 
-babel-runtime@^6.11.6, babel-runtime@^6.2.0, babel-runtime@^6.22.0, babel-runtime@^6.9.0, babel-runtime@^6.9.1:
+babel-runtime@^6.11.6, babel-runtime@^6.18.0, babel-runtime@^6.2.0, babel-runtime@^6.22.0, babel-runtime@^6.9.0, babel-runtime@^6.9.1:
   version "6.22.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.22.0.tgz#1cf8b4ac67c77a4ddb0db2ae1f74de52ac4ca611"
   dependencies:
@@ -1239,9 +1239,9 @@ connect@^2.8.3:
     utils-merge "1.0.0"
     vhost "~3.0.1"
 
-constelation-animate_@^12.0.1:
-  version "12.0.1"
-  resolved "https://registry.yarnpkg.com/constelation-animate_/-/constelation-animate_-12.0.1.tgz#84abf5e31d5e7b8d5ac7d047eaa846530f294496"
+constelation-animate_@^12.3.0:
+  version "12.3.0"
+  resolved "https://registry.yarnpkg.com/constelation-animate_/-/constelation-animate_-12.3.0.tgz#63ebaad96866ac29eee298985f0f6f863cdef0c9"
   dependencies:
     json5 "^0.5.1"
     mitt "^1.0.1"
@@ -1250,41 +1250,44 @@ constelation-animate_@^12.0.1:
   optionalDependencies:
     glamor "^2.17.12"
 
-constelation-event_@^12.0.1:
-  version "12.0.1"
-  resolved "https://registry.yarnpkg.com/constelation-event_/-/constelation-event_-12.0.1.tgz#ae60e61a6bb9bd3cd161a4894b9c49693a7b3919"
+constelation-event_@^12.3.0:
+  version "12.3.0"
+  resolved "https://registry.yarnpkg.com/constelation-event_/-/constelation-event_-12.3.0.tgz#b3223c040d7f65450ea266bf99899e61909008e8"
   optionalDependencies:
     hammerjs "^2.0.8"
 
-constelation-image@^11.0.0:
-  version "11.0.0"
-  resolved "https://registry.yarnpkg.com/constelation-image/-/constelation-image-11.0.0.tgz#31fa9fa7a5df711d6de5d5dc7d77cb1828754285"
+constelation-image@^12.3.0:
+  version "12.3.0"
+  resolved "https://registry.yarnpkg.com/constelation-image/-/constelation-image-12.3.0.tgz#ae2ac4ced926ccfd02b601ed462c7c8d776f0a9f"
   optionalDependencies:
     glamor "^2.17.12"
 
-constelation-scroll-view@^10.1.0:
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/constelation-scroll-view/-/constelation-scroll-view-10.1.0.tgz#7cc4e4042462648f975c31f0ea3a4000da1b892b"
+constelation-scroll-view@^12.3.0:
+  version "12.3.0"
+  resolved "https://registry.yarnpkg.com/constelation-scroll-view/-/constelation-scroll-view-12.3.0.tgz#beca55da8363fb3547318b4e1d82ab6ece653f7f"
+  optionalDependencies:
+    glamor "^2.20.24"
+    glamor-react "^3.0.0-1"
+
+constelation-style_@^12.3.0:
+  version "12.3.0"
+  resolved "https://registry.yarnpkg.com/constelation-style_/-/constelation-style_-12.3.0.tgz#011d3c4b9a9632acfd828e7d4096f12d6d91d242"
   optionalDependencies:
     glamor "^2.17.12"
 
-constelation-style_@^12.0.1:
-  version "12.0.1"
-  resolved "https://registry.yarnpkg.com/constelation-style_/-/constelation-style_-12.0.1.tgz#7bf8301d702bd7ac9efbb85586fd91d99d293b11"
+constelation-text@^12.3.0:
+  version "12.3.0"
+  resolved "https://registry.yarnpkg.com/constelation-text/-/constelation-text-12.3.0.tgz#5ca33aa7cb7969a431cd990ddb3a9624c341baf5"
   optionalDependencies:
-    glamor "^2.17.12"
+    glamor "^2.20.24"
+    glamor-react "^3.0.0-1"
 
-constelation-text@^7.0.3:
-  version "7.0.3"
-  resolved "https://registry.yarnpkg.com/constelation-text/-/constelation-text-7.0.3.tgz#fa8b953e6b6eb6400d2990703233a19ed0b03112"
+constelation-view@^12.3.0:
+  version "12.3.0"
+  resolved "https://registry.yarnpkg.com/constelation-view/-/constelation-view-12.3.0.tgz#8878828287f13b8e0be983c8394239f90c9d9f71"
   optionalDependencies:
-    glamor "^2.17.12"
-
-constelation-view@^12.0.0:
-  version "12.0.0"
-  resolved "https://registry.yarnpkg.com/constelation-view/-/constelation-view-12.0.0.tgz#19f54ea93e66accaa137e5d6940940dcd9eac7e6"
-  optionalDependencies:
-    glamor "^2.17.12"
+    glamor "^2.20.24"
+    glamor-react "^3.0.0-1"
 
 content-type-parser@^1.0.1:
   version "1.0.1"
@@ -2011,9 +2014,33 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
+glamor-react@^3.0.0-1:
+  version "3.0.0-1"
+  resolved "https://registry.yarnpkg.com/glamor-react/-/glamor-react-3.0.0-1.tgz#79e96c9735395c0769c447147f68471f996cb37d"
+  dependencies:
+    glamor "^3.0.0-1"
+    object-assign "^4.1.0"
+    react "^15.4.1"
+
 glamor@^2.17.12:
   version "2.20.22"
   resolved "https://registry.yarnpkg.com/glamor/-/glamor-2.20.22.tgz#86c11a143deee7d4c051de50d69387d8b4e700ba"
+  dependencies:
+    babel-runtime "^6.18.0"
+    fbjs "^0.8.8"
+    object-assign "^4.1.0"
+
+glamor@^2.20.24:
+  version "2.20.24"
+  resolved "https://registry.yarnpkg.com/glamor/-/glamor-2.20.24.tgz#a299af2eec687322634ba38e4a0854d8743d2041"
+  dependencies:
+    babel-runtime "^6.18.0"
+    fbjs "^0.8.8"
+    object-assign "^4.1.0"
+
+glamor@^3.0.0-1:
+  version "3.0.0-1"
+  resolved "https://registry.yarnpkg.com/glamor/-/glamor-3.0.0-1.tgz#60f489e96d96c12620803d3677ac26413cb76a95"
   dependencies:
     babel-runtime "^6.18.0"
     fbjs "^0.8.8"
@@ -3142,9 +3169,9 @@ minimist@^1.1.0, minimist@^1.1.1, minimist@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
 
-mitt@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/mitt/-/mitt-1.0.1.tgz#dd7f850967acc0b13420ac0e3e1ff69a3b1b029c"
+mitt@^1.0.1, mitt@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/mitt/-/mitt-1.1.0.tgz#22f0d57e2fedd39620a62bb41b7cdd93667d3c41"
 
 mkdirp@^0.5.0, mkdirp@^0.5.1:
   version "0.5.1"
@@ -3611,9 +3638,9 @@ react-native-drawer-layout@^1.1.0:
     autobind-decorator "^1.3.2"
     react-native-dismiss-keyboard "1.0.0"
 
-react-native-tab-view@^0.0.55:
-  version "0.0.55"
-  resolved "https://registry.yarnpkg.com/react-native-tab-view/-/react-native-tab-view-0.0.55.tgz#6e82c50f916b46e0a5af2f9748e6aca36d58f7ad"
+react-native-tab-view@^0.0.56:
+  version "0.0.56"
+  resolved "https://registry.yarnpkg.com/react-native-tab-view/-/react-native-tab-view-0.0.56.tgz#7417a1f6502deef49abf58ba76a1cde213abbbf1"
 
 react-native@0.41.2:
   version "0.41.2"
@@ -3695,16 +3722,16 @@ react-native@0.41.2:
     xmldoc "^0.4.0"
     yargs "^6.4.0"
 
-react-navigation@^1.0.0-beta.5:
-  version "1.0.0-beta.5"
-  resolved "https://registry.yarnpkg.com/react-navigation/-/react-navigation-1.0.0-beta.5.tgz#28f0cf6e9ab12e25f927dbc63efa51cf7d5ab8a5"
+react-navigation@^1.0.0-beta.6:
+  version "1.0.0-beta.6"
+  resolved "https://registry.yarnpkg.com/react-navigation/-/react-navigation-1.0.0-beta.6.tgz#56172ef7493a461b05d362674290eae4bdcaef6a"
   dependencies:
     clamp "^1.0.1"
     fbjs "^0.8.5"
     hoist-non-react-statics "^1.2.0"
     path-to-regexp "^1.7.0"
     react-native-drawer-layout "^1.1.0"
-    react-native-tab-view "^0.0.55"
+    react-native-tab-view "^0.0.56"
 
 react-proxy@^1.1.7:
   version "1.1.8"
@@ -3731,7 +3758,7 @@ react-transform-hmr@^1.0.4:
     global "^4.3.0"
     react-proxy "^1.1.7"
 
-react@^15.4.2:
+react@^15.4.1, react@^15.4.2:
   version "15.4.2"
   resolved "https://registry.yarnpkg.com/react/-/react-15.4.2.tgz#41f7991b26185392ba9bae96c8889e7e018397ef"
   dependencies:

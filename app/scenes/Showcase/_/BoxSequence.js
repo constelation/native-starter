@@ -4,6 +4,7 @@
 import Animate_, { emitAnimationEvent } from 'constelation-animate_'
 import Event_ from 'constelation-event_'
 import React from 'react'
+import { StyleSheet } from 'react-native'
 import Style_ from 'constelation-style_'
 import View from 'constelation-view'
 
@@ -62,7 +63,7 @@ export default class BoxSequence extends React.Component {
             onEndEvent='BOX_1_END'
           >
             <Style_ backgroundColor='purple' >
-              <View height={200} />
+              <View />
             </Style_>
           </Animate_>
         </Event_>
@@ -75,7 +76,7 @@ export default class BoxSequence extends React.Component {
           onEndEvent='BOX_2_END'
         >
           <Style_ backgroundColor='black' >
-            <View height={200} />
+            <View />
           </Style_>
         </Animate_>
 
@@ -88,7 +89,7 @@ export default class BoxSequence extends React.Component {
           onEndEvent='BOX_SEQUENCE'
         >
           <Style_ backgroundColor='purple' >
-            <View height={200} />
+            <View />
           </Style_>
         </Animate_>
       </View>
