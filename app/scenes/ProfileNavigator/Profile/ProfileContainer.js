@@ -1,7 +1,7 @@
 // @flow
 // Imports {{{
 
-import { observer, inject } from 'mobx-react/native'
+import { inject, observer } from 'mobx-react/native'
 import Event_ from 'constelation-event_'
 import React from 'react'
 import Text from 'constelation-text'
