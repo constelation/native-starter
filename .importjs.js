@@ -50,7 +50,7 @@ module.exports = {
   },
   moduleNameFormatter({ moduleName, pathToCurrentFile }) {
     // shortcut for aliased paths
-    if (moduleName.startsWith('app/')) {
+    if (moduleName.startsWith('src/')) {
       return moduleName.slice(4);
     }
     // Fall back to the original specifier. It's important that this function

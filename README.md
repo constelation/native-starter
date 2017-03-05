@@ -54,7 +54,7 @@ $ npm run android               # Deploy the app to the already running emulator
 │   ├── /images/
 │   └── /videos/
 |
-├── /app                        # Your app-specific source code of the application
+├── /src                        # Your app-specific source code of the application
 │   ├── /store/                 # Responsible for you app state. Houses MobX actions and observables
 │   ├── /scenes/                # Components that are handled by a Navigator. Same as pages, views, etc for the app.
 │   |   ├── /App/               # Root scene

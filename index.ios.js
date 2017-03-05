@@ -3,7 +3,7 @@
 
 import { AppRegistry } from 'react-native'
 
-import App from './app/scenes'
+import App from './src/scenes'
 
 // }}}
 
