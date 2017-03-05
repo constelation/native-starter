@@ -1,11 +1,11 @@
 // @flow
 // Imports {{{
 
+import { Col, View } from 'constelation-view'
 import Animate_, { emitAnimationEvent } from 'constelation-animate_'
 import Event_ from 'constelation-event_'
 import React from 'react'
 import Style_ from 'constelation-style_'
-import View from 'constelation-view'
 
 // }}}
 
@@ -45,7 +45,7 @@ export default class BoxSequence extends React.Component {
 
   render() {
     return (
-      <View>
+      <Col>
         <Event_
           hitSlop={20}
           // Note: this effect doesn't work because Animate_ replaces Opacity
@@ -91,7 +91,7 @@ export default class BoxSequence extends React.Component {
             <View />
           </Style_>
         </Animate_>
-      </View>
+      </Col>
     )
   }
 }

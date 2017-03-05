@@ -1,14 +1,15 @@
 // @flow
 // Imports {{{
 
+import { Col, Row, View } from 'constelation-view'
 import { Dimensions } from 'react-native'
 import Animate_, { AnimationConfig, emitAnimationEvent } from 'constelation-animate_'
 import Event_ from 'constelation-event_'
 import Image from 'constelation-image'
 import React from 'react'
 import ScrollView from 'constelation-scroll-view'
+import Space from 'constelation-space'
 import Style_ from 'constelation-style_'
-import View from 'constelation-view'
 
 import SIZE from 'constants/SIZE'
 
@@ -98,27 +99,29 @@ export default class Showcase extends React.Component {
             rotate='123deg'
             translateX={40}
           >
-            <View
-              horizontal
+            <Row
+              align='stretch'
               height={200}
             >
               <Style_ backgroundColor='red' >
                 <View width={50} />
               </Style_>
+              <Space size={50} />
               <Style_ backgroundColor='green' >
                 <View width={50} />
               </Style_>
+              <Space size={50} />
               <Style_ backgroundColor='blue' >
                 <View width={50} />
               </Style_>
-            </View>
+            </Row>
           </Style_>
 
           <Style_
             backgroundColor='grey'
             opacity={0.5}
           >
-            <View height={200} >
+            <Col height={200} >
               <Style_ backgroundColor='red' >
                 <View height={50} />
               </Style_>
@@ -128,7 +131,7 @@ export default class Showcase extends React.Component {
               <Style_ backgroundColor='blue' >
                 <View height={50} />
               </Style_>
-            </View>
+            </Col>
           </Style_>
 
         </ScrollView>

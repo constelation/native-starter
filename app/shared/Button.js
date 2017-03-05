@@ -11,7 +11,6 @@ import View from 'constelation-view'
 
 type Props = {
   label: string,
-  marginTop?: number,
   onPress: Function
 }
 export default class Button extends React.Component<void, Props, void> {
@@ -31,7 +30,6 @@ export default class Button extends React.Component<void, Props, void> {
             center
             paddingVertical={5}
             paddingHorizontal={10}
-            marginTop={this.props.marginTop}
           >
             <Text color='black'>
               {this.props.label}

@@ -1,10 +1,11 @@
 // @flow
 // Imports {{{
 
+import { Col } from 'constelation-view'
 import Event_ from 'constelation-event_'
 import React from 'react'
+import Space from 'constelation-space'
 import Text from 'constelation-text'
-import View from 'constelation-view'
 
 // }}}
 
@@ -16,7 +17,7 @@ type Props = {
 export default class ProfileDetail extends React.Component<void, Props, void> {
   render() {
     return (
-      <View
+      <Col
         grow
         alignVertical='center'
       >
@@ -27,20 +28,20 @@ export default class ProfileDetail extends React.Component<void, Props, void> {
           Profile Detail
         </Text>
 
+        <Space size={10} />
+
         <Event_
           pressEffect='opacity'
           onPress={this.props.onIncreaseCounter}
         >
-          <View margin={10}>
-            <Text
-              center
-              size={20}
-            >
-              {this.props.value}
-            </Text>
-          </View>
+          <Text
+            center
+            size={20}
+          >
+            {this.props.value}
+          </Text>
         </Event_>
-      </View>
+      </Col>
     )
   }
 }

@@ -6,7 +6,8 @@ module.exports = {
     Text: 'constelation-text',
     Image: 'constelation-image',
     ScrollView: 'constelation-scroll-view',
-    View: 'constelation-view',
+    // View: 'constelation-view',
+    Space: 'constelation-space',
     Style_: 'constelation-style_',
     Event_: 'constelation-event_',
     Animate_: 'constelation-animate_',
@@ -28,6 +29,11 @@ module.exports = {
     ],
     'constelation-event_': [
       'Event',
+    ],
+    'constelation-view': [
+      'View',
+      'Row',
+      'Col',
     ],
   },
   groupImports: true,

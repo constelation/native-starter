@@ -30,7 +30,7 @@ export default inject('counter')(observer(
               pressEffect='opacity'
               onPress={() => props.navigate('ProfileDetail')} // eslint-disable-line react/jsx-no-bind
             >
-              <View marginRight={20}>
+              <View paddingRight={20}>
                 <Text>Detail</Text>
               </View>
             </Event_>

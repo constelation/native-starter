@@ -865,14 +865,14 @@ babel-register@^6.18.0:
     mkdirp "^0.5.1"
     source-map-support "^0.4.2"
 
-babel-runtime@^6.0.0, babel-runtime@^6.20.0:
+babel-runtime@^6.0.0, babel-runtime@^6.18.0, babel-runtime@^6.20.0:
   version "6.20.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.20.0.tgz#87300bdcf4cd770f09bf0048c64204e17806d16f"
   dependencies:
     core-js "^2.4.0"
     regenerator-runtime "^0.10.0"
 
-babel-runtime@^6.11.6, babel-runtime@^6.18.0, babel-runtime@^6.2.0, babel-runtime@^6.22.0, babel-runtime@^6.9.0, babel-runtime@^6.9.1:
+babel-runtime@^6.11.6, babel-runtime@^6.2.0, babel-runtime@^6.22.0, babel-runtime@^6.9.0, babel-runtime@^6.9.1:
   version "6.22.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.22.0.tgz#1cf8b4ac67c77a4ddb0db2ae1f74de52ac4ca611"
   dependencies:
@@ -1269,6 +1269,13 @@ constelation-scroll-view@^12.3.0:
     glamor "^2.20.24"
     glamor-react "^3.0.0-1"
 
+constelation-space@^13.0.0:
+  version "13.0.0"
+  resolved "https://registry.yarnpkg.com/constelation-space/-/constelation-space-13.0.0.tgz#f6420c573fb16be8e1f583320fc739fdb5b117fb"
+  optionalDependencies:
+    glamor "^2.20.24"
+    glamor-react "^3.0.0-1"
+
 constelation-style_@^12.3.0:
   version "12.3.0"
   resolved "https://registry.yarnpkg.com/constelation-style_/-/constelation-style_-12.3.0.tgz#011d3c4b9a9632acfd828e7d4096f12d6d91d242"
@@ -1282,9 +1289,9 @@ constelation-text@^12.3.0:
     glamor "^2.20.24"
     glamor-react "^3.0.0-1"
 
-constelation-view@^12.3.0:
-  version "12.3.0"
-  resolved "https://registry.yarnpkg.com/constelation-view/-/constelation-view-12.3.0.tgz#8878828287f13b8e0be983c8394239f90c9d9f71"
+constelation-view@^13.0.0:
+  version "13.0.0"
+  resolved "https://registry.yarnpkg.com/constelation-view/-/constelation-view-13.0.0.tgz#df502226c1ea71356d1fc211c61452b2f69e93ab"
   optionalDependencies:
     glamor "^2.20.24"
     glamor-react "^3.0.0-1"
@@ -1658,9 +1665,9 @@ eslint-plugin-react@^6.10.0:
     jsx-ast-utils "^1.3.4"
     object.assign "^4.0.4"
 
-eslint@^3.16.1:
-  version "3.16.1"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-3.16.1.tgz#9bc31fc7341692cf772e80607508f67d711c5609"
+eslint@^3.17.0:
+  version "3.17.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-3.17.0.tgz#e2704b09c5bae9fb49ee8bafeea3832c7257d498"
   dependencies:
     babel-code-frame "^6.16.0"
     chalk "^1.1.3"
@@ -2247,9 +2254,9 @@ http-signature@~1.1.0:
     jsprim "^1.2.2"
     sshpk "^1.7.0"
 
-husky@^0.13.1:
-  version "0.13.1"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-0.13.1.tgz#11efc6fc10e0ec4e789776f6582be37d71ba4ccf"
+husky@^0.13.2:
+  version "0.13.2"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-0.13.2.tgz#9dcf212f88e61dba36f17be1a202ed61ff6c0661"
   dependencies:
     chalk "^1.1.3"
     find-parent-dir "^0.3.0"
@@ -3179,9 +3186,9 @@ mkdirp@^0.5.0, mkdirp@^0.5.1:
   dependencies:
     minimist "0.0.8"
 
-mobx-react@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/mobx-react/-/mobx-react-4.1.0.tgz#0b4927a8c4457dbb296c512693acdf9073d9afc7"
+mobx-react@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/mobx-react/-/mobx-react-4.1.1.tgz#98b2625e0ac8f53a5116fef85265d1c987120432"
   dependencies:
     hoist-non-react-statics "^1.2.0"
 
@@ -3193,9 +3200,9 @@ mobx-remotedev@^0.2.6:
     remotedev "^0.2.7"
     remotedev-utils "^0.0.3"
 
-mobx@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/mobx/-/mobx-3.1.0.tgz#e5f15b475efdd1eea1f5c43a0afccde6e6f322ee"
+mobx@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/mobx/-/mobx-3.1.2.tgz#5687b45d1ee268b4996cbfb4c8269d3c639f3aa8"
 
 moment@2.x.x:
   version "2.17.1"
