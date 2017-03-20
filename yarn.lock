@@ -206,10 +206,6 @@ asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
 
-autobind-decorator@^1.3.2:
-  version "1.3.4"
-  resolved "https://registry.yarnpkg.com/autobind-decorator/-/autobind-decorator-1.3.4.tgz#b67560e6bbbb68a35c049c82d6351ea0e82d820d"
-
 aws-sign2@~0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.6.0.tgz#14342dd38dbcc94d0e5b87d763cd63612c0e794f"
@@ -865,14 +861,14 @@ babel-register@^6.18.0:
     mkdirp "^0.5.1"
     source-map-support "^0.4.2"
 
-babel-runtime@^6.0.0, babel-runtime@^6.18.0, babel-runtime@^6.20.0:
+babel-runtime@^6.0.0, babel-runtime@^6.11.6, babel-runtime@^6.18.0, babel-runtime@^6.2.0, babel-runtime@^6.20.0, babel-runtime@^6.9.0, babel-runtime@^6.9.1:
   version "6.20.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.20.0.tgz#87300bdcf4cd770f09bf0048c64204e17806d16f"
   dependencies:
     core-js "^2.4.0"
     regenerator-runtime "^0.10.0"
 
-babel-runtime@^6.11.6, babel-runtime@^6.2.0, babel-runtime@^6.22.0, babel-runtime@^6.9.0, babel-runtime@^6.9.1:
+babel-runtime@^6.22.0:
   version "6.22.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.22.0.tgz#1cf8b4ac67c77a4ddb0db2ae1f74de52ac4ca611"
   dependencies:
@@ -1186,7 +1182,7 @@ concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
 
-concat-stream@^1.4.6:
+concat-stream@^1.5.2:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/concat-stream/-/concat-stream-1.6.0.tgz#0aac662fd52be78964d5532f694784e70110acf7"
   dependencies:
@@ -1239,9 +1235,9 @@ connect@^2.8.3:
     utils-merge "1.0.0"
     vhost "~3.0.1"
 
-constelation-animate_@^12.3.0:
-  version "12.3.0"
-  resolved "https://registry.yarnpkg.com/constelation-animate_/-/constelation-animate_-12.3.0.tgz#63ebaad96866ac29eee298985f0f6f863cdef0c9"
+constelation-animate_@^13.0.2:
+  version "13.0.2"
+  resolved "https://registry.yarnpkg.com/constelation-animate_/-/constelation-animate_-13.0.2.tgz#eeeaad8c5eae8f91d0544cacec09eb603642fe0f"
   dependencies:
     json5 "^0.5.1"
     mitt "^1.0.1"
@@ -1250,21 +1246,21 @@ constelation-animate_@^12.3.0:
   optionalDependencies:
     glamor "^2.17.12"
 
-constelation-event_@^12.3.0:
-  version "12.3.0"
-  resolved "https://registry.yarnpkg.com/constelation-event_/-/constelation-event_-12.3.0.tgz#b3223c040d7f65450ea266bf99899e61909008e8"
+constelation-event_@^13.0.2:
+  version "13.0.2"
+  resolved "https://registry.yarnpkg.com/constelation-event_/-/constelation-event_-13.0.2.tgz#dee9640710b6d299a72b2c1f0b63783ae961c285"
   optionalDependencies:
     hammerjs "^2.0.8"
 
-constelation-image@^12.3.0:
-  version "12.3.0"
-  resolved "https://registry.yarnpkg.com/constelation-image/-/constelation-image-12.3.0.tgz#ae2ac4ced926ccfd02b601ed462c7c8d776f0a9f"
+constelation-image@^13.2.2:
+  version "13.2.2"
+  resolved "https://registry.yarnpkg.com/constelation-image/-/constelation-image-13.2.2.tgz#70e09b52169c9ddfd73fd8ac4212dd1598995785"
   optionalDependencies:
     glamor "^2.17.12"
 
-constelation-scroll-view@^12.3.0:
-  version "12.3.0"
-  resolved "https://registry.yarnpkg.com/constelation-scroll-view/-/constelation-scroll-view-12.3.0.tgz#beca55da8363fb3547318b4e1d82ab6ece653f7f"
+constelation-scroll-view@^13.2.0:
+  version "13.2.0"
+  resolved "https://registry.yarnpkg.com/constelation-scroll-view/-/constelation-scroll-view-13.2.0.tgz#afc9a9d0a12a45e9a42600cd981d08dfba58a7e0"
   optionalDependencies:
     glamor "^2.20.24"
     glamor-react "^3.0.0-1"
@@ -1276,9 +1272,9 @@ constelation-space@^13.0.0:
     glamor "^2.20.24"
     glamor-react "^3.0.0-1"
 
-constelation-style_@^12.3.0:
-  version "12.3.0"
-  resolved "https://registry.yarnpkg.com/constelation-style_/-/constelation-style_-12.3.0.tgz#011d3c4b9a9632acfd828e7d4096f12d6d91d242"
+constelation-style_@^13.2.1:
+  version "13.2.1"
+  resolved "https://registry.yarnpkg.com/constelation-style_/-/constelation-style_-13.2.1.tgz#271710312c1846230865ef3e0dc69f2adddbf226"
   optionalDependencies:
     glamor "^2.17.12"
 
@@ -1289,9 +1285,9 @@ constelation-text@^12.3.0:
     glamor "^2.20.24"
     glamor-react "^3.0.0-1"
 
-constelation-view@^13.0.0:
-  version "13.0.0"
-  resolved "https://registry.yarnpkg.com/constelation-view/-/constelation-view-13.0.0.tgz#df502226c1ea71356d1fc211c61452b2f69e93ab"
+constelation-view@^13.0.1:
+  version "13.0.1"
+  resolved "https://registry.yarnpkg.com/constelation-view/-/constelation-view-13.0.1.tgz#54b3b67f9cead592ea553832e390155f1e1b7800"
   optionalDependencies:
     glamor "^2.20.24"
     glamor-react "^3.0.0-1"
@@ -1486,6 +1482,13 @@ doctrine@^1.2.2:
     esutils "^2.0.2"
     isarray "^1.0.0"
 
+doctrine@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/doctrine/-/doctrine-2.0.0.tgz#c73d8d2909d22291e1a007a395804da8b665fe63"
+  dependencies:
+    esutils "^2.0.2"
+    isarray "^1.0.0"
+
 dom-walk@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/dom-walk/-/dom-walk-0.1.1.tgz#672226dc74c8f799ad35307df936aba11acd6018"
@@ -1655,9 +1658,9 @@ eslint-config-kylpo@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/eslint-config-kylpo/-/eslint-config-kylpo-2.0.0.tgz#154cbe901fbd9abcdd366d90a5b3eb9bec2bac3b"
 
-eslint-plugin-react@^6.10.0:
-  version "6.10.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-6.10.0.tgz#9c48b48d101554b5355413e7c64238abde6ef1ef"
+eslint-plugin-react@^6.10.2:
+  version "6.10.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-6.10.2.tgz#e5492fc842ab19a3ba3e26bbf7a3455bd9c7b06f"
   dependencies:
     array.prototype.find "^2.0.1"
     doctrine "^1.2.2"
@@ -1665,17 +1668,18 @@ eslint-plugin-react@^6.10.0:
     jsx-ast-utils "^1.3.4"
     object.assign "^4.0.4"
 
-eslint@^3.17.0:
-  version "3.17.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-3.17.0.tgz#e2704b09c5bae9fb49ee8bafeea3832c7257d498"
+eslint@^3.18.0:
+  version "3.18.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-3.18.0.tgz#647e985c4ae71502d20ac62c109f66d5104c8a4b"
   dependencies:
     babel-code-frame "^6.16.0"
     chalk "^1.1.3"
-    concat-stream "^1.4.6"
+    concat-stream "^1.5.2"
     debug "^2.1.1"
-    doctrine "^1.2.2"
+    doctrine "^2.0.0"
     escope "^3.6.0"
     espree "^3.4.0"
+    esquery "^1.0.0"
     estraverse "^4.2.0"
     esutils "^2.0.2"
     file-entry-cache "^2.0.0"
@@ -1715,6 +1719,12 @@ esprima@^2.6.0, esprima@^2.7.1:
   version "2.7.3"
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-2.7.3.tgz#96e3b70d5779f6ad49cd032673d1c312767ba581"
 
+esquery@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/esquery/-/esquery-1.0.0.tgz#cfba8b57d7fba93f17298a8a006a04cda13d80fa"
+  dependencies:
+    estraverse "^4.0.0"
+
 esrecurse@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/esrecurse/-/esrecurse-4.1.0.tgz#4713b6536adf7f2ac4f327d559e7756bff648220"
@@ -1730,7 +1740,7 @@ estraverse@^1.9.1:
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/estraverse/-/estraverse-1.9.3.tgz#af67f2dc922582415950926091a4005d29c9bb44"
 
-estraverse@^4.1.1, estraverse@^4.2.0:
+estraverse@^4.0.0, estraverse@^4.1.1, estraverse@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/estraverse/-/estraverse-4.2.0.tgz#0dee3fed31fcd469618ce7342099fc1afa0bdb13"
 
@@ -3140,13 +3150,13 @@ mime-db@~1.23.0:
   version "1.23.0"
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.23.0.tgz#a31b4070adaea27d732ea333740a64d0ec9a6659"
 
-mime-types@2.1.11, mime-types@~2.1.7, mime-types@~2.1.9:
+mime-types@2.1.11, mime-types@~2.1.7:
   version "2.1.11"
   resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.11.tgz#c259c471bda808a85d6cd193b430a5fae4473b3c"
   dependencies:
     mime-db "~1.23.0"
 
-mime-types@^2.1.12, mime-types@~2.1.11, mime-types@~2.1.13, mime-types@~2.1.6:
+mime-types@^2.1.12, mime-types@~2.1.11, mime-types@~2.1.13, mime-types@~2.1.6, mime-types@~2.1.9:
   version "2.1.13"
   resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.13.tgz#e07aaa9c6c6b9a7ca3012c69003ad25a39e92a88"
   dependencies:
@@ -3186,9 +3196,9 @@ mkdirp@^0.5.0, mkdirp@^0.5.1:
   dependencies:
     minimist "0.0.8"
 
-mobx-react@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/mobx-react/-/mobx-react-4.1.1.tgz#98b2625e0ac8f53a5116fef85265d1c987120432"
+mobx-react@^4.1.3:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/mobx-react/-/mobx-react-4.1.3.tgz#8074a0d06f1211177fd6f2cc4091b106e03d4b89"
   dependencies:
     hoist-non-react-statics "^1.2.0"
 
@@ -3200,9 +3210,9 @@ mobx-remotedev@^0.2.6:
     remotedev "^0.2.7"
     remotedev-utils "^0.0.3"
 
-mobx@^3.1.2:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/mobx/-/mobx-3.1.2.tgz#5687b45d1ee268b4996cbfb4c8269d3c639f3aa8"
+mobx@^3.1.7:
+  version "3.1.7"
+  resolved "https://registry.yarnpkg.com/mobx/-/mobx-3.1.7.tgz#910c01f6e2f7e88ec47baabefee5fe667d37ac00"
 
 moment@2.x.x:
   version "2.17.1"
@@ -3626,9 +3636,9 @@ react-deep-force-update@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/react-deep-force-update/-/react-deep-force-update-1.0.1.tgz#f911b5be1d2a6fe387507dd6e9a767aa2924b4c7"
 
-react-native-debugger-open@^0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/react-native-debugger-open/-/react-native-debugger-open-0.3.2.tgz#ac90d33e97ab9aa9f815eb8c9f6f9efb4a09a733"
+react-native-debugger-open@^0.3.3:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/react-native-debugger-open/-/react-native-debugger-open-0.3.3.tgz#8fd92357c7cce82bf88eb39433a7a69f809dc7d5"
   dependencies:
     chalk "^1.1.3"
     es6-template "^1.0.4"
@@ -3638,20 +3648,25 @@ react-native-dismiss-keyboard@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/react-native-dismiss-keyboard/-/react-native-dismiss-keyboard-1.0.0.tgz#32886242b3f2317e121f3aeb9b0a585e2b879b49"
 
-react-native-drawer-layout@^1.1.0:
+react-native-drawer-layout-polyfill@^1.0.4:
   version "1.1.0"
-  resolved "https://registry.yarnpkg.com/react-native-drawer-layout/-/react-native-drawer-layout-1.1.0.tgz#138881331c14d3e45dce691a521323420d7d5f94"
+  resolved "https://registry.yarnpkg.com/react-native-drawer-layout-polyfill/-/react-native-drawer-layout-polyfill-1.1.0.tgz#6a76f582b260ebe64e556a58d473ddd51adc93ab"
   dependencies:
-    autobind-decorator "^1.3.2"
+    react-native-drawer-layout "~1.1.5"
+
+react-native-drawer-layout@~1.1.5:
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/react-native-drawer-layout/-/react-native-drawer-layout-1.1.6.tgz#e6fff2e2a13cd3821496827e65c20222d4441009"
+  dependencies:
     react-native-dismiss-keyboard "1.0.0"
 
-react-native-tab-view@^0.0.56:
-  version "0.0.56"
-  resolved "https://registry.yarnpkg.com/react-native-tab-view/-/react-native-tab-view-0.0.56.tgz#7417a1f6502deef49abf58ba76a1cde213abbbf1"
+react-native-tab-view@^0.0.57:
+  version "0.0.57"
+  resolved "https://registry.yarnpkg.com/react-native-tab-view/-/react-native-tab-view-0.0.57.tgz#715e2ea4100fa50168e134df3947dd76ebd55743"
 
-react-native@0.42.0:
-  version "0.42.0"
-  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.42.0.tgz#59b501603a63232598fff653a36307a26010402e"
+react-native@^0.42.3:
+  version "0.42.3"
+  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.42.3.tgz#450c8a03a5e3e991a08a426f22776dd8feb80b26"
   dependencies:
     absolute-path "^0.0.0"
     art "^0.10.0"
@@ -3729,16 +3744,16 @@ react-native@0.42.0:
     xmldoc "^0.4.0"
     yargs "^6.4.0"
 
-react-navigation@^1.0.0-beta.6:
-  version "1.0.0-beta.6"
-  resolved "https://registry.yarnpkg.com/react-navigation/-/react-navigation-1.0.0-beta.6.tgz#56172ef7493a461b05d362674290eae4bdcaef6a"
+react-navigation@^1.0.0-beta.7:
+  version "1.0.0-beta.7"
+  resolved "https://registry.yarnpkg.com/react-navigation/-/react-navigation-1.0.0-beta.7.tgz#acd89a01903ef0d1335f1ff364d1dbe67bc70039"
   dependencies:
     clamp "^1.0.1"
     fbjs "^0.8.5"
     hoist-non-react-statics "^1.2.0"
     path-to-regexp "^1.7.0"
-    react-native-drawer-layout "^1.1.0"
-    react-native-tab-view "^0.0.56"
+    react-native-drawer-layout-polyfill "^1.0.4"
+    react-native-tab-view "^0.0.57"
 
 react-proxy@^1.1.7:
   version "1.1.8"
