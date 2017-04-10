@@ -1,6 +1,7 @@
 // @flow
 // Imports {{{
 
+import { bind } from 'decko'
 import Animate_ from 'constelation-animate_'
 import Event_ from 'constelation-event_'
 import Image from 'constelation-image'
@@ -13,7 +14,8 @@ export default class Logo extends React.Component<void, any, void> {
   rotating: boolean
 
   // Showing controls of Animate_ with refs
-  handleToggleRotation = () => {
+  @bind
+  handleToggleRotation() {
     if (this.rotating === true) {
       this.node.stop()
       this.rotating = false
@@ -24,7 +26,8 @@ export default class Logo extends React.Component<void, any, void> {
     }
   }
 
-  setRef = (node: Animate_) => {
+  @bind
+  setRef(node: Animate_) {
     this.node = node
   }
 

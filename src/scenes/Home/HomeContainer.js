@@ -1,6 +1,7 @@
 // @flow
 // Imports {{{
 
+import { bind } from 'decko'
 import Image from 'constelation-image'
 import React from 'react'
 
@@ -28,11 +29,13 @@ export default class HomeContainer extends React.Component<void, Props, void> {
     },
   }
 
-  handleShowFromRight = () => {
+  @bind
+  handleShowFromRight() {
     this.props.navigation.navigate('Dummy')
   }
 
-  handleShowFromBottom = () => {
+  @bind
+  handleShowFromBottom() {
     //TODO use custom Transition to support modal transition here
     // see CardStack https://github.com/react-community/react-navigation/blob/master/src/views/CardStack.js
     // and TransitionConfigs https://github.com/react-community/react-navigation/blob/master/src/views/TransitionConfigs.js

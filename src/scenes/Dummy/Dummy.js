@@ -4,6 +4,7 @@
 import {
   StatusBar,
 } from 'react-native'
+import { bind } from 'decko'
 import Event_ from 'constelation-event_'
 import React from 'react'
 import Style_ from 'constelation-style_'
@@ -20,7 +21,8 @@ type Props = {
 
 export default class Dummy extends React.Component<void, Props, void> {
 
-  handlePress = () => {
+  @bind
+  handlePress() {
     this.props.navigation.goBack()
   }
 

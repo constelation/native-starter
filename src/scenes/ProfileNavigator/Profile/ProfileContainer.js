@@ -1,6 +1,7 @@
 // @flow
 // Imports {{{
 
+import { bind } from 'decko'
 import { inject, observer } from 'mobx-react/native'
 import Event_ from 'constelation-event_'
 import React from 'react'
@@ -39,7 +40,8 @@ export default inject('counter')(observer(
       },
     }
 
-    handleIncreaseCounter = () => {
+    @bind
+    handleIncreaseCounter() {
       this.props.counter.increase()
     }
 

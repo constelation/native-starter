@@ -35,6 +35,9 @@ module.exports = {
       'Row',
       'Col',
     ],
+    'decko': [
+      'bind',
+    ],
   },
   groupImports: true,
   useRelativePaths({ pathToImportedModule, pathToCurrentFile }) {

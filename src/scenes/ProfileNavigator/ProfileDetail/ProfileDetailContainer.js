@@ -1,6 +1,7 @@
 // @flow
 // Imports {{{
 
+import { bind } from 'decko'
 import { observer, inject } from 'mobx-react/native'
 import React from 'react'
 
@@ -20,7 +21,8 @@ class ProfileDetailContainer extends React.Component<void, Props, void> {
     title: () => `Profile Detail`,
   }
 
-  handleIncreaseCounter = () => {
+  @bind
+  handleIncreaseCounter() {
     this.props.counter.increase()
   }
 

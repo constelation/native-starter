@@ -2,6 +2,7 @@
 // Imports {{{
 
 import { Col, View } from 'constelation-view'
+import { bind } from 'decko'
 import Animate_, { emitAnimationEvent } from 'constelation-animate_'
 import Event_ from 'constelation-event_'
 import React from 'react'
@@ -32,14 +33,16 @@ export default class BoxSequence extends React.Component {
     count: 0,
   }
 
-  handleTriggerBox1Animation = () => {
+  @bind
+  handleTriggerBox1Animation() {
     this.setState({count: 0}, () => {
       // Has me a bit worried since this looks like a race condition
       emitAnimationEvent('BOX_SEQUENCE')
     })
   }
 
-  handleEnd = () => {
+  @bind
+  handleEnd() {
     this.setState({count: this.state.count + 1})
   }
 

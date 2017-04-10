@@ -3,6 +3,7 @@
 
 import { Col, Row, View } from 'constelation-view'
 import { Dimensions } from 'react-native'
+import { bind } from 'decko'
 import Animate_, { AnimationConfig, emitAnimationEvent } from 'constelation-animate_'
 import Event_ from 'constelation-event_'
 import Image from 'constelation-image'
@@ -43,11 +44,13 @@ export default class Showcase extends React.Component {
     setTimeout(() => {emitAnimationEvent('BOX_SEQUENCE')}, 1000)
   }
 
-  handleStartLogoAnimation = () => {
+  @bind
+  handleStartLogoAnimation() {
     this.setState({startLogoAnimation: true})
   }
 
-  handleEndLogoAnimation = () => {
+  @bind
+  handleEndLogoAnimation() {
     this.setState( {startLogoAnimation: false} )
   }
 
