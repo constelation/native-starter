@@ -14,8 +14,7 @@ export default class Logo extends React.Component<void, any, void> {
   rotating: boolean
 
   // Showing controls of Animate_ with refs
-  @bind
-  handleToggleRotation() {
+  @bind handleToggleRotation() {
     if (this.rotating === true) {
       this.node.stop()
       this.rotating = false
@@ -26,8 +25,7 @@ export default class Logo extends React.Component<void, any, void> {
     }
   }
 
-  @bind
-  setRef(node: Animate_) {
+  @bind setRef(node: Animate_) {
     this.node = node
   }
 
@@ -63,3 +61,4 @@ export default class Logo extends React.Component<void, any, void> {
     )
   }
 }
+

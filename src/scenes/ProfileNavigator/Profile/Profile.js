@@ -30,9 +30,7 @@ export default class Profile extends React.Component<void, Props, void> {
 
         <Space size={10} />
 
-        <Text
-          center
-        >
+        <Text center>
           Click 'Detail' for a threaded view
         </Text>
 

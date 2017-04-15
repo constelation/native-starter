@@ -1,9 +1,7 @@
 // @flow
 // Imports {{{
 
-import {
-  StatusBar,
-} from 'react-native'
+import { StatusBar } from 'react-native'
 import { bind } from 'decko'
 import Event_ from 'constelation-event_'
 import React from 'react'
@@ -20,28 +18,20 @@ type Props = {
 }
 
 export default class Dummy extends React.Component<void, Props, void> {
-
-  @bind
-  handlePress() {
+  @bind handlePress() {
     this.props.navigation.goBack()
   }
 
   render() {
     return (
-      <View
-        grow
-      >
+      <View grow>
         <StatusBar
           animated
           barStyle='light-content'
         />
 
-        <Event_
-          onPress={this.handlePress}
-        >
-          <Style_
-            backgroundColor='black'
-          >
+        <Event_ onPress={this.handlePress}>
+          <Style_ backgroundColor='black'>
             <View
               grow
               center
@@ -60,3 +50,4 @@ export default class Dummy extends React.Component<void, Props, void> {
     )
   }
 }
+

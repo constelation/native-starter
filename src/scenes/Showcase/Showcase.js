@@ -4,7 +4,10 @@
 import { Col, Row, View } from 'constelation-view'
 import { Dimensions } from 'react-native'
 import { bind } from 'decko'
-import Animate_, { AnimationConfig, emitAnimationEvent } from 'constelation-animate_'
+import Animate_, {
+  AnimationConfig,
+  emitAnimationEvent,
+} from 'constelation-animate_'
 import Event_ from 'constelation-event_'
 import Image from 'constelation-image'
 import React from 'react'
@@ -18,7 +21,6 @@ import BoxSequence from './_/BoxSequence'
 
 // }}}
 
-
 export default class Showcase extends React.Component {
   constelation: Animate_
 
@@ -30,7 +32,7 @@ export default class Showcase extends React.Component {
           source={require('images/icon-lab.png')}
           tintColor={tintColor}
         />
-       ),
+      ),
     },
   }
 
@@ -41,22 +43,22 @@ export default class Showcase extends React.Component {
   componentDidMount() {
     // Note the global event emitted
     // Not the best example. but showing that it is possible
-    setTimeout(() => {emitAnimationEvent('BOX_SEQUENCE')}, 1000)
+    setTimeout(() => {
+      emitAnimationEvent('BOX_SEQUENCE')
+    }, 1000)
   }
 
-  @bind
-  handleStartLogoAnimation() {
-    this.setState({startLogoAnimation: true})
+  @bind handleStartLogoAnimation() {
+    this.setState({ startLogoAnimation: true })
   }
 
-  @bind
-  handleEndLogoAnimation() {
-    this.setState( {startLogoAnimation: false} )
+  @bind handleEndLogoAnimation() {
+    this.setState({ startLogoAnimation: false })
   }
 
   render() {
     return (
-      <AnimationConfig timingMultiplier={10} >
+      <AnimationConfig timingMultiplier={10}>
         <ScrollView
           grow
           marginTop={65}
@@ -66,7 +68,7 @@ export default class Showcase extends React.Component {
 
           <BoxSequence />
 
-          <Event_ onPress={this.handleStartLogoAnimation} >
+          <Event_ onPress={this.handleStartLogoAnimation}>
             <Animate_
               start={this.state.startLogoAnimation}
               repeat={2}
@@ -106,15 +108,15 @@ export default class Showcase extends React.Component {
               align='stretch'
               height={200}
             >
-              <Style_ backgroundColor='red' >
+              <Style_ backgroundColor='red'>
                 <View width={50} />
               </Style_>
               <Space size={50} />
-              <Style_ backgroundColor='green' >
+              <Style_ backgroundColor='green'>
                 <View width={50} />
               </Style_>
               <Space size={50} />
-              <Style_ backgroundColor='blue' >
+              <Style_ backgroundColor='blue'>
                 <View width={50} />
               </Style_>
             </Row>
@@ -124,14 +126,14 @@ export default class Showcase extends React.Component {
             backgroundColor='grey'
             opacity={0.5}
           >
-            <Col height={200} >
-              <Style_ backgroundColor='red' >
+            <Col height={200}>
+              <Style_ backgroundColor='red'>
                 <View height={50} />
               </Style_>
-              <Style_ backgroundColor='green' >
+              <Style_ backgroundColor='green'>
                 <View height={50} />
               </Style_>
-              <Style_ backgroundColor='blue' >
+              <Style_ backgroundColor='blue'>
                 <View height={50} />
               </Style_>
             </Col>
