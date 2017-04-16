@@ -16,7 +16,6 @@ type Props = {
 }
 
 export default class HomeContainer extends React.Component<void, Props, void> {
-
   static navigationOptions = {
     tabBar: {
       label: 'Home',
@@ -29,13 +28,11 @@ export default class HomeContainer extends React.Component<void, Props, void> {
     },
   }
 
-  @bind
-  handleShowFromRight() {
+  @bind handleShowFromRight() {
     this.props.navigation.navigate('Dummy')
   }
 
-  @bind
-  handleShowFromBottom() {
+  @bind handleShowFromBottom() {
     //TODO use custom Transition to support modal transition here
     // see CardStack https://github.com/react-community/react-navigation/blob/master/src/views/CardStack.js
     // and TransitionConfigs https://github.com/react-community/react-navigation/blob/master/src/views/TransitionConfigs.js
@@ -51,3 +48,4 @@ export default class HomeContainer extends React.Component<void, Props, void> {
     )
   }
 }
+

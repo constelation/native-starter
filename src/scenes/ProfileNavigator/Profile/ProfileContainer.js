@@ -15,43 +15,42 @@ import Profile from './Profile'
 // }}}
 
 type Props = {
-  counter: Counter
+  counter: Counter,
 }
 
-export default inject('counter')(observer(
-  class ProfileContainer extends React.Component<void, Props, void> {
+@inject('counter')
+@observer
+export default class ProfileContainer extends React.Component<void, Props, void> {
+  static navigationOptions = {
+    title: () => `Profile`,
 
-    static navigationOptions = {
-      title: () => `Profile`,
-
-      header: (props) => {
-        return {
-          right: (
-            <Event_
-              pressEffect='opacity'
-              onPress={() => props.navigate('ProfileDetail')} // eslint-disable-line react/jsx-no-bind
-            >
-              <View paddingRight={20}>
-                <Text>Detail</Text>
-              </View>
-            </Event_>
-          ),
-        }
-      },
-    }
-
-    @bind
-    handleIncreaseCounter() {
-      this.props.counter.increase()
-    }
-
-    render() {
-      return (
-        <Profile
-          value={this.props.counter.value}
-          onIncreaseCounter={this.handleIncreaseCounter}
-        />
-      )
-    }
+    header: props => {
+      return {
+        right: (
+          <Event_
+            pressEffect='opacity'
+            onPress={() => props.navigate('ProfileDetail')} // eslint-disable-line react/jsx-no-bind
+          >
+            <View paddingRight={20}>
+              <Text> Detail </Text>
+            </View>
+          </Event_>
+        ),
+      }
+    },
   }
-))
+
+  @bind handleIncreaseCounter() {
+    this.props.counter.increase()
+  }
+
+  render() {
+    return (
+      <Profile
+        value={this.props.counter.value}
+        onIncreaseCounter={this.handleIncreaseCounter}
+      />
+    )
+  }
+}
+

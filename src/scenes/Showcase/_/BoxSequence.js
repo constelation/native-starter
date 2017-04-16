@@ -33,17 +33,15 @@ export default class BoxSequence extends React.Component {
     count: 0,
   }
 
-  @bind
-  handleTriggerBox1Animation() {
-    this.setState({count: 0}, () => {
+  @bind handleTriggerBox1Animation() {
+    this.setState({ count: 0 }, () => {
       // Has me a bit worried since this looks like a race condition
       emitAnimationEvent('BOX_SEQUENCE')
     })
   }
 
-  @bind
-  handleEnd() {
-    this.setState({count: this.state.count + 1})
+  @bind handleEnd() {
+    this.setState({ count: this.state.count + 1 })
   }
 
   render() {
@@ -64,7 +62,7 @@ export default class BoxSequence extends React.Component {
             onEnd={this.handleEnd}
             onEndEvent='BOX_1_END'
           >
-            <Style_ backgroundColor='purple' >
+            <Style_ backgroundColor='purple'>
               <View />
             </Style_>
           </Animate_>
@@ -77,7 +75,7 @@ export default class BoxSequence extends React.Component {
           animation={box1Animation}
           onEndEvent='BOX_2_END'
         >
-          <Style_ backgroundColor='black' >
+          <Style_ backgroundColor='black'>
             <View />
           </Style_>
         </Animate_>
@@ -90,7 +88,7 @@ export default class BoxSequence extends React.Component {
           animation={box1Animation}
           onEndEvent='BOX_SEQUENCE'
         >
-          <Style_ backgroundColor='purple' >
+          <Style_ backgroundColor='purple'>
             <View />
           </Style_>
         </Animate_>
@@ -98,3 +96,4 @@ export default class BoxSequence extends React.Component {
     )
   }
 }
+
