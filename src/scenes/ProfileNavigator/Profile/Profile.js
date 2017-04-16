@@ -52,3 +52,4 @@ export default class Profile extends React.Component<void, Props, void> {
     )
   }
 }
+

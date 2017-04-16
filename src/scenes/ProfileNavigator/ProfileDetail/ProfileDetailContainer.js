@@ -12,17 +12,15 @@ import ProfileDetail from './ProfileDetail'
 // }}}
 
 type Props = {
-  counter: Counter
+  counter: Counter,
 }
 
 class ProfileDetailContainer extends React.Component<void, Props, void> {
-
   static navigationOptions = {
     title: () => `Profile Detail`,
   }
 
-  @bind
-  handleIncreaseCounter() {
+  @bind handleIncreaseCounter() {
     this.props.counter.increase()
   }
 
@@ -37,3 +35,4 @@ class ProfileDetailContainer extends React.Component<void, Props, void> {
 }
 
 export default inject('counter')(observer(ProfileDetailContainer))
+

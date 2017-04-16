@@ -45,3 +45,4 @@ export default class ProfileDetail extends React.Component<void, Props, void> {
     )
   }
 }
+

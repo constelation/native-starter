@@ -32,8 +32,8 @@ export default class ProfileContainer extends React.Component<void, Props, void>
             onPress={() => props.navigate('ProfileDetail')} // eslint-disable-line react/jsx-no-bind
           >
             <View paddingRight={20}>
-              <Text> Detail </Text>{' '}
-            </View>{' '}
+              <Text> Detail </Text>
+            </View>
           </Event_>
         ),
       }
