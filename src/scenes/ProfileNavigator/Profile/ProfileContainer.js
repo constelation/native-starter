@@ -21,24 +21,19 @@ type Props = {
 @inject('counter')
 @observer
 export default class ProfileContainer extends React.Component<void, Props, void> {
-  static navigationOptions = {
-    title: () => `Profile`,
-
-    header: props => {
-      return {
-        right: (
-          <Event_
-            pressEffect='opacity'
-            onPress={() => props.navigate('ProfileDetail')} // eslint-disable-line react/jsx-no-bind
-          >
-            <View paddingRight={20}>
-              <Text> Detail </Text>
-            </View>
-          </Event_>
-        ),
-      }
-    },
-  }
+  static navigationOptions = ({ navigation }) => ({
+    headerTitle: 'Profile',
+    headerRight: (
+      <Event_
+        pressEffect='opacity'
+        onPress={() => navigation.navigate('ProfileDetail')} // eslint-disable-line react/jsx-no-bind
+      >
+        <View paddingRight={20}>
+          <Text> Detail </Text>
+        </View>
+      </Event_>
+    ),
+  })
 
   @bind handleIncreaseCounter() {
     this.props.counter.increase()

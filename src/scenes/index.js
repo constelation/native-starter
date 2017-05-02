@@ -2,7 +2,7 @@
 // Imports {{{
 
 import { Provider } from 'mobx-react/native'
-import { TabNavigator, TabView, StackNavigator } from 'react-navigation'
+import { TabNavigator, TabBarBottom, StackNavigator } from 'react-navigation'
 import React from 'react'
 import mobx from 'mobx'
 
@@ -43,8 +43,8 @@ const Tabs = TabNavigator({
     screen: Showcase,
   },
 }, {
-  lazyLoad: true,
-  tabBarComponent: TabView.TabBarBottom, // overrid Android's default of top
+  lazy: true,
+  tabBarComponent: TabBarBottom, // overrid Android's default of top
   tabBarOptions: {
     activeTintColor: '#111',
     showIcon: true,

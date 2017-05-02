@@ -17,7 +17,7 @@ type Props = {
 
 class ProfileDetailContainer extends React.Component<void, Props, void> {
   static navigationOptions = {
-    title: () => `Profile Detail`,
+    headerTitle: 'Profile Detail',
   }
 
   @bind handleIncreaseCounter() {

@@ -17,15 +17,13 @@ type Props = {
 
 export default class HomeContainer extends React.Component<void, Props, void> {
   static navigationOptions = {
-    tabBar: {
-      label: 'Home',
-      icon: ({ tintColor }) => (
-        <Image
-          source={require('images/icon-home.png')}
-          tintColor={tintColor}
-        />
-      ),
-    },
+    tabBarLabel: 'Home',
+    tabBarIcon: ({ tintColor }) => (
+      <Image
+        source={require('images/icon-home.png')}
+        tintColor={tintColor}
+      />
+    ),
   }
 
   @bind handleShowFromRight() {

@@ -25,15 +25,13 @@ export default class Showcase extends React.Component {
   constelation: Animate_
 
   static navigationOptions = {
-    tabBar: {
-      label: 'Showcase',
-      icon: ({ tintColor }) => (
-        <Image
-          source={require('images/icon-lab.png')}
-          tintColor={tintColor}
-        />
-      ),
-    },
+    tabBarLabel: 'Showcase',
+    tabBarIcon: ({ tintColor }) => (
+      <Image
+        source={require('images/icon-lab.png')}
+        tintColor={tintColor}
+      />
+    ),
   }
 
   state = {
@@ -144,3 +142,4 @@ export default class Showcase extends React.Component {
     )
   }
 }
+
