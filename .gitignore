@@ -55,3 +55,4 @@ fastlane/screenshots
 # -- custom ignores below -- #
 *.zip
 ios/main.jsbundle*
+.lvimrc
