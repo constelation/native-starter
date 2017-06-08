@@ -17,13 +17,13 @@ import Showcase from './Showcase'
 
 // -- MobX --
 // throw an exception on any attempt to modify MobX state outside an action
-mobx.useStrict( true )
+mobx.useStrict(true)
 
 // log all mobx actions when in development mode
 if (__DEV__) {
-  mobx.spy( ev => {
+  mobx.spy(ev => {
     if (ev.type === 'action') {
-      console.log( ev.name )
+      console.log(ev.name)
     }
   })
 }
