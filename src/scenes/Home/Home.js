@@ -69,4 +69,3 @@ export default class Home extends React.Component<void, Props, void> {
     )
   }
 }
-
