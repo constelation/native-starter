@@ -1,38 +1,33 @@
 // @flow
 // Imports {{{
 
-import { bind } from 'decko'
-import { observer, inject } from 'mobx-react/native'
+import { inject } from 'mobx-react/native'
 import React from 'react'
 
-import type { Counter } from 'stores/counter'
+import type { Stores } from 'stores'
 
 import ProfileDetail from './ProfileDetail'
+import type { Props } from './ProfileDetail'
 
 // }}}
 
-type Props = {
-  counter: Counter,
-}
+class ProfileDetailContainer extends React.Component {
+  props: Props
 
-class ProfileDetailContainer extends React.Component<void, Props, void> {
   static navigationOptions = {
     headerTitle: 'Profile Detail',
   }
 
-  @bind handleIncreaseCounter() {
-    this.props.counter.increase()
-  }
-
   render() {
     return (
-      <ProfileDetail
-        value={this.props.counter.value}
-        onIncreaseCounter={this.handleIncreaseCounter}
-      />
+      <ProfileDetail {...this.props} />
     )
   }
 }
 
-export default inject('counter')(observer(ProfileDetailContainer))
-
+export default inject(
+  ({ counter }: Stores) => ({
+    value: counter.value,
+    onIncreaseCounter: counter.increase,
+  })
+)(ProfileDetailContainer)

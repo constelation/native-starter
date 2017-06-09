@@ -1,26 +1,22 @@
 // @flow
 // Imports {{{
 
-import { bind } from 'decko'
-import { inject, observer } from 'mobx-react/native'
+import { inject } from 'mobx-react/native'
 import Event_ from 'constelation-event_'
 import React from 'react'
 import Text from 'constelation-text'
 import View from 'constelation-view'
 
-import type { Counter } from 'stores/counter'
+import type { Stores } from 'stores'
 
 import Profile from './Profile'
+import type { Props } from './Profile'
 
 // }}}
 
-type Props = {
-  counter: Counter,
-}
+class ProfileContainer extends React.Component {
+  props: Props
 
-@inject('counter')
-@observer
-export default class ProfileContainer extends React.Component<void, Props, void> {
   static navigationOptions = ({ navigation }) => ({
     headerTitle: 'Profile',
     headerRight: (
@@ -35,17 +31,16 @@ export default class ProfileContainer extends React.Component<void, Props, void>
     ),
   })
 
-  @bind handleIncreaseCounter() {
-    this.props.counter.increase()
-  }
-
   render() {
     return (
-      <Profile
-        value={this.props.counter.value}
-        onIncreaseCounter={this.handleIncreaseCounter}
-      />
+      <Profile {...this.props} />
     )
   }
 }
 
+export default inject(
+  ({ counter }: Stores) => ({
+    value: counter.value,
+    onIncreaseCounter: counter.increase,
+  })
+)(ProfileContainer)
