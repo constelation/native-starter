@@ -30,7 +30,7 @@ if (__DEV__) {
 }
 
 const stores = {
-  counter: remotedev(new Counter())
+  counter: remotedev(new Counter()),
 }
 
 // -- Routes --
