@@ -6,8 +6,7 @@ import { TabNavigator, TabBarBottom, StackNavigator } from 'react-navigation'
 import React from 'react'
 import mobx from 'mobx'
 
-import Counter from 'stores/counter'
-import remotedev from 'mobx-remotedev'
+import { createStores } from 'stores'
 
 import Dummy from './Dummy'
 import Home from './Home'
@@ -29,9 +28,7 @@ if (__DEV__) {
   })
 }
 
-const stores = {
-  counter: remotedev(new Counter()),
-}
+const stores = createStores()
 
 // -- Routes --
 //TODO: consider moving Tabs to its own folder
@@ -47,7 +44,7 @@ const Tabs = TabNavigator({
   },
 }, {
   lazy: true,
-  tabBarComponent: TabBarBottom, // overrid Android's default of top
+  tabBarComponent: TabBarBottom, // override Android's default of top
   tabBarOptions: {
     activeTintColor: '#111',
     showIcon: true,
