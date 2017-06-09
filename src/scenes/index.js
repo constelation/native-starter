@@ -6,7 +6,8 @@ import { TabNavigator, TabBarBottom, StackNavigator } from 'react-navigation'
 import React from 'react'
 import mobx from 'mobx'
 
-import counter from 'stores/counter'
+import Counter from 'stores/counter'
+import remotedev from 'mobx-remotedev'
 
 import Dummy from './Dummy'
 import Home from './Home'
@@ -28,7 +29,9 @@ if (__DEV__) {
   })
 }
 
-const stores = { counter }
+const stores = {
+  counter: remotedev(new Counter())
+}
 
 // -- Routes --
 //TODO: consider moving Tabs to its own folder

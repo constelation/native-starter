@@ -3,11 +3,9 @@
 
 import { action, extendObservable } from 'mobx'
 
-import remotedev from 'mobx-remotedev'
-
 // }}}
 
-export class Counter {
+export default class Counter {
   value: number
   increase: () => {}
 
@@ -25,6 +23,3 @@ export class Counter {
     this.value++
   })
 }
-
-export default remotedev(new Counter())
-
