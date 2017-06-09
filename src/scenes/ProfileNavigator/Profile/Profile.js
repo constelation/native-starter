@@ -9,7 +9,7 @@ import Text from 'constelation-text'
 
 // }}}
 
-type Props = {
+export type Props = {
   value: number,
   onIncreaseCounter: Function,
 }

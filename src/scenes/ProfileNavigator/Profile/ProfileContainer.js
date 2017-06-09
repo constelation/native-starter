@@ -10,13 +10,9 @@ import View from 'constelation-view'
 import type { Stores } from 'stores'
 
 import Profile from './Profile'
+import type { Props } from './Profile'
 
 // }}}
-
-type Props = {
-  value: number,
-  onIncrease: Function,
-}
 
 class ProfileContainer extends React.Component {
   props: Props
@@ -37,10 +33,7 @@ class ProfileContainer extends React.Component {
 
   render() {
     return (
-      <Profile
-        value={this.props.value}
-        onIncreaseCounter={this.props.onIncrease}
-      />
+      <Profile {...this.props} />
     )
   }
 }
@@ -48,6 +41,6 @@ class ProfileContainer extends React.Component {
 export default inject(
   ({ counter }: Stores) => ({
     value: counter.value,
-    onIncrease: counter.increase,
+    onIncreaseCounter: counter.increase,
   })
 )(ProfileContainer)

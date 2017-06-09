@@ -7,13 +7,9 @@ import React from 'react'
 import type { Stores } from 'stores'
 
 import ProfileDetail from './ProfileDetail'
+import type { Props } from './ProfileDetail'
 
 // }}}
-
-type Props = {
-  value: number,
-  onIncrease: Function,
-}
 
 class ProfileDetailContainer extends React.Component {
   props: Props
@@ -24,10 +20,7 @@ class ProfileDetailContainer extends React.Component {
 
   render() {
     return (
-      <ProfileDetail
-        value={this.props.value}
-        onIncreaseCounter={this.props.onIncrease}
-      />
+      <ProfileDetail {...this.props} />
     )
   }
 }
@@ -35,6 +28,6 @@ class ProfileDetailContainer extends React.Component {
 export default inject(
   ({ counter }: Stores) => ({
     value: counter.value,
-    onIncrease: counter.increase,
+    onIncreaseCounter: counter.increase,
   })
 )(ProfileDetailContainer)
